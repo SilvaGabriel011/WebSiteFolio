@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="Stylised workshop scene: an arched timber door beside a rising staircase profile">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1D3E62"/><stop offset="1" stop-color="#0E2236"/>
+    </linearGradient>
+    <linearGradient id="oak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E7C96C"/><stop offset=".55" stop-color="#C9A227"/><stop offset="1" stop-color="#9E7D1B"/>
+    </linearGradient>
+    <linearGradient id="oak2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9B44A"/><stop offset="1" stop-color="#A8861E"/>
+    </linearGradient>
+    <pattern id="grain" width="150" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 8q38-8 75 0t75 0" fill="none" stroke="#7A620E" stroke-opacity=".38" stroke-width="1.4"/>
+      <path d="M0 20q38 7 75 0t75 0" fill="none" stroke="#7A620E" stroke-opacity=".22" stroke-width="1"/>
+    </pattern>
+    <pattern id="draft" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0v46" fill="none" stroke="#F4EFE4" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+
+  <rect width="720" height="520" rx="12" fill="url(#bg)"/>
+  <rect width="720" height="520" rx="12" fill="url(#draft)"/>
+  <rect x="14" y="14" width="692" height="492" rx="6" fill="none" stroke="#C9A227" stroke-opacity=".35" stroke-width="1.5"/>
+
+  <!-- bench line -->
+  <line x1="46" y1="470" x2="674" y2="470" stroke="#F4EFE4" stroke-opacity=".28" stroke-width="2"/>
+
+  <!-- arched door -->
+  <g>
+    <path d="M112 470V237a101 101 0 0 1 202 0v233" fill="none" stroke="#F4EFE4" stroke-opacity=".85" stroke-width="9"/>
+    <path d="M134 470V262h158v208z" fill="url(#oak)"/>
+    <path d="M134 470V262h158v208z" fill="url(#grain)"/>
+    <!-- fanlight -->
+    <path d="M134 250a79 79 0 0 1 158 0z" fill="#0E2236"/>
+    <g stroke="#C9A227" stroke-width="3" stroke-opacity=".9">
+      <path d="M134 250a79 79 0 0 1 158 0z" fill="none"/>
+      <path d="M213 250V171M213 250l-56-56M213 250l56-56"/>
+    </g>
+    <!-- panels -->
+    <g fill="none" stroke="#7A620E" stroke-width="3">
+      <rect x="150" y="280" width="55" height="90" rx="2"/>
+      <rect x="221" y="280" width="55" height="90" rx="2"/>
+      <rect x="150" y="390" width="55" height="60" rx="2"/>
+      <rect x="221" y="390" width="55" height="60" rx="2"/>
+    </g>
+    <circle cx="282" cy="368" r="6.5" fill="#F4EFE4"/>
+  </g>
+
+  <!-- staircase profile -->
+  <g>
+    <path d="M390 470V420h45v-40h45v-40h45v-40h45v-40h45v-40h45v290z" fill="#16324F" stroke="#F4EFE4" stroke-opacity=".55" stroke-width="2.5"/>
+    <g stroke="url(#oak2)" stroke-width="7" stroke-linecap="round">
+      <path d="M390 420h45M435 380h45M480 340h45M525 300h45M570 260h45M615 220h45"/>
+    </g>
+    <!-- balusters + rail -->
+    <g stroke="#F4EFE4" stroke-opacity=".6" stroke-width="3">
+      <path d="M412 420v-73M457 380v-73M502 340v-73M547 300v-73M592 260v-73M637 220v-73"/>
+    </g>
+    <path d="M398 352 660 118" stroke="#C9A227" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="398" cy="352" r="11" fill="#C9A227"/>
+    <rect x="392" y="352" width="12" height="68" rx="2" fill="#C9A227"/>
+  </g>
+
+  <!-- crossed tools emblem -->
+  <g transform="translate(478 96)">
+    <circle r="52" fill="none" stroke="#C9A227" stroke-opacity=".45" stroke-width="1.5"/>
+    <g transform="rotate(-38)">
+      <rect x="-5" y="-42" width="10" height="52" rx="4" fill="#C9A227"/>
+      <path d="M-4 10h8l3 26h-14z" fill="#F4EFE4"/>
+    </g>
+    <g transform="rotate(38)">
+      <rect x="-16" y="-44" width="32" height="22" rx="6" fill="#F4EFE4"/>
+      <rect x="-3.5" y="-22" width="7" height="62" rx="3" fill="#C9A227"/>
+    </g>
+  </g>
+
+  <!-- dust motes -->
+  <g fill="#E7C96C">
+    <circle cx="82" cy="128" r="3" opacity=".5"/>
+    <circle cx="352" cy="88" r="2.4" opacity=".38"/>
+    <circle cx="620" cy="86" r="3.2" opacity=".45"/>
+    <circle cx="60" cy="330" r="2.2" opacity=".3"/>
+    <circle cx="350" cy="210" r="2" opacity=".3"/>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="it id2">
+  <title id="it">Oak-veneer kitchen island</title>
+  <desc id="id2">Abstract kitchen island: light oak grain base with waterfall stone top and three pendant lights.</desc>
+  <defs>
+    <linearGradient id="iBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241E15"/>
+      <stop offset="1" stop-color="#14110C"/>
+    </linearGradient>
+    <linearGradient id="iStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7EFDF"/>
+      <stop offset="1" stop-color="#CDBFA6"/>
+    </linearGradient>
+    <pattern id="iOak" width="160" height="28" patternUnits="userSpaceOnUse">
+      <rect width="160" height="28" fill="#C89B5F"/>
+      <path d="M0 6q40-5 80 0t80 0" fill="none" stroke="#9A7038" stroke-width="1.4" opacity=".5"/>
+      <path d="M0 14q34 6 78 1t82 2" fill="none" stroke="#9A7038" stroke-width="1.1" opacity=".4"/>
+      <path d="M0 22q44-5 88 0t72-1" fill="none" stroke="#835D2B" stroke-width="1" opacity=".35"/>
+      <ellipse cx="52" cy="11" rx="9" ry="3" fill="none" stroke="#835D2B" stroke-width="1" opacity=".4"/>
+      <ellipse cx="122" cy="20" rx="7" ry="2.6" fill="none" stroke="#835D2B" stroke-width="1" opacity=".3"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#iBg)"/>
+  <!-- pendants -->
+  <g>
+    <rect x="248" y="0" width="4" height="96" fill="#3A3126"/>
+    <rect x="398" y="0" width="4" height="120" fill="#3A3126"/>
+    <rect x="548" y="0" width="4" height="96" fill="#3A3126"/>
+    <g fill="#1F1A13" stroke="#B98A4E" stroke-width="2">
+      <path d="M228 96h44l-7 22h-30z"/>
+      <path d="M378 120h44l-7 22h-30z"/>
+      <path d="M528 96h44l-7 22h-30z"/>
+    </g>
+    <ellipse cx="250" cy="120" rx="8" ry="4.5" fill="#F0C98A"/>
+    <ellipse cx="400" cy="144" rx="8" ry="4.5" fill="#F0C98A"/>
+    <ellipse cx="550" cy="120" rx="8" ry="4.5" fill="#F0C98A"/>
+  </g>
+  <!-- back bench silhouette -->
+  <rect x="0" y="252" width="800" height="14" fill="#2A2318"/>
+  <rect x="0" y="266" width="800" height="86" fill="#201B14"/>
+  <!-- island: waterfall stone wraps oak base -->
+  <g>
+    <rect x="150" y="330" width="500" height="170" fill="url(#iOak)"/>
+    <g stroke="#835D2B" stroke-width="2.5">
+      <line x1="316" y1="330" x2="316" y2="500"/>
+      <line x1="482" y1="330" x2="482" y2="500"/>
+    </g>
+    <g fill="#1F1D1A">
+      <rect x="212" y="368" width="44" height="6" rx="3"/>
+      <rect x="378" y="368" width="44" height="6" rx="3"/>
+      <rect x="544" y="368" width="44" height="6" rx="3"/>
+    </g>
+    <!-- stone top + waterfall legs -->
+    <path d="M128 308h544v22H128z" fill="url(#iStone)"/>
+    <rect x="128" y="308" width="20" height="212" fill="url(#iStone)"/>
+    <rect x="652" y="308" width="20" height="212" fill="url(#iStone)"/>
+    <!-- subtle stone veining -->
+    <path d="M180 318q60 6 120-2t150 4 130-3" fill="none" stroke="#B4A78E" stroke-width="1.4" opacity=".6"/>
+  </g>
+  <!-- stools -->
+  <g stroke="#B98A4E" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M250 452v88M306 452v88M238 448h80M250 512h56"/>
+    <path d="M430 452v88M486 452v88M418 448h80M430 512h56"/>
+  </g>
+  <!-- bowl on top -->
+  <path d="M368 296q32 14 64 0l-8 12h-48z" fill="#F4EADA" opacity=".9"/>
+  <!-- floor -->
+  <rect x="0" y="540" width="800" height="60" fill="#0F0C08"/>
+  <line x1="0" y1="540" x2="800" y2="540" stroke="#3B3226" stroke-width="2"/>
+</svg>

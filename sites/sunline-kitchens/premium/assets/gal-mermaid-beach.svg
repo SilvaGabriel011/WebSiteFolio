@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 560" role="img" aria-label="">
+  <defs>
+    <linearGradient id="mbstone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FCFAF4"/><stop offset="1" stop-color="#E9E2D0"/>
+    </linearGradient>
+    <linearGradient id="mbglow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9C87F" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#E9C87F" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mbbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C99F53"/><stop offset=".5" stop-color="#E9C87F"/><stop offset="1" stop-color="#C99F53"/>
+    </linearGradient>
+    <pattern id="mbvein" width="260" height="120" patternUnits="userSpaceOnUse">
+      <rect width="260" height="120" fill="none"/>
+      <path d="M-10 26c46 12 70-18 108-8s44 30 92 22 60-24 80-20" fill="none" stroke="#C9C0A9" stroke-width="2.6"/>
+      <path d="M-10 78c54-14 74 16 118 8s54-32 96-22 42 22 66 18" fill="none" stroke="#D9B36A" stroke-width="1.8" opacity=".85"/>
+      <path d="M40 108c32 6 56-12 90-6" fill="none" stroke="#BDB49B" stroke-width="1.4" opacity=".8"/>
+    </pattern>
+  </defs>
+  <rect width="840" height="560" fill="#26312B"/>
+  <rect y="440" width="840" height="120" fill="#1D2620"/>
+  <path d="M0 492h840" stroke="#141B16" stroke-width="2"/>
+
+  <!-- charcoal-green tall wall of cabinetry -->
+  <rect x="56" y="52" width="728" height="330" fill="#34413A"/>
+  <g fill="none" stroke="#2A352E" stroke-width="3">
+    <path d="M238 52v330M420 52v330M602 52v330"/>
+    <path d="M56 216h728"/>
+  </g>
+  <g stroke="url(#mbbar)" stroke-width="4" stroke-linecap="round">
+    <path d="M222 120v56M404 120v56M586 120v56M768 120v56" opacity=".9"/>
+    <path d="M222 252v56M404 252v56M586 252v56M768 252v56" opacity=".9"/>
+  </g>
+  <!-- under-cabinet glow -->
+  <rect x="56" y="382" width="728" height="26" fill="url(#mbglow)"/>
+
+  <!-- monolithic veined island -->
+  <ellipse cx="420" cy="530" rx="330" ry="18" fill="#0E1310" opacity=".55"/>
+  <rect x="150" y="392" width="540" height="34" rx="4" fill="url(#mbstone)"/>
+  <rect x="150" y="392" width="540" height="34" rx="4" fill="url(#mbvein)"/>
+  <rect x="150" y="420" width="34" height="104" fill="url(#mbstone)"/>
+  <rect x="656" y="420" width="34" height="104" fill="url(#mbstone)"/>
+  <rect x="150" y="420" width="34" height="104" fill="url(#mbvein)" opacity=".7"/>
+  <rect x="656" y="420" width="34" height="104" fill="url(#mbvein)" opacity=".7"/>
+  <rect x="184" y="420" width="472" height="104" fill="#EFE9DA"/>
+  <path d="M214 452c60 14 92-22 150-12s70 34 128 24 88-30 134-24" fill="none" stroke="#C9C0A9" stroke-width="3"/>
+  <path d="M244 500c66-16 96 14 158 6s76-34 130-26" fill="none" stroke="#D9B36A" stroke-width="2" opacity=".8"/>
+
+  <!-- long brass bar pendant -->
+  <path d="M300 0v70M540 0v70" stroke="#8A6528" stroke-width="2.5"/>
+  <rect x="252" y="70" width="336" height="14" rx="7" fill="url(#mbbar)"/>
+  <rect x="268" y="88" width="304" height="8" rx="4" fill="#E9C87F" opacity=".35"/>
+
+  <!-- brass objects on stone -->
+  <path d="M362 392a24 12 0 0 0 48 0z" fill="#D9B36A"/>
+  <path d="M448 392v-26m0 6c-7-7-14-9-21-7m21 1c7-7 14-9 21-7" fill="none" stroke="#87A48A" stroke-width="3" stroke-linecap="round"/>
+</svg>

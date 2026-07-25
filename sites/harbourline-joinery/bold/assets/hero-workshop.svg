@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E4066"/>
+      <stop offset="1" stop-color="#0F2540"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4BC3F"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".42" r=".62">
+      <stop offset="0" stop-color="#C9A227" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#C9A227" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grain" width="84" height="24" patternUnits="userSpaceOnUse">
+      <rect width="84" height="24" fill="#C9A227"/>
+      <path d="M0 5q21-4 42 0t42 0" fill="none" stroke="#9A7B1B" stroke-width="1.3" opacity=".6"/>
+      <path d="M0 12q17 5 42 1t42 2" fill="none" stroke="#9A7B1B" stroke-width="1.1" opacity=".45"/>
+      <path d="M0 19q23-4 42 0t42-1" fill="none" stroke="#9A7B1B" stroke-width="1.2" opacity=".55"/>
+      <ellipse cx="27" cy="9" rx="6.5" ry="2.4" fill="none" stroke="#9A7B1B" stroke-width="1" opacity=".5"/>
+    </pattern>
+    <pattern id="hatch" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0v26" stroke="#F7F3E8" stroke-width="1" opacity=".05"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="620" fill="url(#sky)"/>
+  <rect width="800" height="620" fill="url(#hatch)"/>
+  <circle cx="330" cy="240" r="250" fill="url(#halo)"/>
+
+  <!-- floor -->
+  <rect y="520" width="800" height="100" fill="#0A1826"/>
+  <path d="M0 520h800" stroke="#C9A227" stroke-width="2.5" opacity=".55"/>
+
+  <!-- staircase, rising to the right -->
+  <path d="M470 520h55v-38h55v-38h55v-38h55v-38h55v-38h55v190z" fill="#142F4D"/>
+  <path d="M470 482h55M525 444h55M580 406h55M635 368h55M690 330h55" stroke="url(#gold)" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M497 482v-96M552 444v-96M607 406v-96M662 368v-96M717 330v-96" stroke="#F7F3E8" stroke-width="2.5" opacity=".7"/>
+  <path d="M478 400 745 212" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="478" cy="400" r="11" fill="none" stroke="#C9A227" stroke-width="5"/>
+
+  <!-- entry door with fanlight -->
+  <path d="M235 520V300a95 95 0 0 1 190 0v220" fill="none" stroke="#F7F3E8" stroke-width="13"/>
+  <path d="M252 520V302a78 78 0 0 1 156 0v218z" fill="#0D2135"/>
+  <path d="M252 322a78 78 0 0 1 156 0v6H252z" fill="#16324F" stroke="#C9A227" stroke-width="3"/>
+  <path d="M330 246v76M281 262l49 60M379 262l-49 60M258 300l72 24M402 300l-72 24" stroke="#C9A227" stroke-width="2.5" opacity=".85"/>
+  <rect x="262" y="340" width="136" height="180" fill="url(#grain)"/>
+  <rect x="262" y="340" width="136" height="180" fill="none" stroke="#0A1826" stroke-width="3"/>
+  <rect x="276" y="354" width="46" height="66" fill="#9A7B1B" opacity=".45"/>
+  <rect x="338" y="354" width="46" height="66" fill="#9A7B1B" opacity=".45"/>
+  <rect x="276" y="438" width="46" height="66" fill="#9A7B1B" opacity=".45"/>
+  <rect x="338" y="438" width="46" height="66" fill="#9A7B1B" opacity=".45"/>
+  <rect x="276" y="354" width="46" height="66" fill="none" stroke="#7A5E12" stroke-width="2"/>
+  <rect x="338" y="354" width="46" height="66" fill="none" stroke="#7A5E12" stroke-width="2"/>
+  <rect x="276" y="438" width="46" height="66" fill="none" stroke="#7A5E12" stroke-width="2"/>
+  <rect x="338" y="438" width="46" height="66" fill="none" stroke="#7A5E12" stroke-width="2"/>
+  <circle cx="392" cy="432" r="6.5" fill="#F7F3E8"/>
+
+  <!-- small double-hung window, upper left -->
+  <rect x="62" y="128" width="104" height="138" fill="none" stroke="#F7F3E8" stroke-width="8"/>
+  <rect x="70" y="136" width="88" height="60" fill="#142F4D" stroke="#C9A227" stroke-width="2.5"/>
+  <rect x="70" y="200" width="88" height="58" fill="#0D2135" stroke="#C9A227" stroke-width="2.5"/>
+  <path d="M114 136v60M70 166h88M114 200v58M70 229h88" stroke="#C9A227" stroke-width="2"/>
+  <rect x="54" y="266" width="120" height="10" fill="url(#gold)"/>
+
+  <!-- workbench and shavings -->
+  <rect x="40" y="452" width="150" height="16" fill="url(#gold)"/>
+  <rect x="52" y="468" width="12" height="52" fill="#F7F3E8" opacity=".8"/>
+  <rect x="164" y="468" width="12" height="52" fill="#F7F3E8" opacity=".8"/>
+  <path d="M84 444c0-10 14-10 14 0s-14 10-14 0" fill="none" stroke="#E4BC3F" stroke-width="3"/>
+  <path d="M118 440c0-13 18-13 18 0 0 10-13 10-13 2" fill="none" stroke="#E4BC3F" stroke-width="3"/>
+  <path d="M148 446c2-8 12-8 12 0s-10 8-12 0" fill="none" stroke="#E4BC3F" stroke-width="3"/>
+</svg>

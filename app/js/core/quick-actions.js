@@ -341,6 +341,9 @@
     });
   }
 
+  /* Modules reuse the same drawers ("New quote" on Sales, etc.). */
+  DEMO.quickActions = { newQuote: openNewQuote, bookMaintenance: openMaintenance };
+
   function init() {
     if (!DEMO.ui) return; /* ui kit missing — fail quietly, demo still works */
     buildSidebarPanel();

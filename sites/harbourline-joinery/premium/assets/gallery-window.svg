@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540">
+  <defs>
+    <linearGradient id="wbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#193756"/>
+      <stop offset="1" stop-color="#0E2336"/>
+    </linearGradient>
+    <linearGradient id="wglass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24476B"/>
+      <stop offset="0.5" stop-color="#16324F"/>
+      <stop offset="1" stop-color="#1D3D5E"/>
+    </linearGradient>
+    <linearGradient id="woak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C39A3B"/>
+      <stop offset="1" stop-color="#96702A"/>
+    </linearGradient>
+    <pattern id="wgrain" width="40" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q10 2 20 5 T40 5" fill="none" stroke="#6E5017" stroke-width="0.8" opacity="0.4"/>
+      <path d="M0 13 Q10 16 20 13 T40 13" fill="none" stroke="#E4C464" stroke-width="0.6" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <rect width="720" height="540" fill="url(#wbg)"/>
+
+  <!-- weatherboard hint -->
+  <g stroke="#22415F" stroke-width="2" opacity="0.7">
+    <path d="M0 90h720M0 140h720M0 190h720M0 240h720M0 290h720M0 340h720M0 390h720M0 440h720"/>
+  </g>
+
+  <!-- outer casing -->
+  <rect x="216" y="60" width="288" height="404" fill="#0F2740" stroke="#F4EFE4" stroke-width="4"/>
+  <rect x="204" y="48" width="312" height="18" fill="#F4EFE4"/>
+
+  <!-- upper sash (fixed, six panes) -->
+  <g>
+    <rect x="232" y="76" width="256" height="180" fill="url(#wglass)" stroke="#C9A227" stroke-width="3"/>
+    <g stroke="#C9A227" stroke-width="3">
+      <path d="M317 76v180M403 76v180M232 166h256"/>
+    </g>
+    <g stroke="#E4C464" stroke-width="1" opacity="0.35">
+      <path d="M244 88l56 56M330 88l56 56M416 88l56 56"/>
+    </g>
+  </g>
+
+  <!-- lower sash raised ~a third -->
+  <g>
+    <rect x="226" y="196" width="268" height="192" fill="url(#wglass)" stroke="#C9A227" stroke-width="4"/>
+    <rect x="226" y="196" width="268" height="14" fill="url(#woak)" stroke="#5C4413" stroke-width="1.5"/>
+    <g stroke="#C9A227" stroke-width="3.4">
+      <path d="M317 210v178M403 210v178M226 292h268"/>
+    </g>
+    <rect x="226" y="374" width="268" height="14" fill="url(#woak)" stroke="#5C4413" stroke-width="1.5"/>
+    <!-- sash lift -->
+    <rect x="344" y="378" width="32" height="6" rx="3" fill="#E4C464"/>
+    <g stroke="#E4C464" stroke-width="1" opacity="0.3">
+      <path d="M240 210l52 52M330 306l52 52"/>
+    </g>
+  </g>
+
+  <!-- sash cords -->
+  <path d="M222 76v312M498 76v312" stroke="#E4C464" stroke-width="1.6" opacity="0.7"/>
+
+  <!-- sill -->
+  <rect x="196" y="452" width="328" height="18" fill="url(#woak)"/>
+  <rect x="196" y="452" width="328" height="18" fill="url(#wgrain)"/>
+  <rect x="196" y="452" width="328" height="18" fill="none" stroke="#5C4413" stroke-width="2"/>
+
+  <!-- bench with tools below -->
+  <g>
+    <path d="M560 380v84M660 380v84" stroke="#C9A227" stroke-width="4"/>
+    <rect x="540" y="366" width="140" height="16" fill="url(#woak)" stroke="#5C4413" stroke-width="1.5"/>
+    <!-- chisel -->
+    <path d="M560 356l26-22" stroke="#F4EFE4" stroke-width="3.6"/>
+    <path d="M586 334l12-10" stroke="#C9A227" stroke-width="6" stroke-linecap="round"/>
+    <!-- mallet -->
+    <rect x="618" y="322" width="34" height="20" rx="4" fill="#C9A227"/>
+    <path d="M635 342v24" stroke="#E4C464" stroke-width="4"/>
+  </g>
+</svg>

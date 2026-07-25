@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Indoor-outdoor entertainer kitchen with servery window opening to a timber deck and valley greenery">
+  <defs>
+    <linearGradient id="tbwall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF8F0"/><stop offset="1" stop-color="#F0EAD9"/>
+    </linearGradient>
+    <linearGradient id="tbsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6EFDA"/><stop offset="1" stop-color="#EDE2C2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="404" fill="url(#tbwall)"/>
+
+  <!-- indoor floor -->
+  <rect y="404" width="420" height="116" fill="#E5D4B6"/>
+  <path d="M0 442h420M0 480h420" stroke="#D2BD94" stroke-width="1.4"/>
+
+  <!-- outdoor deck -->
+  <rect x="420" y="404" width="380" height="116" fill="#B98A57"/>
+  <path d="M420 430h380M420 456h380M420 482h380" stroke="#9F7143" stroke-width="2"/>
+  <path d="M0 404h800" stroke="#8F6539" stroke-width="2"/>
+  <path d="M420 404v116" stroke="#8F6539" stroke-width="3"/>
+
+  <!-- opening to outside: sky, hills, creek -->
+  <rect x="420" y="44" width="380" height="360" fill="url(#tbsky)"/>
+  <circle cx="700" cy="110" r="26" fill="#E9BE6A"/>
+  <path d="M420 300c60-40 120-56 180-48 70 9 130 2 200-24v176H420z" fill="#9DB79C"/>
+  <path d="M420 330c70-26 140-28 200-12 62 16 120 14 180 0v86H420z" fill="#7E9B7F"/>
+  <path d="M420 372c90-14 190-14 280-2 40 5 70 6 100 3v31H420z" fill="#A8C4C0"/>
+
+  <!-- pergola slats -->
+  <path d="M420 44h380" stroke="#8F6539" stroke-width="8"/>
+  <path d="M448 44v22M504 44v22M560 44v22M616 44v22M672 44v22M728 44v22M784 44v22" stroke="#8F6539" stroke-width="6" stroke-linecap="round"/>
+  <path d="M780 44v360" stroke="#8F6539" stroke-width="10"/>
+
+  <!-- palm + gum foliage -->
+  <g fill="none" stroke="#5F7A63" stroke-width="5" stroke-linecap="round">
+    <path d="M756 404v-96"/>
+    <path d="M756 308c-14-16-32-20-46-14M756 308c14-16 32-20 46-14M756 304c-8-18-4-34 4-42M756 304c2-20 14-30 26-34"/>
+  </g>
+
+  <!-- servery window with gas-strut awning -->
+  <g>
+    <path d="M420 128 300 96v32l120 24z" fill="#FDFBF3" stroke="#D8CFB6" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="292" y="150" width="128" height="106" fill="#F2ECD8" stroke="#D8CFB6" stroke-width="3"/>
+    <path d="M292 256h128" stroke="#D8CFB6" stroke-width="3"/>
+  </g>
+
+  <!-- indoor cabinetry -->
+  <rect x="44" y="56" width="216" height="100" rx="3" fill="#FBF7EB" stroke="#DCD3BA" stroke-width="2.5"/>
+  <path d="M152 56v100M44 106h216" stroke="#DCD3BA" stroke-width="2"/>
+  <g fill="#B58B3E"><circle cx="140" cy="132" r="3.2"/><circle cx="164" cy="132" r="3.2"/></g>
+
+  <!-- splashback + indoor bench -->
+  <rect x="44" y="196" width="248" height="60" fill="#EFEDE2" stroke="#D3CFBB" stroke-width="2"/>
+  <path d="M70 256v-60M96 256v-60M122 256v-60M148 256v-60M174 256v-60M200 256v-60M226 256v-60M252 256v-60" stroke="#D3CFBB" stroke-width="1.6"/>
+  <rect x="32" y="254" width="400" height="14" rx="2" fill="#FFFFFF" stroke="#D6CEB7" stroke-width="2"/>
+  <path d="M120 254v-24a13 13 0 0 1 13-13h9v8" fill="none" stroke="#B58B3E" stroke-width="5" stroke-linecap="round"/>
+  <rect x="196" y="252" width="88" height="5" rx="2.5" fill="#8A8574"/>
+
+  <!-- indoor base cabinets: sage -->
+  <rect x="44" y="268" width="376" height="124" fill="#86A489"/>
+  <g fill="none" stroke="#63805F" stroke-width="2">
+    <rect x="58" y="280" width="100" height="98" rx="2"/>
+    <rect x="172" y="280" width="100" height="98" rx="2"/>
+    <rect x="286" y="280" width="120" height="44" rx="2"/>
+    <rect x="286" y="334" width="120" height="44" rx="2"/>
+  </g>
+  <g fill="#B58B3E">
+    <circle cx="146" cy="328" r="3.4"/><circle cx="184" cy="328" r="3.4"/>
+    <rect x="326" y="298" width="40" height="4" rx="2"/>
+    <rect x="326" y="352" width="40" height="4" rx="2"/>
+  </g>
+  <rect x="44" y="392" width="376" height="12" fill="#5F7A63"/>
+
+  <!-- outdoor servery bench + stools -->
+  <rect x="440" y="284" width="250" height="13" rx="2" fill="#FFFFFF" stroke="#D6CEB7" stroke-width="2"/>
+  <rect x="452" y="297" width="226" height="107" fill="#9F7143"/>
+  <path d="M452 324h226M528 297v107M604 297v107" stroke="#8F6539" stroke-width="2"/>
+  <g stroke="#6B4B2A" stroke-width="4" stroke-linecap="round">
+    <path d="M474 420v56M532 420v56M480 448h46"/>
+    <path d="M594 420v56M652 420v56M600 448h46"/>
+  </g>
+  <rect x="464" y="410" width="78" height="12" rx="6" fill="#E5D4B6"/>
+  <rect x="584" y="410" width="78" height="12" rx="6" fill="#E5D4B6"/>
+
+  <!-- festoon lights -->
+  <path d="M420 78c60 34 120 44 180 40 70-4 130-16 180-40" fill="none" stroke="#8A6528" stroke-width="2"/>
+  <g fill="#EFC878">
+    <circle cx="474" cy="102" r="5"/><circle cx="540" cy="114" r="5"/><circle cx="608" cy="117" r="5"/>
+    <circle cx="676" cy="110" r="5"/><circle cx="742" cy="94" r="5"/>
+  </g>
+
+  <!-- potted plant indoors -->
+  <path d="M60 254c-7-14-3-26 4-33 5 9 7 20 3 33" fill="#5F7A63"/>
+  <path d="M66 254c1-15 8-24 17-27-2 12-8 21-12 27" fill="#7E9B7F"/>
+  <path d="M52 268v-10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v10z" fill="#C97B4F"/>
+</svg>

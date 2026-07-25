@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#193756"/>
+      <stop offset="1" stop-color="#0E2336"/>
+    </linearGradient>
+    <linearGradient id="doak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C39A3B"/>
+      <stop offset="1" stop-color="#96702A"/>
+    </linearGradient>
+    <linearGradient id="doakD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A87F2E"/>
+      <stop offset="1" stop-color="#7E5D1E"/>
+    </linearGradient>
+    <pattern id="dgrain" width="48" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 6 Q12 2 24 6 T48 6" fill="none" stroke="#6E5017" stroke-width="1" opacity="0.5"/>
+      <path d="M0 15 Q12 19 24 15 T48 15" fill="none" stroke="#6E5017" stroke-width="0.8" opacity="0.36"/>
+      <path d="M0 23 Q12 20 24 23 T48 23" fill="none" stroke="#E4C464" stroke-width="0.8" opacity="0.28"/>
+    </pattern>
+  </defs>
+
+  <rect width="720" height="540" fill="url(#dbg)"/>
+
+  <!-- brick hint -->
+  <g stroke="#22415F" stroke-width="1.4" opacity="0.7">
+    <path d="M0 120h720M0 168h720M0 216h720M0 264h720M0 312h720M0 360h720M0 408h720M0 456h720"/>
+    <path d="M80 120v48M240 120v48M560 120v48M160 168v48M640 168v48M80 216v48M600 264v48M120 312v48M620 360v48"/>
+  </g>
+
+  <!-- step -->
+  <rect x="180" y="486" width="360" height="16" fill="#0A1B2C"/>
+  <rect x="196" y="472" width="328" height="14" fill="#1C3A52"/>
+
+  <!-- surround -->
+  <rect x="216" y="82" width="288" height="390" fill="#0F2740" stroke="#F4EFE4" stroke-width="3"/>
+  <rect x="228" y="94" width="264" height="378" fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.8"/>
+
+  <!-- fanlight -->
+  <path d="M244 178a116 78 0 0 1 232 0z" fill="#16324F" stroke="#C9A227" stroke-width="2"/>
+  <g stroke="#E4C464" stroke-width="2.2" fill="none">
+    <path d="M360 178V104M360 178l-62-52M360 178l62-52M360 178l-98-22M360 178l98-22"/>
+  </g>
+  <circle cx="360" cy="178" r="10" fill="#C9A227"/>
+
+  <!-- leaf -->
+  <rect x="252" y="192" width="216" height="280" fill="url(#doak)"/>
+  <rect x="252" y="192" width="216" height="280" fill="url(#dgrain)"/>
+  <rect x="252" y="192" width="216" height="280" fill="none" stroke="#5C4413" stroke-width="2.5"/>
+  <g>
+    <rect x="272" y="212" width="80" height="104" fill="url(#doakD)" stroke="#5C4413" stroke-width="1.5"/>
+    <rect x="368" y="212" width="80" height="104" fill="url(#doakD)" stroke="#5C4413" stroke-width="1.5"/>
+    <rect x="272" y="338" width="80" height="112" fill="url(#doakD)" stroke="#5C4413" stroke-width="1.5"/>
+    <rect x="368" y="338" width="80" height="112" fill="url(#doakD)" stroke="#5C4413" stroke-width="1.5"/>
+    <g fill="none" stroke="#E4C464" stroke-width="1" opacity="0.5">
+      <rect x="280" y="220" width="64" height="88"/>
+      <rect x="376" y="220" width="64" height="88"/>
+      <rect x="280" y="346" width="64" height="96"/>
+      <rect x="376" y="346" width="64" height="96"/>
+    </g>
+  </g>
+  <circle cx="448" cy="330" r="7" fill="#E4C464"/>
+  <circle cx="448" cy="330" r="2.6" fill="#7A620E"/>
+
+  <!-- lantern -->
+  <g stroke="#C9A227" stroke-width="2" fill="none">
+    <path d="M560 96v26"/>
+    <path d="M545 122h30l-5 34h-20z" fill="#16324F"/>
+    <circle cx="560" cy="139" r="5" fill="#E4C464" stroke="none"/>
+  </g>
+</svg>

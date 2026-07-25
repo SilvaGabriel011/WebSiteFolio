@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Hamptons-style kitchen with navy island, glass-front cabinets and lantern pendants">
+  <defs>
+    <linearGradient id="cbwall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF8F0"/><stop offset="1" stop-color="#F1EBDC"/>
+    </linearGradient>
+    <pattern id="cbsub" width="60" height="30" patternUnits="userSpaceOnUse">
+      <rect width="60" height="30" fill="#F5F2E9"/>
+      <path d="M0 14.4h60M0 29.4h60" stroke="#D9D3C2" stroke-width="1.6"/>
+      <path d="M30 0v14.4M0 15v14.4M60 15v14.4" stroke="#D9D3C2" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="cbplank" width="150" height="22" patternUnits="userSpaceOnUse">
+      <rect width="150" height="22" fill="#DEC9A4"/>
+      <path d="M0 10.6h150M0 21.4h150" stroke="#C8AF83" stroke-width="1.1"/>
+      <path d="M52 0v10.6M120 11v11" stroke="#C8AF83" stroke-width="1.1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="404" fill="url(#cbwall)"/>
+  <rect y="404" width="800" height="116" fill="url(#cbplank)"/>
+  <path d="M0 404h800" stroke="#B49A6C" stroke-width="2"/>
+
+  <!-- panelled rangehood canopy -->
+  <g>
+    <path d="M336 52h128v64l16 44H320l16-44z" fill="#FBF8EE" stroke="#DAD2BB" stroke-width="2.5"/>
+    <path d="M352 68h96v44h-96z" fill="none" stroke="#DAD2BB" stroke-width="2"/>
+    <path d="M320 160h160" stroke="#C89B63" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- glass-front overheads -->
+  <g>
+    <rect x="60" y="52" width="200" height="112" rx="3" fill="#FBF8EE" stroke="#DAD2BB" stroke-width="2.5"/>
+    <rect x="74" y="66" width="80" height="84" rx="2" fill="#E7EEEA" stroke="#C9CDBE" stroke-width="2"/>
+    <rect x="166" y="66" width="80" height="84" rx="2" fill="#E7EEEA" stroke="#C9CDBE" stroke-width="2"/>
+    <path d="M114 66v84M74 108h80M206 66v84M166 108h80" stroke="#C9CDBE" stroke-width="2"/>
+    <rect x="540" y="52" width="200" height="112" rx="3" fill="#FBF8EE" stroke="#DAD2BB" stroke-width="2.5"/>
+    <rect x="554" y="66" width="80" height="84" rx="2" fill="#E7EEEA" stroke="#C9CDBE" stroke-width="2"/>
+    <rect x="646" y="66" width="80" height="84" rx="2" fill="#E7EEEA" stroke="#C9CDBE" stroke-width="2"/>
+    <path d="M594 66v84M554 108h80M686 66v84M646 108h80" stroke="#C9CDBE" stroke-width="2"/>
+  </g>
+  <g fill="#C29349">
+    <circle cx="148" cy="110" r="3.2"/><circle cx="172" cy="110" r="3.2"/>
+    <circle cx="628" cy="110" r="3.2"/><circle cx="652" cy="110" r="3.2"/>
+  </g>
+
+  <!-- splashback + bench -->
+  <rect x="56" y="196" width="688" height="72" fill="url(#cbsub)" stroke="#D9D3C2" stroke-width="2"/>
+  <rect x="44" y="266" width="712" height="14" rx="2" fill="#FFFFFF" stroke="#D6CEB7" stroke-width="2"/>
+
+  <!-- cooktop + tap -->
+  <rect x="344" y="262" width="112" height="6" rx="3" fill="#3E4A56"/>
+  <path d="M618 266v-24a13 13 0 0 1 13-13h9v8" fill="none" stroke="#C29349" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- perimeter base: white shaker with cup handles -->
+  <rect x="56" y="280" width="688" height="112" fill="#F7F3E7"/>
+  <g fill="none" stroke="#D9D1BA" stroke-width="2">
+    <rect x="70" y="292" width="108" height="86" rx="2"/>
+    <rect x="192" y="292" width="108" height="86" rx="2"/>
+    <rect x="314" y="292" width="172" height="40" rx="2"/>
+    <rect x="314" y="340" width="172" height="38" rx="2"/>
+    <rect x="500" y="292" width="108" height="86" rx="2"/>
+    <rect x="622" y="292" width="108" height="86" rx="2"/>
+  </g>
+  <g fill="none" stroke="#C29349" stroke-width="3" stroke-linecap="round">
+    <path d="M112 316a12 7 0 0 0 24 0M534 316a12 7 0 0 0 24 0"/>
+    <path d="M380 310a12 7 0 0 0 24 0M380 356a12 7 0 0 0 24 0"/>
+    <path d="M234 316a12 7 0 0 0 24 0M664 316a12 7 0 0 0 24 0"/>
+  </g>
+  <rect x="56" y="392" width="688" height="12" fill="#D9D1BA"/>
+
+  <!-- lantern pendants -->
+  <g fill="none" stroke="#C29349" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M300 0v224M500 0v224"/>
+    <rect x="278" y="224" width="44" height="52" rx="4"/>
+    <rect x="478" y="224" width="44" height="52" rx="4"/>
+    <path d="M300 224v52M278 250h44M500 224v52M478 250h44"/>
+  </g>
+  <circle cx="300" cy="250" r="5" fill="#EFC878"/>
+  <circle cx="500" cy="250" r="5" fill="#EFC878"/>
+
+  <!-- navy island, double stone top -->
+  <rect x="176" y="330" width="448" height="12" rx="2" fill="#FFFFFF" stroke="#D6CEB7" stroke-width="2"/>
+  <rect x="184" y="342" width="432" height="6" fill="#EFEBDD"/>
+  <rect x="192" y="348" width="416" height="136" fill="#33475C"/>
+  <g fill="none" stroke="#223346" stroke-width="2">
+    <rect x="208" y="362" width="112" height="108" rx="2"/>
+    <rect x="344" y="362" width="112" height="108" rx="2"/>
+    <rect x="480" y="362" width="112" height="108" rx="2"/>
+  </g>
+  <g fill="#C29349">
+    <circle cx="320" cy="416" r="3.6"/><circle cx="344" cy="416" r="3.6"/>
+    <circle cx="456" cy="416" r="3.6"/><circle cx="480" cy="416" r="3.6"/>
+  </g>
+  <rect x="192" y="484" width="416" height="10" fill="#223346"/>
+
+  <!-- stools -->
+  <g stroke="#B49A6C" stroke-width="4" stroke-linecap="round">
+    <path d="M268 500v16M330 500v16"/>
+    <path d="M470 500v16M532 500v16"/>
+  </g>
+  <rect x="258" y="490" width="82" height="12" rx="6" fill="#F7F3E7" stroke="#D9D1BA" stroke-width="2"/>
+  <rect x="460" y="490" width="82" height="12" rx="6" fill="#F7F3E7" stroke="#D9D1BA" stroke-width="2"/>
+</svg>

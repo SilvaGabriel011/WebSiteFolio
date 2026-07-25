@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a butler's pantry with open shelving, jars and a workbench">
+  <defs>
+    <linearGradient id="tp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#CB9E66"/>
+      <stop offset="1" stop-color="#A67C42"/>
+    </linearGradient>
+    <pattern id="gp" width="170" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q42 2 85 5 T170 5" fill="none" stroke="#6E4E22" stroke-opacity=".2" stroke-width="1.1"/>
+      <path d="M0 13 Q42 9 85 13 T170 13" fill="none" stroke="#6E4E22" stroke-opacity=".13" stroke-width="1"/>
+      <path d="M0 20 Q42 17 85 20 T170 20" fill="none" stroke="#6E4E22" stroke-opacity=".17" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="wallP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F1E9d7"/>
+      <stop offset="1" stop-color="#E5D8BD"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#wallP)"/>
+  <rect x="0" y="540" width="800" height="60" fill="#D9C9A8"/>
+  <rect x="0" y="536" width="800" height="4" fill="#C4B18B"/>
+
+  <!-- sliding door frame, left -->
+  <g>
+    <rect x="36" y="52" width="150" height="484" fill="#241F19"/>
+    <rect x="50" y="66" width="122" height="456" fill="#EFE6D2" opacity=".2"/>
+    <line x1="111" y1="66" x2="111" y2="522" stroke="#B98A4E" stroke-width="3"/>
+    <circle cx="160" cy="294" r="6" fill="#B98A4E"/>
+  </g>
+
+  <!-- shelving bay -->
+  <g>
+    <rect x="222" y="52" width="540" height="300" fill="#332B23"/>
+    <g fill="url(#tp)">
+      <rect x="222" y="52" width="540" height="12"/>
+      <rect x="222" y="148" width="540" height="10"/>
+      <rect x="222" y="244" width="540" height="10"/>
+      <rect x="222" y="342" width="540" height="10"/>
+      <rect x="222" y="52" width="12" height="300"/>
+      <rect x="750" y="52" width="12" height="300"/>
+    </g>
+    <!-- jars row 1 -->
+    <g>
+      <g fill="#E9DDC4" opacity=".92">
+        <rect x="258" y="96" width="34" height="52" rx="5"/>
+        <rect x="304" y="106" width="30" height="42" rx="5"/>
+        <rect x="472" y="98" width="34" height="50" rx="5"/>
+      </g>
+      <g fill="#B98A4E">
+        <rect x="350" y="92" width="36" height="56" rx="5"/>
+        <rect x="518" y="108" width="28" height="40" rx="5"/>
+        <rect x="672" y="96" width="34" height="52" rx="5"/>
+      </g>
+      <g fill="#6E4E22">
+        <rect x="402" y="104" width="30" height="44" rx="5"/>
+        <rect x="562" y="94" width="34" height="54" rx="5"/>
+        <rect x="612" y="110" width="28" height="38" rx="5"/>
+      </g>
+      <g fill="#40342A">
+        <rect x="262" y="88" width="26" height="8" rx="3"/>
+        <rect x="355" y="84" width="26" height="8" rx="3"/>
+        <rect x="477" y="90" width="24" height="8" rx="3"/>
+        <rect x="567" y="86" width="24" height="8" rx="3"/>
+        <rect x="677" y="88" width="24" height="8" rx="3"/>
+      </g>
+    </g>
+    <!-- jars & tins row 2 -->
+    <g>
+      <g fill="#B98A4E">
+        <rect x="262" y="196" width="30" height="48" rx="5"/>
+        <rect x="416" y="204" width="28" height="40" rx="5"/>
+        <rect x="608" y="194" width="34" height="50" rx="5"/>
+      </g>
+      <g fill="#E9DDC4" opacity=".92">
+        <rect x="308" y="206" width="28" height="38" rx="5"/>
+        <rect x="460" y="196" width="34" height="48" rx="5"/>
+        <rect x="656" y="208" width="26" height="36" rx="5"/>
+      </g>
+      <g fill="#6E4E22">
+        <rect x="352" y="192" width="36" height="52" rx="5"/>
+        <rect x="510" y="206" width="30" height="38" rx="5"/>
+        <rect x="698" y="196" width="30" height="48" rx="5"/>
+      </g>
+      <ellipse cx="575" cy="226" rx="18" ry="18" fill="#40342A"/>
+    </g>
+    <!-- baskets row 3 -->
+    <g fill="none" stroke="#8F6531" stroke-width="4">
+      <rect x="256" y="292" width="96" height="44" rx="6" fill="#B98A4E" stroke="none"/>
+      <path d="M256 306 h96 M256 320 h96" stroke="#8F6531"/>
+      <rect x="380" y="292" width="96" height="44" rx="6" fill="#B98A4E" stroke="none"/>
+      <path d="M380 306 h96 M380 320 h96" stroke="#8F6531"/>
+      <rect x="504" y="292" width="96" height="44" rx="6" fill="#B98A4E" stroke="none"/>
+      <path d="M504 306 h96 M504 320 h96" stroke="#8F6531"/>
+      <rect x="628" y="292" width="96" height="44" rx="6" fill="#B98A4E" stroke="none"/>
+      <path d="M628 306 h96 M628 320 h96" stroke="#8F6531"/>
+    </g>
+  </g>
+
+  <!-- bench + under-bench cabinetry -->
+  <g>
+    <rect x="222" y="380" width="540" height="16" fill="#241F19"/>
+    <rect x="230" y="396" width="524" height="132" fill="url(#tp)"/>
+    <rect x="230" y="396" width="524" height="132" fill="url(#gp)"/>
+    <g stroke="#5F3F17" stroke-opacity=".5" stroke-width="2.5" fill="none">
+      <line x1="405" y1="402" x2="405" y2="522"/>
+      <line x1="580" y1="402" x2="580" y2="522"/>
+    </g>
+    <g fill="#241F19">
+      <rect x="288" y="404" width="60" height="5" rx="2.5"/>
+      <rect x="462" y="404" width="60" height="5" rx="2.5"/>
+      <rect x="637" y="404" width="60" height="5" rx="2.5"/>
+    </g>
+    <!-- appliance + board on bench -->
+    <rect x="272" y="344" width="70" height="36" rx="6" fill="#40342A"/>
+    <circle cx="330" cy="362" r="5" fill="#E9C98F"/>
+    <ellipse cx="470" cy="374" rx="52" ry="8" fill="#8F6531"/>
+    <rect x="522" y="368" width="16" height="6" rx="3" fill="#8F6531"/>
+  </g>
+
+  <ellipse cx="400" cy="560" rx="300" ry="10" fill="#241F19" opacity=".08"/>
+</svg>

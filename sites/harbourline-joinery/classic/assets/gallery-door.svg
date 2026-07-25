@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stylised heritage front door with an arched fanlight and tiled porch">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C3C5F"/><stop offset="1" stop-color="#0F2438"/>
+    </linearGradient>
+    <linearGradient id="oak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E7C96C"/><stop offset=".6" stop-color="#C9A227"/><stop offset="1" stop-color="#9E7D1B"/>
+    </linearGradient>
+    <pattern id="grain" width="150" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 9q38-9 75 0t75 0" fill="none" stroke="#7A620E" stroke-opacity=".35" stroke-width="1.4"/>
+      <path d="M0 22q38 7 75 0t75 0" fill="none" stroke="#7A620E" stroke-opacity=".2" stroke-width="1"/>
+    </pattern>
+    <pattern id="tiles" width="56" height="56" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="56" height="56" fill="#16324F"/>
+      <rect width="28" height="28" fill="#C9A227" fill-opacity=".55"/>
+      <rect x="28" y="28" width="28" height="28" fill="#F4EFE4" fill-opacity=".18"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#C9A227" stroke-opacity=".3" stroke-width="1.5"/>
+
+  <!-- porch tiles -->
+  <rect x="20" y="512" width="760" height="68" fill="url(#tiles)"/>
+  <line x1="20" y1="512" x2="780" y2="512" stroke="#F4EFE4" stroke-opacity=".5" stroke-width="3"/>
+
+  <!-- sidelight windows -->
+  <g fill="#0E2236" stroke="#F4EFE4" stroke-opacity=".55" stroke-width="4">
+    <rect x="196" y="220" width="60" height="292"/>
+    <rect x="544" y="220" width="60" height="292"/>
+  </g>
+  <g stroke="#C9A227" stroke-width="2.5" stroke-opacity=".8">
+    <path d="M196 293h60M196 366h60M196 439h60M544 293h60M544 366h60M544 439h60"/>
+  </g>
+
+  <!-- door frame + fanlight -->
+  <path d="M276 512V208a124 124 0 0 1 248 0v304" fill="none" stroke="#F4EFE4" stroke-width="10"/>
+  <path d="M298 196a102 102 0 0 1 204 0z" fill="#0E2236"/>
+  <g stroke="#C9A227" stroke-width="3.5" fill="none">
+    <path d="M298 196a102 102 0 0 1 204 0z"/>
+    <path d="M400 196V94M400 196l-72-72M400 196l72-72M400 196l-97-31M400 196l97-31"/>
+  </g>
+
+  <!-- door leaf -->
+  <rect x="298" y="212" width="204" height="300" fill="url(#oak)"/>
+  <rect x="298" y="212" width="204" height="300" fill="url(#grain)"/>
+  <g fill="none" stroke="#7A620E" stroke-width="4">
+    <rect x="318" y="234" width="76" height="120" rx="2"/>
+    <rect x="406" y="234" width="76" height="120" rx="2"/>
+    <rect x="318" y="376" width="76" height="112" rx="2"/>
+    <rect x="406" y="376" width="76" height="112" rx="2"/>
+  </g>
+  <g fill="none" stroke="#F4EFE4" stroke-opacity=".35" stroke-width="2">
+    <rect x="326" y="242" width="60" height="104"/>
+    <rect x="414" y="242" width="60" height="104"/>
+    <rect x="326" y="384" width="60" height="96"/>
+    <rect x="414" y="384" width="60" height="96"/>
+  </g>
+  <circle cx="486" cy="368" r="9" fill="#F4EFE4"/>
+  <rect x="382" y="430" width="60" height="10" rx="4" fill="#F4EFE4" fill-opacity=".85"/>
+</svg>

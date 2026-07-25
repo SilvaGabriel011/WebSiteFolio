@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="iOak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C99C60"/>
+      <stop offset="1" stop-color="#9A6A32"/>
+    </linearGradient>
+    <radialGradient id="iGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#D8B77E" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#D8B77E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ig" width="40" height="170" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#6E4A20" stroke-opacity=".32" stroke-width="1.4">
+        <path d="M7 0q5 42 0 85t0 85"/>
+        <path d="M19 0q-4 50 2 95t-2 75"/>
+        <path d="M31 0q5 38 0 88t2 82"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#F3EBDC"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#1F1D1A" stroke-opacity=".16" stroke-width="1.2"/>
+  <g stroke="#1F1D1A" stroke-opacity=".14" stroke-width="1.4" fill="none">
+    <rect x="90" y="70" width="190" height="180"/>
+    <path d="M185 70v180M90 160h190"/>
+    <rect x="520" y="70" width="190" height="180"/>
+    <path d="M615 70v180M520 160h190"/>
+  </g>
+  <circle cx="330" cy="185" r="90" fill="url(#iGlow)"/>
+  <circle cx="470" cy="185" r="90" fill="url(#iGlow)"/>
+  <g stroke="#1F1D1A" stroke-width="2.4" fill="none">
+    <path d="M330 40v96M470 40v96"/>
+  </g>
+  <g fill="#1F1D1A">
+    <path d="M302 168q0-32 28-32t28 32z"/>
+    <path d="M442 168q0-32 28-32t28 32z"/>
+  </g>
+  <circle cx="330" cy="176" r="6" fill="#D8B77E"/>
+  <circle cx="470" cy="176" r="6" fill="#D8B77E"/>
+  <g>
+    <rect x="140" y="316" width="520" height="24" rx="3" fill="#EFE7DA" stroke="#C9BCA3" stroke-width="1.6"/>
+    <rect x="140" y="340" width="24" height="176" fill="#E4D9C4" stroke="#C9BCA3" stroke-width="1.4"/>
+    <rect x="636" y="340" width="24" height="176" fill="#E4D9C4" stroke="#C9BCA3" stroke-width="1.4"/>
+    <rect x="164" y="340" width="472" height="150" fill="url(#iOak)"/>
+    <rect x="164" y="340" width="472" height="150" fill="url(#ig)"/>
+    <path d="M320 340v150M478 340v150" stroke="#5F3F1B" stroke-opacity=".5" stroke-width="2"/>
+    <g stroke="#E9D6AF" stroke-width="3" stroke-linecap="round">
+      <path d="M282 366h30M440 366h30M598 366h30"/>
+    </g>
+    <rect x="164" y="490" width="472" height="26" fill="#1C1A17" opacity=".85"/>
+  </g>
+  <g fill="#1F1D1A">
+    <rect x="236" y="410" width="64" height="12" rx="6"/>
+    <path d="M244 422l-8 96h8l8-96zM292 422l8 96h-8l-8-96z"/>
+    <rect x="404" y="410" width="64" height="12" rx="6"/>
+    <path d="M412 422l-8 96h8l8-96zM460 422l8 96h-8l-8-96z"/>
+  </g>
+  <ellipse cx="400" cy="540" rx="290" ry="12" fill="#1F1D1A" opacity=".14"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-labelledby="dt dd">
+  <title id="dt">Dovetail joint</title>
+  <desc id="dd">Two timber boards meeting in an interlocking dovetail joint.</desc>
+  <defs>
+    <pattern id="dGrainA" width="120" height="22" patternUnits="userSpaceOnUse">
+      <rect width="120" height="22" fill="#B98A4E"/>
+      <path d="M0 5q30-4 60 0t60 0" fill="none" stroke="#8A6130" stroke-width="1.2" opacity=".55"/>
+      <path d="M0 12q24 5 58 1t62 2" fill="none" stroke="#74501F" stroke-width="1" opacity=".4"/>
+      <path d="M0 18q34-4 68 0t52-1" fill="none" stroke="#74501F" stroke-width="1" opacity=".3"/>
+    </pattern>
+    <pattern id="dGrainB" width="120" height="22" patternUnits="userSpaceOnUse">
+      <rect width="120" height="22" fill="#8A6130"/>
+      <path d="M0 6q30-5 60 0t60 0" fill="none" stroke="#5E3F17" stroke-width="1.2" opacity=".6"/>
+      <path d="M0 14q26 5 60 1t60 2" fill="none" stroke="#5E3F17" stroke-width="1" opacity=".45"/>
+    </pattern>
+  </defs>
+  <!-- left board: two tails protruding right -->
+  <path d="M0 55h200v15l50-10v44l-50-10v24l50-10v44l-50-10v23H0z" fill="url(#dGrainB)"/>
+  <!-- right board: complement of the zigzag -->
+  <path d="M400 55H200v15l50-10v44l-50-10v24l50-10v44l-50-10v23h200z" fill="url(#dGrainA)"/>
+  <!-- joint outline -->
+  <path d="M200 55v15l50-10v44l-50-10v24l50-10v44l-50-10v23" fill="none" stroke="#1F1D1A" stroke-width="3" stroke-linejoin="round"/>
+  <!-- board edges -->
+  <path d="M0 55h400M0 165h400" stroke="#1F1D1A" stroke-width="3"/>
+</svg>

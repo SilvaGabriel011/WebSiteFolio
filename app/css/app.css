@@ -7,9 +7,8 @@
    LAYOUT
      .topbar            admin header: brand, business switcher, theme toggle
      .sidebar           fixed left rail, ≥1024px only (240px)
-                        └ #quick-actions  intentionally EMPTY — pending design
-                          decision. It exists between nav and footer; nothing
-                          may be styled against it beyond its existence.
+                        └ #quick-actions  populated by core/quick-actions.js;
+                          its panel styles live in quick-actions.css
      .tabbar            fixed bottom tab bar, <1024px (5 slots incl. "More")
      .consumer-topbar   minimal public header for the #/book flow
      body.consumer      hides all admin chrome, shows .consumer-topbar
@@ -28,6 +27,7 @@
                         .chip--invoiced .chip--draft .chip--sent
                         .chip--accepted .chip--declined .chip--paid
                         .chip--overdue .chip--received .chip--low
+                        .chip--due_soon .chip--on_track
                         (plus tone aliases .chip--brand/--ok/--warn/--danger/--muted)
      .btn               button/link: .btn--primary .btn--danger .btn--ghost
                         sizes: .btn--sm  icon-only: .btn--icon
@@ -228,8 +228,7 @@ body.no-scroll { overflow: hidden; }
 .nav__icon { display: inline-flex; flex: none; }
 .nav__icon svg { width: 20px; height: 20px; }
 
-/* #quick-actions — intentionally UNSTYLED (see comment block at top).
-   Do not add rules for it until the design decision lands. */
+/* #quick-actions — filled by core/quick-actions.js; styled in quick-actions.css. */
 
 .sidebar__footer {
   border-top: 1px solid var(--border);
@@ -313,6 +312,9 @@ body.no-scroll { overflow: hidden; }
   border-top: 1px solid var(--border);
   padding-bottom: env(safe-area-inset-bottom);
 }
+/* Desktop shows the sidebar instead. This must sit AFTER the base rule —
+   the earlier min-width:1024 block loses to it on source order. */
+@media (min-width: 1024px) { .tabbar { display: none; } }
 
 .tabbar__item {
   flex: 1 1 0;
@@ -472,10 +474,11 @@ a.kpi:hover { border-color: var(--brand); }
 }
 .kpi__value {
   font-family: var(--font-display);
-  font-size: 1.65rem;
+  font-size: clamp(1.2rem, 1rem + 1vw, 1.65rem);
   font-weight: 700;
   margin-top: 0.2rem;
-  overflow-wrap: anywhere;
+  /* Keep dollar figures on one line — a broken "$23,078./00" misreads. */
+  overflow-wrap: normal;
 }
 .kpi__sub {
   font-size: 0.8rem;
@@ -590,8 +593,8 @@ a.kpi:hover { border-color: var(--brand); }
 }
 
 .chip--scheduled, .chip--sent, .chip--invoiced, .chip--brand { color: var(--brand); }
-.chip--done, .chip--accepted, .chip--paid, .chip--received, .chip--ok { color: var(--ok); }
-.chip--in_progress, .chip--low, .chip--warn { color: var(--warn); }
+.chip--done, .chip--accepted, .chip--paid, .chip--received, .chip--on_track, .chip--ok { color: var(--ok); }
+.chip--in_progress, .chip--low, .chip--due_soon, .chip--warn { color: var(--warn); }
 .chip--declined, .chip--overdue, .chip--danger { color: var(--danger); }
 .chip--draft, .chip--muted { color: var(--muted); }
 
@@ -852,4 +855,129 @@ select.input, .field select { cursor: pointer; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ---- Book online (#/book consumer flow) -------------------------------------- */
+
+.book { max-width: 46rem; margin: 0 auto; }
+
+.book-steps {
+  display: flex;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0 0 1.4rem;
+  padding: 0;
+}
+.book-steps__step {
+  flex: 1 1 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 0.45rem 0.3rem 0.6rem;
+  border-bottom: 3px solid var(--border);
+}
+.book-steps__step.is-active { color: var(--brand); border-color: var(--brand); }
+.book-steps__step.is-done   { color: var(--ok); border-color: var(--ok); }
+
+.book-service {
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.book-service:hover { border-color: var(--brand); transform: translateY(-1px); }
+.book-service h2 { margin: 0 0 0.3rem; font-size: 1.05rem; }
+.book-service p { margin: 0; }
+
+.book-days {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+  margin: 0 0 1rem;
+}
+.book-day {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  min-width: 4.2rem;
+  padding: 0.55rem 0.75rem;
+  font: inherit;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.book-day.is-active {
+  border-color: var(--brand);
+  color: var(--brand);
+  box-shadow: inset 0 0 0 1px var(--brand);
+}
+.book-day__name { font-weight: 700; font-size: 0.85rem; }
+.book-day__date { font-size: 0.78rem; color: var(--muted); }
+.book-day.is-active .book-day__date { color: inherit; }
+
+.book-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  gap: 0.5rem;
+  margin: 0 0 1.2rem;
+}
+.book-slot {
+  padding: 0.6rem 0.4rem;
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.book-slot:hover:not(:disabled) { border-color: var(--brand); color: var(--brand); }
+.book-slot.is-taken {
+  cursor: not-allowed;
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+
+.book-form { max-width: 30rem; }
+.book-help { margin-top: 1.2rem; }
+
+.book-confirm {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+.book-confirm h1 { margin: 0.6rem 0 0.4rem; }
+.book-confirm .qa-success__icon { margin: 0 auto; color: var(--ok); }
+.book-confirm .cal-links { justify-content: center; margin: 1rem 0; }
+.book-confirm .qa-foot { justify-content: center; }
+
+/* ---- Settings ---------------------------------------------------------------- */
+
+.settings-card h2 { margin: 0 0 0.8rem; font-size: 1.1rem; }
+
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+.settings-row:last-child { border-bottom: 0; }
+.settings-row__label { color: var(--muted); flex: 0 0 auto; }
+.settings-row__value { text-align: right; overflow-wrap: anywhere; }
+
+.settings-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.6rem;
 }

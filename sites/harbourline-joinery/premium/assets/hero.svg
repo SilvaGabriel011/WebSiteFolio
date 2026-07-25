@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A3A5C"/>
+      <stop offset="1" stop-color="#0E2336"/>
+    </linearGradient>
+    <linearGradient id="oak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C39A3B"/>
+      <stop offset="1" stop-color="#9A742A"/>
+    </linearGradient>
+    <linearGradient id="oakDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A98230"/>
+      <stop offset="1" stop-color="#84611F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#E7C86A" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#E7C86A" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#E7C86A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grain" width="52" height="30" patternUnits="userSpaceOnUse">
+      <rect width="52" height="30" fill="none"/>
+      <path d="M0 7 Q13 3 26 7 T52 7" fill="none" stroke="#6E5017" stroke-width="1.1" opacity="0.5"/>
+      <path d="M0 16 Q13 20 26 16 T52 16" fill="none" stroke="#6E5017" stroke-width="0.9" opacity="0.38"/>
+      <path d="M0 25 Q13 22 26 25 T52 25" fill="none" stroke="#E4C464" stroke-width="0.8" opacity="0.3"/>
+    </pattern>
+    <pattern id="grainV" width="30" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(90)">
+      <path d="M0 8 Q13 4 26 8 T52 8" fill="none" stroke="#6E5017" stroke-width="1" opacity="0.42"/>
+      <path d="M0 20 Q13 24 26 20 T52 20" fill="none" stroke="#E4C464" stroke-width="0.8" opacity="0.26"/>
+    </pattern>
+  </defs>
+
+  <rect width="760" height="640" fill="url(#sky)"/>
+  <rect width="760" height="640" fill="url(#glow)"/>
+
+  <!-- faint compass / setting-out lines -->
+  <g fill="none" stroke="#C9A227" opacity="0.14">
+    <circle cx="380" cy="300" r="252" stroke-width="1"/>
+    <circle cx="380" cy="300" r="286" stroke-width="0.7" stroke-dasharray="2 7"/>
+    <path d="M60 300h640M380 20v560" stroke-width="0.7" stroke-dasharray="1 9"/>
+  </g>
+
+  <!-- porch floor -->
+  <g>
+    <rect x="60" y="540" width="640" height="14" fill="#0A1B2C"/>
+    <rect x="90" y="522" width="580" height="18" fill="#1C3A52"/>
+    <g stroke="#0E2336" stroke-width="2">
+      <path d="M150 522v18M230 522v18M310 522v18M390 522v18M470 522v18M550 522v18M630 522v18"/>
+    </g>
+  </g>
+
+  <!-- surround architrave -->
+  <g fill="none" stroke="#F4EFE4" stroke-width="3">
+    <path d="M170 522V236a210 210 0 0 1 420 0v286"/>
+  </g>
+  <g fill="none" stroke="#C9A227" stroke-width="1.2" opacity="0.85">
+    <path d="M182 522V240a198 198 0 0 1 396 0v282"/>
+  </g>
+
+  <!-- fanlight -->
+  <g>
+    <path d="M262 300a118 118 0 0 1 236 0z" fill="#16324F" stroke="#C9A227" stroke-width="2"/>
+    <g stroke="#E4C464" stroke-width="2.4" fill="none" opacity="0.95">
+      <path d="M380 300 L380 186M380 300 L308 208M380 300 L452 208M380 300 L272 258M380 300 L488 258"/>
+      <path d="M304 262a96 96 0 0 1 152 0" opacity="0.6"/>
+    </g>
+    <circle cx="380" cy="300" r="14" fill="#C9A227"/>
+  </g>
+
+  <!-- sidelights -->
+  <g>
+    <rect x="212" y="322" width="52" height="200" fill="#16324F" stroke="#F4EFE4" stroke-width="2.5"/>
+    <rect x="496" y="322" width="52" height="200" fill="#16324F" stroke="#F4EFE4" stroke-width="2.5"/>
+    <g stroke="#3E5B78" stroke-width="1.6">
+      <path d="M212 372h52M212 422h52M212 472h52M496 372h52M496 422h52M496 472h52"/>
+    </g>
+    <g stroke="#E4C464" stroke-width="1" opacity="0.4">
+      <path d="M220 330 L256 366M504 330 L540 366"/>
+    </g>
+  </g>
+
+  <!-- door leaf -->
+  <g>
+    <rect x="286" y="314" width="188" height="208" rx="2" fill="url(#oak)"/>
+    <rect x="286" y="314" width="188" height="208" rx="2" fill="url(#grain)"/>
+    <rect x="286" y="314" width="188" height="208" rx="2" fill="none" stroke="#5C4413" stroke-width="2.5"/>
+    <!-- fielded panels -->
+    <g>
+      <rect x="304" y="332" width="64" height="76" fill="url(#oakDeep)" stroke="#5C4413" stroke-width="1.6"/>
+      <rect x="392" y="332" width="64" height="76" fill="url(#oakDeep)" stroke="#5C4413" stroke-width="1.6"/>
+      <rect x="304" y="430" width="64" height="74" fill="url(#oakDeep)" stroke="#5C4413" stroke-width="1.6"/>
+      <rect x="392" y="430" width="64" height="74" fill="url(#oakDeep)" stroke="#5C4413" stroke-width="1.6"/>
+      <g fill="none" stroke="#E4C464" stroke-width="1" opacity="0.55">
+        <rect x="311" y="339" width="50" height="62"/>
+        <rect x="399" y="339" width="50" height="62"/>
+        <rect x="311" y="437" width="50" height="60"/>
+        <rect x="399" y="437" width="50" height="60"/>
+      </g>
+    </g>
+    <!-- knob & escutcheon -->
+    <circle cx="458" cy="424" r="7.5" fill="#E4C464"/>
+    <circle cx="458" cy="424" r="3" fill="#7A620E"/>
+    <rect x="454.5" y="438" width="7" height="12" rx="2" fill="#E4C464"/>
+  </g>
+
+  <!-- threshold -->
+  <rect x="272" y="516" width="216" height="8" fill="url(#grainV)" stroke="#5C4413" stroke-width="1"/>
+
+  <!-- hanging shavings / corner flourish -->
+  <g fill="none" stroke="#C9A227" stroke-width="1.6" opacity="0.8">
+    <path d="M96 96q22 4 26 26q4 22-14 24q-14 1-15-11q-1-10 9-11"/>
+    <path d="M664 118q-22 4 -26 26q-4 22 14 24q14 1 15 -11q1 -10 -9 -11"/>
+  </g>
+</svg>

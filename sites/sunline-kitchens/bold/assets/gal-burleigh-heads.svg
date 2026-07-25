@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="gbhT">
+  <title id="gbhT">Stylised compact apartment kitchen with a tall storage wall, oak bar bench, two stools and a city window</title>
+  <defs>
+    <pattern id="bhOak" width="92" height="16" patternUnits="userSpaceOnUse">
+      <rect width="92" height="16" fill="#DCB27A"/>
+      <path d="M0 4q23-3 46 0t46 0M0 11q23 4 46 0t46 1" stroke="#C29455" stroke-width="1.2" fill="none"/>
+    </pattern>
+    <pattern id="bhTile" width="40" height="20" patternUnits="userSpaceOnUse">
+      <rect width="40" height="20" fill="#F6F1E2"/>
+      <path d="M0 0h40M0 10h40M0 20h40" stroke="#DFD5BB" stroke-width="1.4"/>
+      <path d="M20 0v10M0 10v10M40 10v10" stroke="#DFD5BB" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="560" rx="14" fill="#FFF8EC"/>
+  <rect x="0" y="0" width="800" height="392" fill="#EFEADB"/>
+  <!-- big window with towers + palm -->
+  <g>
+    <rect x="470" y="70" width="270" height="250" fill="#D8E6E0"/>
+    <g fill="#AFC9C0">
+      <rect x="500" y="150" width="44" height="170"/>
+      <rect x="560" y="118" width="52" height="202"/>
+      <rect x="628" y="170" width="40" height="150"/>
+      <rect x="684" y="140" width="36" height="180"/>
+    </g>
+    <g stroke="#8FB3A8" stroke-width="3">
+      <path d="M566 136h40M566 154h40M566 172h40M506 168h32M506 186h32M634 188h28M690 158h24"/>
+    </g>
+    <circle cx="700" cy="108" r="24" fill="#F2CE82"/>
+    <path d="M486 320q10-56 44-70M500 320q22-40 52-46" stroke="#5F7A63" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <rect x="470" y="70" width="270" height="250" fill="none" stroke="#1C2620" stroke-width="7"/>
+    <path d="M604 70v250" stroke="#1C2620" stroke-width="4" opacity=".5"/>
+  </g>
+  <!-- single pendant -->
+  <g>
+    <path d="M300 0v80" stroke="#1C2620" stroke-width="4"/>
+    <path d="M274 80h52l-8 28h-36z" fill="#C9974C" stroke="#1C2620" stroke-width="4"/>
+    <circle cx="300" cy="118" r="5" fill="#EFC46E"/>
+  </g>
+  <!-- tall clever-storage unit -->
+  <g>
+    <rect x="40" y="56" width="130" height="418" fill="#8BA88E"/>
+    <path d="M40 196h130M40 336h130" stroke="#5F7A63" stroke-width="4"/>
+    <path d="M105 56v418" stroke="#5F7A63" stroke-width="3" opacity=".6"/>
+    <g fill="#C9974C">
+      <rect x="88" y="116" width="5" height="26" rx="2.5"/>
+      <rect x="88" y="256" width="5" height="26" rx="2.5"/>
+      <rect x="88" y="396" width="5" height="26" rx="2.5"/>
+    </g>
+    <rect x="40" y="56" width="130" height="418" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- splashback -->
+  <rect x="184" y="240" width="256" height="102" fill="url(#bhTile)"/>
+  <rect x="184" y="240" width="256" height="102" fill="none" stroke="#1C2620" stroke-width="5"/>
+  <!-- compact run + oak bar overhang -->
+  <rect x="176" y="342" width="280" height="16" rx="4" fill="#FFFFFF" stroke="#1C2620" stroke-width="5"/>
+  <g>
+    <rect x="184" y="358" width="264" height="116" fill="#8BA88E"/>
+    <g fill="none" stroke="#5F7A63" stroke-width="4">
+      <rect x="198" y="372" width="106" height="88" rx="3"/>
+      <rect x="326" y="372" width="106" height="88" rx="3"/>
+    </g>
+    <g fill="#C9974C">
+      <rect x="240" y="364" width="28" height="5" rx="2.5"/>
+      <rect x="368" y="364" width="28" height="5" rx="2.5"/>
+    </g>
+    <rect x="184" y="358" width="264" height="116" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- oak bar return with stools -->
+  <g>
+    <rect x="456" y="342" width="300" height="18" rx="6" fill="url(#bhOak)" stroke="#1C2620" stroke-width="5"/>
+    <path d="M732 360v114" stroke="#1C2620" stroke-width="8" stroke-linecap="round"/>
+    <g stroke="#A57730" stroke-width="6" stroke-linecap="round">
+      <path d="M520 402v72M566 402v72M528 444h30"/>
+      <path d="M628 402v72M674 402v72M636 444h30"/>
+    </g>
+    <rect x="508" y="386" width="70" height="16" rx="8" fill="#D9AC6F" stroke="#1C2620" stroke-width="5"/>
+    <rect x="616" y="386" width="70" height="16" rx="8" fill="#D9AC6F" stroke="#1C2620" stroke-width="5"/>
+  </g>
+  <!-- floor -->
+  <rect x="0" y="474" width="800" height="86" fill="#EFE7D2"/>
+  <path d="M0 512h800" stroke="#DFD3B4" stroke-width="3"/>
+  <rect x="3" y="3" width="794" height="554" rx="12" fill="none" stroke="#1C2620" stroke-width="6"/>
+</svg>

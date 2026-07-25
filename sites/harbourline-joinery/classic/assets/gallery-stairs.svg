@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stylised timber staircase profile with turned newel post and handrail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C3C5F"/><stop offset="1" stop-color="#0F2438"/>
+    </linearGradient>
+    <linearGradient id="oak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7C96C"/><stop offset="1" stop-color="#A8861E"/>
+    </linearGradient>
+    <pattern id="grain" width="130" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 7q33-7 65 0t65 0" fill="none" stroke="#7A620E" stroke-opacity=".4" stroke-width="1.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#C9A227" stroke-opacity=".3" stroke-width="1.5"/>
+
+  <!-- floor -->
+  <line x1="40" y1="540" x2="760" y2="540" stroke="#F4EFE4" stroke-opacity=".35" stroke-width="3"/>
+
+  <!-- stringer + steps -->
+  <path d="M150 540v-58h78v-52h78v-52h78v-52h78v-52h78v-52h78v-52h82v422z" fill="#16324F" stroke="#F4EFE4" stroke-opacity=".55" stroke-width="3"/>
+  <g fill="url(#oak)">
+    <rect x="142" y="474" width="94" height="14" rx="3"/>
+    <rect x="220" y="422" width="94" height="14" rx="3"/>
+    <rect x="298" y="370" width="94" height="14" rx="3"/>
+    <rect x="376" y="318" width="94" height="14" rx="3"/>
+    <rect x="454" y="266" width="94" height="14" rx="3"/>
+    <rect x="532" y="214" width="94" height="14" rx="3"/>
+    <rect x="610" y="162" width="94" height="14" rx="3"/>
+  </g>
+  <g fill="url(#grain)">
+    <rect x="142" y="474" width="94" height="14" rx="3"/>
+    <rect x="298" y="370" width="94" height="14" rx="3"/>
+    <rect x="454" y="266" width="94" height="14" rx="3"/>
+    <rect x="610" y="162" width="94" height="14" rx="3"/>
+  </g>
+
+  <!-- balusters -->
+  <g stroke="#F4EFE4" stroke-opacity=".65" stroke-width="4">
+    <path d="M188 474v-96M266 422v-96M344 370v-96M422 318v-96M500 266v-96M578 214v-96M656 162v-96"/>
+  </g>
+
+  <!-- handrail with volute -->
+  <path d="M172 388q-40 8-38 34t34 20q24-4 18-26t-30-12L680 62" fill="none" stroke="#C9A227" stroke-width="11" stroke-linecap="round"/>
+
+  <!-- newel post -->
+  <rect x="158" y="400" width="26" height="140" rx="4" fill="url(#oak)"/>
+  <rect x="152" y="392" width="38" height="14" rx="4" fill="#C9A227"/>
+  <circle cx="171" cy="381" r="12" fill="#E7C96C"/>
+
+  <!-- shavings -->
+  <g fill="none" stroke="#E7C96C" stroke-width="3" opacity=".55">
+    <path d="M560 500q14-16 28 0t28 0"/>
+    <path d="M620 522q10-12 20 0t20 0"/>
+  </g>
+</svg>

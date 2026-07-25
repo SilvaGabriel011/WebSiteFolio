@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E4066"/>
+      <stop offset="1" stop-color="#0F2540"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4BC3F"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx=".5" cy=".3" r=".7">
+      <stop offset="0" stop-color="#E4BC3F" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#E4BC3F" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="vgroove" width="22" height="60" patternUnits="userSpaceOnUse">
+      <rect width="22" height="60" fill="#C9A227"/>
+      <path d="M0 0v60" stroke="#9A7B1B" stroke-width="2.5"/>
+      <path d="M11 0v60" stroke="#9A7B1B" stroke-width="1" opacity=".5"/>
+    </pattern>
+  </defs>
+  <rect width="440" height="320" fill="url(#bg)"/>
+  <!-- back shelving -->
+  <rect x="56" y="46" width="328" height="8" fill="url(#gold)"/>
+  <rect x="56" y="106" width="328" height="8" fill="url(#gold)"/>
+  <g fill="#F7F3E8" opacity=".85">
+    <rect x="76" y="24" width="16" height="22" rx="3"/>
+    <rect x="102" y="18" width="12" height="28" rx="3"/>
+    <rect x="128" y="28" width="18" height="18" rx="3"/>
+    <rect x="298" y="22" width="14" height="24" rx="3"/>
+    <rect x="322" y="28" width="20" height="18" rx="3"/>
+    <rect x="352" y="18" width="12" height="28" rx="3"/>
+  </g>
+  <g fill="none" stroke="#C9A227" stroke-width="2.5" opacity=".9">
+    <rect x="80" y="82" width="22" height="24" rx="3"/>
+    <rect x="116" y="88" width="26" height="18" rx="3"/>
+    <rect x="296" y="84" width="22" height="22" rx="3"/>
+    <rect x="332" y="90" width="26" height="16" rx="3"/>
+  </g>
+  <!-- pendant lights -->
+  <path d="M150 0v52M290 0v52" stroke="#F7F3E8" stroke-width="2.5"/>
+  <path d="M136 52h28l-6 16h-16z" fill="url(#gold)"/>
+  <path d="M276 52h28l-6 16h-16z" fill="url(#gold)"/>
+  <circle cx="150" cy="86" r="30" fill="url(#lamp)"/>
+  <circle cx="290" cy="86" r="30" fill="url(#lamp)"/>
+  <!-- counter -->
+  <rect x="42" y="140" width="356" height="16" fill="#F7F3E8"/>
+  <rect x="52" y="156" width="336" height="118" fill="url(#vgroove)"/>
+  <rect x="52" y="156" width="336" height="118" fill="none" stroke="#0A1826" stroke-width="3"/>
+  <path d="M52 258h336" stroke="#0D2135" stroke-width="5" opacity=".55"/>
+  <!-- espresso machine hint -->
+  <rect x="196" y="112" width="66" height="28" rx="4" fill="#0D2135" stroke="#C9A227" stroke-width="2.5"/>
+  <circle cx="229" cy="126" r="5" fill="#E4BC3F"/>
+  <!-- stools -->
+  <g stroke="#F7F3E8" stroke-width="4" fill="none" opacity=".9">
+    <path d="M92 320v-26M132 320v-26"/>
+    <path d="M84 290h56"/>
+    <path d="M308 320v-26M348 320v-26"/>
+    <path d="M300 290h56"/>
+  </g>
+  <rect y="304" width="440" height="16" fill="#0A1826"/>
+</svg>
