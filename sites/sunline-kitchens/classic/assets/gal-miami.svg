@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Minimalist kitchen with handleless oak slab joinery, white stone island and a slot window">
+  <defs>
+    <linearGradient id="miwall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF9F2"/><stop offset="1" stop-color="#F0EDE2"/>
+    </linearGradient>
+    <linearGradient id="misky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2EBD6"/><stop offset="1" stop-color="#E4D9BC"/>
+    </linearGradient>
+    <pattern id="oak" width="96" height="48" patternUnits="userSpaceOnUse">
+      <rect width="96" height="48" fill="#CE9F63"/>
+      <path d="M0 10c24-4 48 4 96 1M0 25c28-5 56 6 96 2M0 40c22-3 46 3 96 1" stroke="#B9884F" stroke-width="1.5" fill="none"/>
+      <path d="M50 16c6 2 6 7 0 9" stroke="#B9884F" stroke-width="1.3" fill="none"/>
+    </pattern>
+    <pattern id="conc" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="#DDD9CC"/>
+      <path d="M0 119h120M119 0v120" stroke="#CCC7B7" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#miwall)"/>
+  <rect y="400" width="800" height="120" fill="url(#conc)"/>
+  <path d="M0 400h800" stroke="#BEB9A6" stroke-width="2"/>
+
+  <!-- full-height oak joinery bank -->
+  <rect x="52" y="48" width="228" height="352" fill="url(#oak)"/>
+  <path d="M52 136h228M52 224h228M52 312h228" stroke="#A5763F" stroke-width="2.5"/>
+  <path d="M166 48v352" stroke="#A5763F" stroke-width="2.5"/>
+  <rect x="52" y="48" width="228" height="352" fill="none" stroke="#A5763F" stroke-width="3"/>
+
+  <!-- slot window -->
+  <rect x="332" y="84" width="356" height="72" rx="3" fill="url(#misky)" stroke="#D8D2BE" stroke-width="3"/>
+  <circle cx="404" cy="118" r="15" fill="#E9BE6A"/>
+  <path d="M332 138c40-12 84-14 128-6 60 11 122 11 228 0v24H332z" fill="#C4CDB2"/>
+
+  <!-- floating shelf, minimal objects -->
+  <path d="M332 212h356" stroke="#8A8574" stroke-width="6" stroke-linecap="round"/>
+  <rect x="356" y="186" width="16" height="26" rx="2" fill="#8BA88E"/>
+  <rect x="382" y="192" width="24" height="20" rx="2" fill="#C4B593"/>
+  <path d="M642 212c-2-14 5-22 8-24 3 7 10 11 6 24z" fill="#7E9B7F"/>
+
+  <!-- linear pendant -->
+  <path d="M420 0v228M600 0v228" stroke="#4A473C" stroke-width="2"/>
+  <rect x="386" y="228" width="248" height="8" rx="4" fill="#4A473C"/>
+  <g fill="#EFC878"><circle cx="440" cy="242" r="3"/><circle cx="510" cy="242" r="3"/><circle cx="580" cy="242" r="3"/></g>
+
+  <!-- back bench: oak base, handleless -->
+  <rect x="320" y="264" width="424" height="12" rx="2" fill="#FFFFFF" stroke="#D6D0BC" stroke-width="2"/>
+  <rect x="332" y="276" width="400" height="112" fill="url(#oak)"/>
+  <path d="M332 312h400M332 350h400M532 276v112" stroke="#A5763F" stroke-width="2.5"/>
+  <rect x="332" y="276" width="400" height="112" fill="none" stroke="#A5763F" stroke-width="3"/>
+  <rect x="332" y="388" width="400" height="12" fill="#8A8574"/>
+
+  <!-- island monolith -->
+  <g>
+    <rect x="252" y="332" width="420" height="16" rx="2" fill="#FFFFFF" stroke="#D6D0BC" stroke-width="2.5"/>
+    <rect x="252" y="348" width="16" height="144" fill="#FFFFFF" stroke="#D6D0BC" stroke-width="2.5"/>
+    <rect x="656" y="348" width="16" height="144" fill="#FFFFFF" stroke="#D6D0BC" stroke-width="2.5"/>
+    <path d="M300 372c20-6 40 6 62 0M540 452c18-5 36 5 56 0" stroke="#CCC7B4" stroke-width="2" fill="none"/>
+    <rect x="268" y="348" width="388" height="144" fill="#F4F1E6"/>
+    <path d="M320 380c30-10 52 14 84 4M470 430c26-8 46 10 74 3M300 466c20-6 42 8 66 2" stroke="#D9D4C0" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- stools: minimal black line -->
+  <g fill="none" stroke="#4A473C" stroke-width="4" stroke-linecap="round">
+    <path d="M330 492v24M396 492v24M330 516h66"/>
+    <path d="M500 492v24M566 492v24M500 516h66"/>
+  </g>
+  <rect x="322" y="484" width="82" height="10" rx="5" fill="#4A473C"/>
+  <rect x="492" y="484" width="82" height="10" rx="5" fill="#4A473C"/>
+</svg>

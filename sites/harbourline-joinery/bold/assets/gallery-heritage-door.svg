@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E4066"/>
+      <stop offset="1" stop-color="#0F2540"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4BC3F"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <pattern id="grain" width="70" height="20" patternUnits="userSpaceOnUse">
+      <rect width="70" height="20" fill="#C9A227"/>
+      <path d="M0 4q17-3 35 0t35 0" fill="none" stroke="#9A7B1B" stroke-width="1.1" opacity=".55"/>
+      <path d="M0 10q14 4 35 1t35 1" fill="none" stroke="#9A7B1B" stroke-width="1" opacity=".45"/>
+      <path d="M0 16q19-3 35 0t35-1" fill="none" stroke="#9A7B1B" stroke-width="1" opacity=".5"/>
+    </pattern>
+    <pattern id="tiles" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#0D2135"/>
+      <path d="M12 0l12 12-12 12L0 12z" fill="#C9A227" opacity=".55"/>
+    </pattern>
+  </defs>
+  <rect width="440" height="320" fill="url(#bg)"/>
+  <!-- verandah posts -->
+  <rect x="52" y="40" width="12" height="240" fill="#F7F3E8" opacity=".85"/>
+  <rect x="376" y="40" width="12" height="240" fill="#F7F3E8" opacity=".85"/>
+  <path d="M64 60q40 34 78 0M298 60q40 34 78 0" fill="none" stroke="#C9A227" stroke-width="3" opacity=".7"/>
+  <rect x="40" y="28" width="360" height="14" fill="url(#gold)"/>
+  <!-- door casing with fanlight and sidelights -->
+  <rect x="128" y="66" width="184" height="214" fill="none" stroke="#F7F3E8" stroke-width="9"/>
+  <path d="M150 118a70 62 0 0 1 140 0z" fill="#142F4D" stroke="#C9A227" stroke-width="2.5"/>
+  <path d="M220 62v56M172 76l48 42M268 76l-48 42" stroke="#C9A227" stroke-width="2"/>
+  <!-- sidelights -->
+  <rect x="146" y="128" width="22" height="146" fill="#142F4D" stroke="#C9A227" stroke-width="2"/>
+  <rect x="272" y="128" width="22" height="146" fill="#142F4D" stroke="#C9A227" stroke-width="2"/>
+  <path d="M146 176h22M146 226h22M272 176h22M272 226h22" stroke="#C9A227" stroke-width="1.6"/>
+  <!-- door slab -->
+  <rect x="176" y="128" width="88" height="148" fill="url(#grain)" stroke="#0A1826" stroke-width="2.5"/>
+  <rect x="186" y="138" width="30" height="52" fill="#9A7B1B" opacity=".5" stroke="#7A5E12" stroke-width="1.6"/>
+  <rect x="224" y="138" width="30" height="52" fill="#9A7B1B" opacity=".5" stroke="#7A5E12" stroke-width="1.6"/>
+  <rect x="186" y="204" width="30" height="58" fill="#9A7B1B" opacity=".5" stroke="#7A5E12" stroke-width="1.6"/>
+  <rect x="224" y="204" width="30" height="58" fill="#9A7B1B" opacity=".5" stroke="#7A5E12" stroke-width="1.6"/>
+  <circle cx="257" cy="206" r="4.5" fill="#F7F3E8"/>
+  <!-- tessellated verandah tiles -->
+  <rect x="40" y="286" width="360" height="24" fill="url(#tiles)"/>
+  <rect x="40" y="280" width="360" height="6" fill="#F7F3E8" opacity=".9"/>
+</svg>

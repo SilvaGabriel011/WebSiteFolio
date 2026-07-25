@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="gtbT">
+  <title id="gtbT">Stylised indoor-outdoor entertainer kitchen with a servery window opening to greenery and a timber deck</title>
+  <defs>
+    <pattern id="tbOak" width="92" height="16" patternUnits="userSpaceOnUse">
+      <rect width="92" height="16" fill="#D9AC6F"/>
+      <path d="M0 4q23-3 46 0t46 0M0 11q23 4 46 0t46 1" stroke="#BE8D50" stroke-width="1.2" fill="none"/>
+    </pattern>
+    <linearGradient id="tbStone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#ECE6D8"/><stop offset="1" stop-color="#FBF7EC"/>
+    </linearGradient>
+    <linearGradient id="tbSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8ECE2"/><stop offset="1" stop-color="#EFF6E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" rx="14" fill="#FFF8EC"/>
+  <rect x="0" y="0" width="800" height="392" fill="#EDEBDD"/>
+  <!-- timber batten ceiling -->
+  <g stroke="#C9974C" stroke-width="5" opacity=".65">
+    <path d="M20 26h760M20 50h760"/>
+  </g>
+  <!-- open servery to garden -->
+  <g>
+    <rect x="420" y="96" width="348" height="240" fill="url(#tbSky)"/>
+    <!-- greenery -->
+    <g fill="#8BA88E">
+      <circle cx="700" cy="180" r="52"/>
+      <circle cx="640" cy="220" r="38"/>
+      <circle cx="742" cy="236" r="34"/>
+    </g>
+    <g fill="#5F7A63">
+      <circle cx="676" cy="214" r="30"/>
+      <circle cx="722" cy="196" r="22"/>
+    </g>
+    <path d="M700 336V252" stroke="#7A5A34" stroke-width="8"/>
+    <circle cx="470" cy="132" r="22" fill="#F2CE82"/>
+    <!-- hanging fern in servery -->
+    <path d="M540 96v34" stroke="#1C2620" stroke-width="3"/>
+    <path d="M522 130h36l-5 16h-26z" fill="#C9974C" stroke="#1C2620" stroke-width="3"/>
+    <path d="M524 148q-10 22 2 34M540 150q0 24 0 36M556 148q10 22-2 34" stroke="#5F7A63" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- deck + bbq beyond -->
+    <rect x="588" y="300" width="180" height="14" fill="url(#tbOak)" stroke="#1C2620" stroke-width="4"/>
+    <rect x="612" y="252" width="110" height="48" rx="8" fill="#26332C" stroke="#1C2620" stroke-width="4"/>
+    <path d="M622 252a45 24 0 0 1 90 0" fill="#39473F" stroke="#1C2620" stroke-width="4"/>
+    <circle cx="646" cy="278" r="5" fill="#C9974C"/><circle cx="668" cy="278" r="5" fill="#C9974C"/>
+    <rect x="420" y="96" width="348" height="240" fill="none" stroke="#1C2620" stroke-width="7"/>
+    <path d="M420 336h348" stroke="#1C2620" stroke-width="7"/>
+  </g>
+  <!-- bifold panels stacked left of servery -->
+  <g fill="#F5F0E0" stroke="#1C2620" stroke-width="5">
+    <rect x="356" y="100" width="26" height="232"/>
+    <rect x="386" y="104" width="22" height="224"/>
+  </g>
+  <!-- interior overheads -->
+  <g>
+    <rect x="44" y="96" width="280" height="92" fill="#F7F1E0"/>
+    <g fill="none" stroke="#D8CEB4" stroke-width="4">
+      <rect x="58" y="108" width="118" height="68" rx="3"/>
+      <rect x="192" y="108" width="118" height="68" rx="3"/>
+    </g>
+    <g fill="#C9974C">
+      <rect x="164" y="134" width="5" height="20" rx="2.5"/>
+      <rect x="198" y="134" width="5" height="20" rx="2.5"/>
+    </g>
+    <rect x="44" y="96" width="280" height="92" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- long stone bench through servery -->
+  <rect x="36" y="336" width="728" height="22" rx="5" fill="url(#tbStone)" stroke="#1C2620" stroke-width="6"/>
+  <!-- sage bases inside -->
+  <g>
+    <rect x="44" y="358" width="440" height="116" fill="#8BA88E"/>
+    <g fill="none" stroke="#5F7A63" stroke-width="4">
+      <rect x="60" y="372" width="120" height="88" rx="3"/>
+      <rect x="200" y="372" width="120" height="88" rx="3"/>
+      <rect x="340" y="372" width="128" height="88" rx="3"/>
+    </g>
+    <g fill="#C9974C">
+      <rect x="106" y="364" width="28" height="5" rx="2.5"/>
+      <rect x="246" y="364" width="28" height="5" rx="2.5"/>
+      <rect x="390" y="364" width="28" height="5" rx="2.5"/>
+    </g>
+    <rect x="44" y="358" width="440" height="116" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- outdoor stools at the servery bench -->
+  <g stroke="#A57730" stroke-width="6" stroke-linecap="round">
+    <path d="M560 402v72M606 402v72M568 444h30"/>
+    <path d="M668 402v72M714 402v72M676 444h30"/>
+  </g>
+  <rect x="548" y="386" width="70" height="16" rx="8" fill="#D9AC6F" stroke="#1C2620" stroke-width="5"/>
+  <rect x="656" y="386" width="70" height="16" rx="8" fill="#D9AC6F" stroke="#1C2620" stroke-width="5"/>
+  <!-- floor: tile inside, deck outside -->
+  <rect x="0" y="474" width="500" height="86" fill="#EFE7D2"/>
+  <rect x="500" y="474" width="300" height="86" fill="url(#tbOak)"/>
+  <path d="M0 512h500M500 474v86" stroke="#DFD3B4" stroke-width="3"/>
+  <rect x="3" y="3" width="794" height="554" rx="12" fill="none" stroke="#1C2620" stroke-width="6"/>
+</svg>

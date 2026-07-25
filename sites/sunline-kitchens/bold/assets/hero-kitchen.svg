@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="heroT">
+  <title id="heroT">Stylised illustration of a sage and brass kitchen: pendant lights over a stone island, sun rising through the window</title>
+  <defs>
+    <linearGradient id="hSun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFC46E"/><stop offset="1" stop-color="#C9974C"/>
+    </linearGradient>
+    <linearGradient id="hStone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#ECE6D8"/><stop offset="1" stop-color="#FBF7EC"/>
+    </linearGradient>
+    <linearGradient id="hGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2CE82" stop-opacity=".85"/><stop offset="1" stop-color="#F2CE82" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="hTile" width="48" height="24" patternUnits="userSpaceOnUse">
+      <rect width="48" height="24" fill="#F6F1E2"/>
+      <path d="M0 0h48M0 12h48M0 24h48" stroke="#DFD5BB" stroke-width="1.5"/>
+      <path d="M24 0v12M0 12v12M48 12v12" stroke="#DFD5BB" stroke-width="1.5"/>
+    </pattern>
+    <pattern id="hWood" width="92" height="16" patternUnits="userSpaceOnUse">
+      <rect width="92" height="16" fill="#D9AC6F"/>
+      <path d="M0 4q23-3 46 0t46 0M0 11q23 4 46 0t46 1" stroke="#BE8D50" stroke-width="1.3" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="560" rx="20" fill="#FFF8EC"/>
+  <rect x="0" y="0" width="800" height="392" fill="#E7EEE2"/>
+  <!-- sun + rays -->
+  <g opacity=".95">
+    <circle cx="565" cy="128" r="86" fill="url(#hSun)"/>
+    <g stroke="#C9974C" stroke-width="7" stroke-linecap="round" opacity=".5">
+      <path d="M565 16v-6M462 44l-5-5M668 44l5-5M446 128h-10M684 128h10"/>
+    </g>
+  </g>
+  <!-- window -->
+  <g>
+    <rect x="472" y="88" width="186" height="188" rx="10" fill="#F3EBD6"/>
+    <rect x="472" y="88" width="186" height="112" rx="10" fill="#CFE0DA"/>
+    <rect x="472" y="176" width="186" height="100" fill="#F3EBD6"/>
+    <path d="M472 200h186" stroke="#9EC0B4" stroke-width="4"/>
+    <circle cx="560" cy="176" r="46" fill="url(#hSun)"/>
+    <path d="M520 200h80" stroke="#B5893F" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+    <rect x="472" y="88" width="186" height="188" rx="10" fill="none" stroke="#1C2620" stroke-width="6"/>
+    <path d="M565 94v100" stroke="#1C2620" stroke-width="5"/>
+  </g>
+  <!-- pendants -->
+  <g>
+    <path d="M198 0v96M318 0v96" stroke="#1C2620" stroke-width="4"/>
+    <path d="M170 96h56l-9 34h-38zM290 96h56l-9 34h-38z" fill="#C9974C"/>
+    <path d="M170 96h56M290 96h56" stroke="#A57730" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="198" cy="150" rx="34" ry="16" fill="url(#hGlow)"/>
+    <ellipse cx="318" cy="150" rx="34" ry="16" fill="url(#hGlow)"/>
+    <circle cx="198" cy="134" r="6" fill="#EFC46E"/>
+    <circle cx="318" cy="134" r="6" fill="#EFC46E"/>
+  </g>
+  <!-- tall pantry -->
+  <g>
+    <rect x="24" y="60" width="96" height="332" fill="url(#hWood)"/>
+    <rect x="24" y="60" width="96" height="332" fill="none" stroke="#1C2620" stroke-width="6"/>
+    <path d="M72 60v332" stroke="#1C2620" stroke-width="3" opacity=".55"/>
+    <rect x="60" y="200" width="5" height="34" rx="2.5" fill="#1C2620"/>
+    <rect x="79" y="200" width="5" height="34" rx="2.5" fill="#1C2620"/>
+  </g>
+  <!-- splashback + rear bench -->
+  <rect x="132" y="252" width="328" height="106" fill="url(#hTile)"/>
+  <rect x="132" y="252" width="328" height="106" fill="none" stroke="#1C2620" stroke-width="5"/>
+  <rect x="120" y="352" width="552" height="18" rx="4" fill="url(#hStone)" stroke="#1C2620" stroke-width="5"/>
+  <!-- rear base cabinets: sage shaker -->
+  <g>
+    <rect x="126" y="370" width="540" height="96" fill="#8BA88E"/>
+    <g fill="none" stroke="#5F7A63" stroke-width="4">
+      <rect x="142" y="384" width="116" height="66" rx="3"/>
+      <rect x="276" y="384" width="116" height="66" rx="3"/>
+      <rect x="410" y="384" width="116" height="66" rx="3"/>
+      <rect x="544" y="384" width="106" height="66" rx="3"/>
+    </g>
+    <g fill="#C9974C">
+      <rect x="194" y="376" width="30" height="5" rx="2.5"/>
+      <rect x="328" y="376" width="30" height="5" rx="2.5"/>
+      <rect x="462" y="376" width="30" height="5" rx="2.5"/>
+      <rect x="590" y="376" width="30" height="5" rx="2.5"/>
+    </g>
+    <rect x="126" y="370" width="540" height="96" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- island -->
+  <g>
+    <rect x="196" y="452" width="424" height="86" fill="#1C2620" rx="4"/>
+    <g stroke="#C9974C" stroke-width="3" opacity=".8">
+      <path d="M262 460v70M328 460v70M394 460v70M460 460v70M526 460v70"/>
+    </g>
+    <rect x="180" y="430" width="456" height="26" rx="6" fill="url(#hStone)" stroke="#1C2620" stroke-width="6"/>
+    <rect x="612" y="430" width="24" height="108" rx="6" fill="url(#hStone)" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- stools -->
+  <g stroke="#A57730" stroke-width="6" stroke-linecap="round">
+    <path d="M84 470v70M136 470v70M96 512h30"/>
+    <path d="M710 470v70M762 470v70M722 512h30" stroke="#A57730"/>
+  </g>
+  <rect x="72" y="456" width="76" height="16" rx="8" fill="#D9AC6F" stroke="#1C2620" stroke-width="5"/>
+  <rect x="698" y="456" width="76" height="16" rx="8" fill="#D9AC6F" stroke="#1C2620" stroke-width="5"/>
+  <!-- plant + board on bench -->
+  <g>
+    <path d="M410 330q-14-26 2-44M414 332q16-22 4-46M412 334q-24-14-20-38" stroke="#5F7A63" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M396 334h34l-5 20h-24z" fill="#C9974C" stroke="#1C2620" stroke-width="4"/>
+    <rect x="200" y="336" width="70" height="12" rx="6" fill="#D9AC6F" stroke="#1C2620" stroke-width="4"/>
+  </g>
+  <rect x="3" y="3" width="794" height="554" rx="18" fill="none" stroke="#1C2620" stroke-width="6"/>
+</svg>

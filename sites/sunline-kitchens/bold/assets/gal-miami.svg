@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="gmT">
+  <title id="gmT">Stylised minimalist kitchen with flat oak fronts, handle-free shadowlines and a single linear pendant</title>
+  <defs>
+    <pattern id="mOak" width="96" height="18" patternUnits="userSpaceOnUse">
+      <rect width="96" height="18" fill="#DCB27A"/>
+      <path d="M0 5q24-3 48 0t48 0M0 13q24 4 48 0t48 1" stroke="#C29455" stroke-width="1.3" fill="none"/>
+    </pattern>
+    <linearGradient id="mStone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0ECE1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" rx="14" fill="#FBFAF4"/>
+  <rect x="0" y="0" width="800" height="392" fill="#F3F1E8"/>
+  <!-- single black linear pendant -->
+  <g>
+    <path d="M300 0v64M500 0v64" stroke="#1C2620" stroke-width="3"/>
+    <rect x="270" y="64" width="260" height="12" rx="6" fill="#1C2620"/>
+    <path d="M300 84h200" stroke="#F2CE82" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <!-- tall oak bank, handleless -->
+  <g>
+    <rect x="48" y="60" width="180" height="414" fill="url(#mOak)"/>
+    <path d="M138 60v414" stroke="#1C2620" stroke-width="3"/>
+    <path d="M48 200h180M48 340h180" stroke="#1C2620" stroke-width="3"/>
+    <rect x="48" y="60" width="180" height="414" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- long open oak shelf -->
+  <g>
+    <rect x="292" y="204" width="420" height="12" rx="3" fill="url(#mOak)" stroke="#1C2620" stroke-width="4"/>
+    <rect x="330" y="168" width="24" height="36" rx="3" fill="#8BA88E" stroke="#1C2620" stroke-width="4"/>
+    <rect x="382" y="178" width="30" height="26" rx="3" fill="#1C2620"/>
+    <path d="M470 204v-20a12 12 0 0 1 24 0v20" fill="#FBFAF4" stroke="#1C2620" stroke-width="4"/>
+    <path d="M560 204q-10-24 6-38" stroke="#5F7A63" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M552 204h26l-4 14h-18z" fill="#C9974C" stroke="#1C2620" stroke-width="4"/>
+  </g>
+  <!-- thin stone bench -->
+  <rect x="272" y="348" width="484" height="14" rx="3" fill="url(#mStone)" stroke="#1C2620" stroke-width="5"/>
+  <!-- oak base run, shadowline routed pulls -->
+  <g>
+    <rect x="280" y="362" width="468" height="112" fill="url(#mOak)"/>
+    <g stroke="#1C2620" stroke-width="4">
+      <path d="M436 362v112M592 362v112"/>
+    </g>
+    <g stroke="#1C2620" stroke-width="7" stroke-linecap="round">
+      <path d="M296 372h56M452 372h56M608 372h56"/>
+    </g>
+    <rect x="280" y="362" width="468" height="112" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- induction line on bench -->
+  <path d="M520 344h150" stroke="#1C2620" stroke-width="6" stroke-linecap="round"/>
+  <!-- pale concrete floor -->
+  <rect x="0" y="474" width="800" height="86" fill="#E9E5D8"/>
+  <path d="M266 474v86M534 474v86" stroke="#D8D2BE" stroke-width="3"/>
+  <rect x="3" y="3" width="794" height="554" rx="12" fill="none" stroke="#1C2620" stroke-width="6"/>
+</svg>

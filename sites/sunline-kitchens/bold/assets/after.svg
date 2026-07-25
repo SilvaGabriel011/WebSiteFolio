@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="aftT">
+  <title id="aftT">Stylised illustration of the same kitchen renovated: sage shaker cupboards, stone benchtop, subway tiles and brass pendants</title>
+  <defs>
+    <linearGradient id="aStone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#ECE6D8"/><stop offset="1" stop-color="#FBF7EC"/>
+    </linearGradient>
+    <linearGradient id="aGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2CE82" stop-opacity=".85"/><stop offset="1" stop-color="#F2CE82" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="aTile" width="48" height="24" patternUnits="userSpaceOnUse">
+      <rect width="48" height="24" fill="#F6F1E2"/>
+      <path d="M0 0h48M0 12h48M0 24h48" stroke="#DFD5BB" stroke-width="1.5"/>
+      <path d="M24 0v12M0 12v12M48 12v12" stroke="#DFD5BB" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="520" fill="#FFF8EC"/>
+  <rect x="0" y="0" width="800" height="360" fill="#E7EEE2"/>
+  <!-- brass pendants where the batten light was -->
+  <g>
+    <path d="M290 0v56M510 0v56" stroke="#1C2620" stroke-width="4"/>
+    <path d="M264 56h52l-8 30h-36zM484 56h52l-8 30h-36z" fill="#C9974C"/>
+    <ellipse cx="290" cy="104" rx="30" ry="14" fill="url(#aGlow)"/>
+    <ellipse cx="510" cy="104" rx="30" ry="14" fill="url(#aGlow)"/>
+    <circle cx="290" cy="92" r="5" fill="#EFC46E"/>
+    <circle cx="510" cy="92" r="5" fill="#EFC46E"/>
+  </g>
+  <!-- overhead cabinets: cream shaker -->
+  <g>
+    <rect x="60" y="86" width="560" height="102" fill="#F7F1E0"/>
+    <g fill="none" stroke="#D8CEB4" stroke-width="4">
+      <rect x="76" y="98" width="108" height="78" rx="3"/>
+      <rect x="216" y="98" width="108" height="78" rx="3"/>
+      <rect x="356" y="98" width="108" height="78" rx="3"/>
+      <rect x="496" y="98" width="108" height="78" rx="3"/>
+    </g>
+    <g fill="#C9974C">
+      <rect x="168" y="130" width="5" height="24" rx="2.5"/>
+      <rect x="308" y="130" width="5" height="24" rx="2.5"/>
+      <rect x="368" y="130" width="5" height="24" rx="2.5"/>
+      <rect x="508" y="130" width="5" height="24" rx="2.5"/>
+    </g>
+    <rect x="60" y="86" width="560" height="102" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- window (same spot as before) with sun -->
+  <g>
+    <rect x="648" y="92" width="120" height="180" fill="#CFE0DA"/>
+    <rect x="648" y="196" width="120" height="76" fill="#F3EBD6"/>
+    <circle cx="708" cy="196" r="34" fill="#EFC46E"/>
+    <path d="M682 196h52" stroke="#B5893F" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+    <rect x="648" y="92" width="120" height="180" fill="none" stroke="#1C2620" stroke-width="6"/>
+    <path d="M708 92v104" stroke="#1C2620" stroke-width="4"/>
+  </g>
+  <!-- subway splashback -->
+  <rect x="60" y="188" width="560" height="140" fill="url(#aTile)"/>
+  <rect x="60" y="188" width="560" height="140" fill="none" stroke="#1C2620" stroke-width="5"/>
+  <!-- rangehood + cooktop line -->
+  <g>
+    <path d="M338 188h104l14 56H324z" fill="#8BA88E" stroke="#1C2620" stroke-width="5"/>
+    <path d="M334 292h112" stroke="#1C2620" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- stone benchtop -->
+  <rect x="48" y="328" width="720" height="20" rx="4" fill="url(#aStone)" stroke="#1C2620" stroke-width="5"/>
+  <!-- base cabinets: sage shaker -->
+  <g>
+    <rect x="56" y="348" width="704" height="118" fill="#8BA88E"/>
+    <g fill="none" stroke="#5F7A63" stroke-width="4">
+      <rect x="72" y="362" width="128" height="90" rx="3"/>
+      <rect x="232" y="362" width="128" height="90" rx="3"/>
+      <rect x="392" y="362" width="128" height="90" rx="3"/>
+      <rect x="552" y="362" width="128" height="90" rx="3"/>
+    </g>
+    <g fill="#C9974C">
+      <rect x="120" y="354" width="32" height="5" rx="2.5"/>
+      <rect x="280" y="354" width="32" height="5" rx="2.5"/>
+      <rect x="440" y="354" width="32" height="5" rx="2.5"/>
+      <rect x="600" y="354" width="32" height="5" rx="2.5"/>
+    </g>
+    <rect x="56" y="348" width="704" height="118" fill="none" stroke="#1C2620" stroke-width="6"/>
+  </g>
+  <!-- plant + board -->
+  <g>
+    <path d="M574 306q-12-22 2-38M578 308q14-19 3-40" stroke="#5F7A63" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M562 308h30l-4 18h-22z" fill="#C9974C" stroke="#1C2620" stroke-width="4"/>
+    <rect x="96" y="312" width="64" height="12" rx="6" fill="#D9AC6F" stroke="#1C2620" stroke-width="4"/>
+  </g>
+  <!-- oak floor -->
+  <rect x="0" y="466" width="800" height="54" fill="#E8CD9C"/>
+  <path d="M0 492h800" stroke="#D2B27C" stroke-width="3"/>
+  <path d="M140 466v26M420 466v26M700 466v26M280 492v28M560 492v28" stroke="#D2B27C" stroke-width="3"/>
+</svg>

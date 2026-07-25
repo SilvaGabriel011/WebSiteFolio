@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="befT">
+  <title id="befT">Stylised illustration of a dated 1990s kitchen with brown laminate cupboards and beige square tiles</title>
+  <defs>
+    <pattern id="bOld" width="80" height="14" patternUnits="userSpaceOnUse">
+      <rect width="80" height="14" fill="#8A6B4E"/>
+      <path d="M0 4q20-2 40 0t40 0M0 10q20 3 40 0t40 1" stroke="#6E523A" stroke-width="1.3" fill="none"/>
+    </pattern>
+    <pattern id="bSqTile" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#E4D3AE"/>
+      <path d="M0 0h30v30H0z" fill="none" stroke="#C9B487" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="520" fill="#E9DEC6"/>
+  <rect x="0" y="0" width="800" height="360" fill="#DFD2B4"/>
+  <!-- old fluorescent batten light -->
+  <g>
+    <path d="M400 0v34" stroke="#5B5142" stroke-width="5"/>
+    <rect x="286" y="34" width="228" height="20" rx="6" fill="#CFC6AF" stroke="#5B5142" stroke-width="4"/>
+  </g>
+  <!-- overhead cupboards: dated laminate -->
+  <g>
+    <rect x="60" y="86" width="560" height="102" fill="url(#bOld)"/>
+    <g stroke="#4F3A27" stroke-width="4" fill="none">
+      <path d="M200 86v102M340 86v102M480 86v102"/>
+    </g>
+    <g fill="#4F3A27">
+      <circle cx="188" cy="140" r="5"/><circle cx="212" cy="140" r="5"/>
+      <circle cx="328" cy="140" r="5"/><circle cx="352" cy="140" r="5"/>
+      <circle cx="468" cy="140" r="5"/><circle cx="492" cy="140" r="5"/>
+    </g>
+    <rect x="60" y="86" width="560" height="102" fill="none" stroke="#4F3A27" stroke-width="6"/>
+  </g>
+  <!-- window (same spot as after) -->
+  <g>
+    <rect x="648" y="92" width="120" height="180" fill="#D6CBAC" stroke="#5B5142" stroke-width="6"/>
+    <path d="M708 92v180M648 182h120" stroke="#5B5142" stroke-width="4"/>
+  </g>
+  <!-- square-tile splashback -->
+  <rect x="60" y="188" width="560" height="140" fill="url(#bSqTile)"/>
+  <rect x="60" y="188" width="560" height="140" fill="none" stroke="#4F3A27" stroke-width="5"/>
+  <!-- dated appliance -->
+  <rect x="330" y="230" width="120" height="98" fill="#CFC6AF" stroke="#5B5142" stroke-width="5"/>
+  <circle cx="356" cy="248" r="6" fill="#5B5142"/><circle cx="380" cy="248" r="6" fill="#5B5142"/>
+  <!-- grey laminate bench -->
+  <rect x="48" y="328" width="720" height="20" rx="3" fill="#B8B0A0" stroke="#4F3A27" stroke-width="5"/>
+  <!-- base cupboards -->
+  <g>
+    <rect x="56" y="348" width="704" height="118" fill="url(#bOld)"/>
+    <path d="M196 348v118M336 348v118M476 348v118M616 348v118" stroke="#4F3A27" stroke-width="4"/>
+    <g fill="#4F3A27">
+      <circle cx="184" cy="404" r="5"/><circle cx="208" cy="404" r="5"/>
+      <circle cx="324" cy="404" r="5"/><circle cx="348" cy="404" r="5"/>
+      <circle cx="464" cy="404" r="5"/><circle cx="488" cy="404" r="5"/>
+      <circle cx="604" cy="404" r="5"/><circle cx="628" cy="404" r="5"/>
+    </g>
+    <rect x="56" y="348" width="704" height="118" fill="none" stroke="#4F3A27" stroke-width="6"/>
+  </g>
+  <!-- worn vinyl floor -->
+  <rect x="0" y="466" width="800" height="54" fill="#C9BB9B"/>
+  <path d="M0 492h800" stroke="#B3A480" stroke-width="3" opacity=".7"/>
+</svg>

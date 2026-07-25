@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <linearGradient id="sash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E4066"/>
+      <stop offset="1" stop-color="#142F4D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4BC3F"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <pattern id="boards" width="440" height="34" patternUnits="userSpaceOnUse">
+      <rect width="440" height="34" fill="#0F2540"/>
+      <path d="M0 33h440" stroke="#0A1826" stroke-width="3"/>
+      <path d="M0 30h440" stroke="#1E4066" stroke-width="1.5" opacity=".6"/>
+    </pattern>
+  </defs>
+  <!-- weatherboard wall -->
+  <rect width="440" height="320" fill="url(#boards)"/>
+  <!-- casing -->
+  <rect x="118" y="26" width="204" height="252" fill="none" stroke="#F7F3E8" stroke-width="12"/>
+  <rect x="130" y="38" width="180" height="228" fill="url(#sash)"/>
+  <!-- upper sash: 2-over-2 -->
+  <rect x="136" y="44" width="168" height="104" fill="none" stroke="url(#gold)" stroke-width="6"/>
+  <path d="M220 44v104" stroke="url(#gold)" stroke-width="4"/>
+  <path d="M136 96h168" stroke="url(#gold)" stroke-width="3" opacity=".7"/>
+  <!-- lower sash raised part-open, overlapping meeting rail -->
+  <rect x="132" y="132" width="176" height="112" fill="#1E4066" stroke="#F7F3E8" stroke-width="7"/>
+  <path d="M220 132v112" stroke="#F7F3E8" stroke-width="4"/>
+  <path d="M132 188h176" stroke="#F7F3E8" stroke-width="3" opacity=".8"/>
+  <!-- open gap showing dark reveal below sash -->
+  <rect x="136" y="248" width="168" height="14" fill="#0A1826"/>
+  <!-- sash cords -->
+  <path d="M126 44v200M314 44v200" stroke="#E4BC3F" stroke-width="2.5" opacity=".8"/>
+  <circle cx="126" cy="70" r="4" fill="#E4BC3F"/>
+  <circle cx="314" cy="70" r="4" fill="#E4BC3F"/>
+  <!-- sash lift + lock -->
+  <rect x="206" y="238" width="28" height="6" rx="3" fill="url(#gold)"/>
+  <circle cx="220" cy="128" r="5" fill="url(#gold)"/>
+  <!-- sill -->
+  <rect x="104" y="278" width="232" height="14" fill="url(#gold)"/>
+  <path d="M104 292l10 12h212l10-12z" fill="#9A7B1B"/>
+</svg>

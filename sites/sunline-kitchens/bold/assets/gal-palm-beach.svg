@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="gpbT">
+  <title id="gpbT">Stylised coastal white kitchen with an arched window over the sea and light timber benchtop</title>
+  <defs>
+    <linearGradient id="pbSea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BFDCD6"/><stop offset="1" stop-color="#8FBDB4"/>
+    </linearGradient>
+    <pattern id="pbOak" width="92" height="16" patternUnits="userSpaceOnUse">
+      <rect width="92" height="16" fill="#E9CFA0"/>
+      <path d="M0 4q23-3 46 0t46 0M0 11q23 4 46 0t46 1" stroke="#D3B279" stroke-width="1.2" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="560" rx="14" fill="#F2F6F0"/>
+  <rect x="0" y="0" width="800" height="392" fill="#E3EEEA"/>
+  <!-- arched window to the sea -->
+  <g>
+    <path d="M470 300V170a110 110 0 0 1 220 0v130z" fill="#F6FBF8"/>
+    <path d="M482 300V172a98 98 0 0 1 196 0v128z" fill="url(#pbSea)"/>
+    <path d="M482 236h196" stroke="#F6FBF8" stroke-width="6"/>
+    <circle cx="580" cy="200" r="26" fill="#F2CE82"/>
+    <path d="M470 300V170a110 110 0 0 1 220 0v130z" fill="none" stroke="#274038" stroke-width="7"/>
+    <path d="M580 66v234" stroke="#274038" stroke-width="4" opacity=".5"/>
+  </g>
+  <!-- palm fronds top left -->
+  <g stroke="#5F7A63" stroke-width="6" fill="none" stroke-linecap="round" opacity=".85">
+    <path d="M40 44q60-24 118 6"/>
+    <path d="M52 84q52-34 110-22"/>
+    <path d="M36 22q44 4 74 34"/>
+  </g>
+  <!-- white shaker overheads -->
+  <g>
+    <rect x="60" y="120" width="330" height="96" fill="#FDFDF8"/>
+    <g fill="none" stroke="#D9E0D4" stroke-width="4">
+      <rect x="74" y="132" width="90" height="72" rx="3"/>
+      <rect x="180" y="132" width="90" height="72" rx="3"/>
+      <rect x="286" y="132" width="90" height="72" rx="3"/>
+    </g>
+    <g fill="#C9974C">
+      <rect x="152" y="162" width="5" height="20" rx="2.5"/>
+      <rect x="258" y="162" width="5" height="20" rx="2.5"/>
+      <rect x="298" y="162" width="5" height="20" rx="2.5"/>
+    </g>
+    <rect x="60" y="120" width="330" height="96" fill="none" stroke="#274038" stroke-width="6"/>
+  </g>
+  <!-- open shelf with ceramics -->
+  <g>
+    <rect x="60" y="252" width="330" height="10" rx="4" fill="url(#pbOak)" stroke="#274038" stroke-width="4"/>
+    <rect x="92" y="216" width="26" height="36" rx="4" fill="#8FBDB4" stroke="#274038" stroke-width="4"/>
+    <rect x="140" y="226" width="34" height="26" rx="4" fill="#F2CE82" stroke="#274038" stroke-width="4"/>
+    <path d="M212 252v-24a14 14 0 0 1 28 0v24" fill="#FDFDF8" stroke="#274038" stroke-width="4"/>
+  </g>
+  <!-- timber benchtop -->
+  <rect x="44" y="342" width="712" height="20" rx="5" fill="url(#pbOak)" stroke="#274038" stroke-width="5"/>
+  <!-- white base shakers with brass cup pulls -->
+  <g>
+    <rect x="52" y="362" width="696" height="112" fill="#FDFDF8"/>
+    <g fill="none" stroke="#D9E0D4" stroke-width="4">
+      <rect x="68" y="376" width="150" height="84" rx="3"/>
+      <rect x="242" y="376" width="150" height="84" rx="3"/>
+      <rect x="416" y="376" width="150" height="84" rx="3"/>
+      <rect x="590" y="376" width="142" height="84" rx="3"/>
+    </g>
+    <g stroke="#C9974C" stroke-width="5" fill="none" stroke-linecap="round">
+      <path d="M128 388q15 12 30 0M302 388q15 12 30 0M476 388q15 12 30 0M646 388q15 12 30 0"/>
+    </g>
+    <rect x="52" y="362" width="696" height="112" fill="none" stroke="#274038" stroke-width="6"/>
+  </g>
+  <!-- washed floor -->
+  <rect x="0" y="474" width="800" height="86" fill="#EFE7D2"/>
+  <path d="M0 508h800M0 540h800" stroke="#DFD3B4" stroke-width="3"/>
+  <rect x="3" y="3" width="794" height="554" rx="12" fill="none" stroke="#274038" stroke-width="6"/>
+</svg>

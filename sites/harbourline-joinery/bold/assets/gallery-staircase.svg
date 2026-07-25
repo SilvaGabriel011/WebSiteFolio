@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E4066"/>
+      <stop offset="1" stop-color="#0F2540"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4BC3F"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#E4BC3F" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#E4BC3F" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grain" width="70" height="20" patternUnits="userSpaceOnUse">
+      <rect width="70" height="20" fill="#C9A227"/>
+      <path d="M0 4q17-3 35 0t35 0" fill="none" stroke="#9A7B1B" stroke-width="1.1" opacity=".55"/>
+      <path d="M0 10q14 4 35 1t35 1" fill="none" stroke="#9A7B1B" stroke-width="1" opacity=".45"/>
+      <path d="M0 16q19-3 35 0t35-1" fill="none" stroke="#9A7B1B" stroke-width="1" opacity=".5"/>
+    </pattern>
+  </defs>
+  <rect width="440" height="320" fill="url(#bg)"/>
+  <!-- window light behind -->
+  <circle cx="300" cy="120" r="130" fill="url(#glow)"/>
+  <rect x="252" y="42" width="96" height="126" fill="#142F4D" stroke="#F7F3E8" stroke-width="6"/>
+  <path d="M300 42v126M252 105h96" stroke="#F7F3E8" stroke-width="3" opacity=".8"/>
+  <!-- open-riser treads climbing right -->
+  <g>
+    <rect x="60" y="262" width="76" height="14" fill="url(#grain)" stroke="#0A1826" stroke-width="2"/>
+    <rect x="112" y="226" width="76" height="14" fill="url(#grain)" stroke="#0A1826" stroke-width="2"/>
+    <rect x="164" y="190" width="76" height="14" fill="url(#grain)" stroke="#0A1826" stroke-width="2"/>
+    <rect x="216" y="154" width="76" height="14" fill="url(#grain)" stroke="#0A1826" stroke-width="2"/>
+    <rect x="268" y="118" width="76" height="14" fill="url(#grain)" stroke="#0A1826" stroke-width="2"/>
+    <rect x="320" y="82" width="76" height="14" fill="url(#grain)" stroke="#0A1826" stroke-width="2"/>
+  </g>
+  <!-- steel-free timber stringer -->
+  <path d="M52 292 388 60" stroke="#0D2135" stroke-width="18"/>
+  <path d="M52 292 388 60" stroke="#C9A227" stroke-width="3" opacity=".6"/>
+  <!-- balusters + handrail -->
+  <path d="M98 262v-64M150 226v-64M202 190v-64M254 154v-64M306 118v-64M358 82v-64" stroke="#F7F3E8" stroke-width="3" opacity=".8"/>
+  <path d="M74 216C120 180 260 84 380 4" fill="none" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M74 216c-16 10-14 34 6 34s24-26 2-26" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  <!-- newel post -->
+  <rect x="86" y="230" width="16" height="62" fill="url(#grain)" stroke="#0A1826" stroke-width="2"/>
+  <circle cx="94" cy="222" r="10" fill="url(#gold)"/>
+  <!-- floor -->
+  <rect y="292" width="440" height="28" fill="#0A1826"/>
+  <path d="M0 292h440" stroke="#C9A227" stroke-width="2" opacity=".5"/>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 560" role="img" aria-label="">
+  <defs>
+    <linearGradient id="cbstone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFCF7"/><stop offset="1" stop-color="#EDE7D6"/>
+    </linearGradient>
+    <pattern id="cbbead" width="26" height="20" patternUnits="userSpaceOnUse">
+      <rect width="26" height="20" fill="#6B876F"/>
+      <path d="M24.6 0v20" stroke="#5B7660" stroke-width="2.4"/>
+    </pattern>
+    <radialGradient id="cbsun" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#E9C87F"/><stop offset="1" stop-color="#C99F53"/>
+    </radialGradient>
+  </defs>
+  <rect width="840" height="560" fill="#FAF7EF"/>
+  <rect y="432" width="840" height="128" fill="#EFE6D0"/>
+  <path d="M0 478h840M0 522h840" stroke="#E2D6BA" stroke-width="2"/>
+
+  <!-- glass-front uppers with mullions -->
+  <rect x="56" y="58" width="500" height="150" fill="#F6F2E4"/>
+  <g>
+    <rect x="72" y="72" width="148" height="122" fill="#E8EFE4"/>
+    <rect x="236" y="72" width="148" height="122" fill="#E8EFE4"/>
+    <rect x="400" y="72" width="140" height="122" fill="#E8EFE4"/>
+  </g>
+  <g fill="none" stroke="#FDFBF4" stroke-width="6">
+    <path d="M146 72v122M72 133h148M310 72v122M236 133h148M470 72v122M400 133h140"/>
+  </g>
+  <g fill="none" stroke="#D9CFB6" stroke-width="3">
+    <rect x="72" y="72" width="148" height="122"/>
+    <rect x="236" y="72" width="148" height="122"/>
+    <rect x="400" y="72" width="140" height="122"/>
+  </g>
+  <!-- crockery hints behind glass -->
+  <g fill="#B7C9B4" opacity=".7">
+    <ellipse cx="109" cy="120" rx="17" ry="5"/><ellipse cx="109" cy="106" rx="14" ry="4"/>
+    <ellipse cx="347" cy="120" rx="17" ry="5"/><ellipse cx="347" cy="106" rx="14" ry="4"/>
+    <ellipse cx="435" cy="168" rx="14" ry="4"/><ellipse cx="435" cy="180" rx="17" ry="5"/>
+  </g>
+
+  <!-- splashback + marble bench -->
+  <rect x="56" y="224" width="500" height="104" fill="#F8F3E5"/>
+  <path d="M56 252h500M56 280h500M56 308h500" stroke="#E8DFC9" stroke-width="1.8"/>
+  <rect x="46" y="324" width="520" height="20" rx="3" fill="url(#cbstone)"/>
+  <path d="M80 340c50 6 80-14 128-8s76 18 118 12s72-16 104-10" fill="none" stroke="#D6CDB6" stroke-width="2.2"/>
+
+  <!-- deep sage shaker lowers with cup handles -->
+  <rect x="56" y="344" width="500" height="112" fill="#5F7A63"/>
+  <g fill="none" stroke="#4E6852" stroke-width="2.5">
+    <rect x="74" y="360" width="130" height="80" rx="2"/>
+    <rect x="228" y="360" width="130" height="80" rx="2"/>
+    <rect x="382" y="360" width="156" height="80" rx="2"/>
+  </g>
+  <g fill="none" stroke="#D9B36A" stroke-width="4" stroke-linecap="round">
+    <path d="M124 376a15 11 0 0 0 30 0M278 376a15 11 0 0 0 30 0M445 376a15 11 0 0 0 30 0"/>
+  </g>
+
+  <!-- beadboard island -->
+  <ellipse cx="320" cy="522" rx="264" ry="17" fill="#26312B" opacity=".08"/>
+  <rect x="102" y="430" width="436" height="84" fill="url(#cbbead)"/>
+  <rect x="84" y="408" width="472" height="24" rx="4" fill="url(#cbstone)"/>
+  <path d="M120 424c44 6 70-12 112-6s66 16 102 10" fill="none" stroke="#D6CDB6" stroke-width="2"/>
+
+  <!-- window slice, right -->
+  <rect x="600" y="58" width="196" height="398" fill="#F7EFDC"/>
+  <rect x="612" y="70" width="172" height="374" fill="#F8F1DF"/>
+  <rect x="612" y="266" width="172" height="52" fill="#9FBCA6"/>
+  <rect x="612" y="318" width="172" height="126" fill="#EBDFC2"/>
+  <circle cx="698" cy="160" r="36" fill="url(#cbsun)"/>
+  <rect x="600" y="58" width="196" height="398" fill="none" stroke="#B58B3E" stroke-width="2.5"/>
+  <path d="M698 70v374M612 266h172" stroke="#B58B3E" stroke-width="1.8" opacity=".5"/>
+
+  <!-- twin pendants -->
+  <g stroke="#8A6528" stroke-width="2.5"><path d="M232 0v176M408 0v176"/></g>
+  <g fill="url(#cbsun)">
+    <path d="M202 208a30 30 0 0 1 60 0z"/>
+    <path d="M378 208a30 30 0 0 1 60 0z"/>
+  </g>
+  <g fill="#E9C87F" opacity=".5">
+    <ellipse cx="232" cy="211" rx="21" ry="4.5"/><ellipse cx="408" cy="211" rx="21" ry="4.5"/>
+  </g>
+</svg>
