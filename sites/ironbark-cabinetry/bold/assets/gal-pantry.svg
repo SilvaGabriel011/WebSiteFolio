@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="pt pd">
+  <title id="pt">Butler's pantry</title>
+  <desc id="pd">Abstract butler's pantry: open timber shelves lined with jars, a working bench and a part-open sliding door.</desc>
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#221C13"/>
+      <stop offset="1" stop-color="#131009"/>
+    </linearGradient>
+    <linearGradient id="pStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7EFDF"/>
+      <stop offset="1" stop-color="#CDBFA6"/>
+    </linearGradient>
+    <pattern id="pGrain" width="130" height="24" patternUnits="userSpaceOnUse">
+      <rect width="130" height="24" fill="#B98A4E"/>
+      <path d="M0 5q32-4 65 0t65 0" fill="none" stroke="#8A6130" stroke-width="1.2" opacity=".55"/>
+      <path d="M0 12q26 5 62 1t68 2" fill="none" stroke="#8A6130" stroke-width="1" opacity=".4"/>
+      <path d="M0 19q36-4 72 0t58-1" fill="none" stroke="#74501F" stroke-width="1" opacity=".35"/>
+    </pattern>
+    <pattern id="pGrainV" width="24" height="130" patternUnits="userSpaceOnUse">
+      <rect width="24" height="130" fill="#A6763D"/>
+      <path d="M6 0q-4 32 0 65t0 65" fill="none" stroke="#74501F" stroke-width="1.2" opacity=".5"/>
+      <path d="M15 0q5 26 1 62t2 68" fill="none" stroke="#5E3F17" stroke-width="1" opacity=".4"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#pBg)"/>
+  <!-- pantry alcove -->
+  <rect x="60" y="48" width="500" height="512" fill="#191510" stroke="#332B1F" stroke-width="2.5"/>
+  <!-- open shelves with jars -->
+  <g fill="url(#pGrain)">
+    <rect x="84" y="150" width="452" height="12"/>
+    <rect x="84" y="256" width="452" height="12"/>
+  </g>
+  <!-- top shelf jars -->
+  <g>
+    <g fill="#D8A45F" opacity=".9">
+      <rect x="110" y="96" width="34" height="54" rx="4"/>
+      <rect x="154" y="108" width="28" height="42" rx="4"/>
+    </g>
+    <g fill="#F4EADA" opacity=".85">
+      <rect x="206" y="100" width="30" height="50" rx="4"/>
+      <rect x="246" y="112" width="24" height="38" rx="4"/>
+    </g>
+    <g fill="#8A6130">
+      <rect x="296" y="94" width="36" height="56" rx="4"/>
+      <rect x="342" y="110" width="26" height="40" rx="4"/>
+    </g>
+    <g fill="#B98A4E" opacity=".85">
+      <rect x="396" y="102" width="30" height="48" rx="4"/>
+      <rect x="436" y="94" width="38" height="56" rx="4"/>
+    </g>
+    <g fill="#5E4A2E">
+      <rect x="110" y="88" width="34" height="8" rx="3"/>
+      <rect x="296" y="86" width="36" height="8" rx="3"/>
+      <rect x="436" y="86" width="38" height="8" rx="3"/>
+    </g>
+  </g>
+  <!-- middle shelf: bowls, bottles, crock -->
+  <g>
+    <path d="M104 256q34-26 68 0z" fill="#F4EADA" opacity=".85"/>
+    <rect x="200" y="196" width="18" height="60" rx="3" fill="#3F362A"/>
+    <rect x="226" y="206" width="18" height="50" rx="3" fill="#3F362A" opacity=".8"/>
+    <rect x="282" y="212" width="52" height="44" rx="4" fill="#D8A45F"/>
+    <ellipse cx="308" cy="212" rx="26" ry="6" fill="#8A6130"/>
+    <path d="M368 256q28-20 56 0z" fill="#B98A4E"/>
+    <rect x="452" y="200" width="30" height="56" rx="4" fill="#F4EADA" opacity=".8"/>
+  </g>
+  <!-- bench + appliance garage under -->
+  <rect x="72" y="322" width="476" height="18" fill="url(#pStone)"/>
+  <g>
+    <rect x="84" y="340" width="452" height="168" fill="url(#pGrain)"/>
+    <rect x="84" y="340" width="452" height="168" fill="none" stroke="#5E3F17" stroke-width="3"/>
+    <g stroke="#5E3F17" stroke-width="2.5">
+      <line x1="234" y1="340" x2="234" y2="508"/>
+      <line x1="386" y1="340" x2="386" y2="508"/>
+      <line x1="84" y1="424" x2="234" y2="424"/>
+    </g>
+    <g fill="#1F1D1A">
+      <rect x="138" y="376" width="42" height="6" rx="3"/>
+      <rect x="138" y="460" width="42" height="6" rx="3"/>
+      <rect x="288" y="418" width="44" height="6" rx="3"/>
+      <rect x="440" y="418" width="44" height="6" rx="3"/>
+    </g>
+  </g>
+  <!-- kettle on bench -->
+  <path d="M300 296q0-14 16-14t16 14l-3 26h-26z" fill="#3F362A"/>
+  <path d="M332 300q12 2 10 14" fill="none" stroke="#3F362A" stroke-width="4"/>
+  <!-- sliding door, part open, vertical grain -->
+  <g>
+    <rect x="588" y="48" width="152" height="512" fill="url(#pGrainV)"/>
+    <rect x="588" y="48" width="152" height="512" fill="none" stroke="#5E3F17" stroke-width="3"/>
+    <rect x="604" y="270" width="7" height="70" rx="3.5" fill="#1F1D1A"/>
+    <!-- track -->
+    <rect x="540" y="36" width="220" height="8" rx="4" fill="#3B3226"/>
+    <circle cx="612" cy="52" r="7" fill="#D8A45F"/>
+    <circle cx="716" cy="52" r="7" fill="#D8A45F"/>
+  </g>
+  <!-- floor -->
+  <rect x="0" y="560" width="800" height="40" fill="#0F0C08"/>
+  <line x1="0" y1="560" x2="800" y2="560" stroke="#3B3226" stroke-width="2"/>
+</svg>

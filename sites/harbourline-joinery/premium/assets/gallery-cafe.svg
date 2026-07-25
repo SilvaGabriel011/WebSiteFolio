@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A3A5C"/>
+      <stop offset="1" stop-color="#0E2336"/>
+    </linearGradient>
+    <linearGradient id="ctop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9A03F"/>
+      <stop offset="1" stop-color="#9A742A"/>
+    </linearGradient>
+    <pattern id="cflute" width="26" height="120" patternUnits="userSpaceOnUse">
+      <rect width="26" height="120" fill="#A87F2E"/>
+      <path d="M13 0v120" stroke="#7E5D1E" stroke-width="7"/>
+      <path d="M4 0v120" stroke="#C39A3B" stroke-width="3" opacity="0.7"/>
+    </pattern>
+    <pattern id="cgrain" width="46" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q12 2 23 5 T46 5" fill="none" stroke="#6E5017" stroke-width="0.9" opacity="0.45"/>
+      <path d="M0 14 Q12 17 23 14 T46 14" fill="none" stroke="#E4C464" stroke-width="0.7" opacity="0.28"/>
+    </pattern>
+  </defs>
+
+  <rect width="720" height="540" fill="url(#cbg)"/>
+
+  <!-- pendants -->
+  <g>
+    <path d="M180 0v96M360 0v76M540 0v96" stroke="#C9A227" stroke-width="2"/>
+    <path d="M158 96h44l-8 26h-28zM338 76h44l-8 26h-28zM518 96h44l-8 26h-28z" fill="#16324F" stroke="#C9A227" stroke-width="2"/>
+    <circle cx="180" cy="130" r="6" fill="#E4C464"/>
+    <circle cx="360" cy="110" r="6" fill="#E4C464"/>
+    <circle cx="540" cy="130" r="6" fill="#E4C464"/>
+    <circle cx="180" cy="130" r="16" fill="#E7C86A" opacity="0.18"/>
+    <circle cx="360" cy="110" r="16" fill="#E7C86A" opacity="0.18"/>
+    <circle cx="540" cy="130" r="16" fill="#E7C86A" opacity="0.18"/>
+  </g>
+
+  <!-- back shelves -->
+  <g>
+    <path d="M92 190h250M92 250h250" stroke="#C9A227" stroke-width="4"/>
+    <path d="M104 190v-26h16v26M132 190v-20h14v20M158 190v-30h18v30M188 190v-22h14v22M214 190v-26h16v26M244 190v-18h14v18M270 190v-28h16v28M300 190v-22h14v22" fill="#F4EFE4" opacity="0.85" stroke="none"/>
+    <path d="M110 250v-16a10 10 0 0 1 20 0v16M146 250v-16a10 10 0 0 1 20 0v16M182 250v-16a10 10 0 0 1 20 0v16M218 250v-16a10 10 0 0 1 20 0v16M254 250v-16a10 10 0 0 1 20 0v16" fill="none" stroke="#E4C464" stroke-width="2.4"/>
+  </g>
+
+  <!-- machine hint -->
+  <g>
+    <rect x="452" y="196" width="160" height="76" rx="6" fill="#16324F" stroke="#F4EFE4" stroke-width="2.4"/>
+    <rect x="468" y="212" width="34" height="26" rx="3" fill="#C9A227"/>
+    <circle cx="586" cy="224" r="9" fill="none" stroke="#E4C464" stroke-width="2.4"/>
+    <path d="M520 272v14M556 272v14" stroke="#F4EFE4" stroke-width="3"/>
+  </g>
+
+  <!-- counter -->
+  <g>
+    <rect x="60" y="286" width="600" height="22" fill="url(#ctop)"/>
+    <rect x="60" y="286" width="600" height="22" fill="url(#cgrain)"/>
+    <rect x="60" y="286" width="600" height="22" fill="none" stroke="#5C4413" stroke-width="2"/>
+    <rect x="76" y="308" width="568" height="150" fill="url(#cflute)"/>
+    <rect x="76" y="308" width="568" height="150" fill="none" stroke="#5C4413" stroke-width="2.4"/>
+    <rect x="60" y="458" width="600" height="12" fill="#0A1B2C"/>
+  </g>
+
+  <!-- stools -->
+  <g stroke="#C9A227" stroke-width="4" fill="none">
+    <path d="M170 500v-14M214 500v-14M160 486h64M192 486v-12"/>
+    <path d="M506 500v-14M550 500v-14M496 486h64M528 486v-12"/>
+  </g>
+  <path d="M156 468h72a8 8 0 0 0 8-8v-0h-88v0a8 8 0 0 0 8 8zM492 468h72a8 8 0 0 0 8-8v-0h-88v0a8 8 0 0 0 8 8z" fill="#E4C464"/>
+
+  <!-- floor line -->
+  <path d="M0 500h720" stroke="#22415F" stroke-width="2"/>
+</svg>

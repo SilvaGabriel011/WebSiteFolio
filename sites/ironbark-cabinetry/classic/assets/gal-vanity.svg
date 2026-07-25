@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a floating timber bathroom vanity with a round mirror">
+  <defs>
+    <linearGradient id="tv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#CB9E66"/>
+      <stop offset="1" stop-color="#A67C42"/>
+    </linearGradient>
+    <pattern id="gv" width="180" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q45 2 90 5 T180 5" fill="none" stroke="#6E4E22" stroke-opacity=".22" stroke-width="1.1"/>
+      <path d="M0 13 Q45 9 90 13 T180 13" fill="none" stroke="#6E4E22" stroke-opacity=".14" stroke-width="1"/>
+      <path d="M0 20 Q45 17 90 20 T180 20" fill="none" stroke="#6E4E22" stroke-opacity=".18" stroke-width="1"/>
+    </pattern>
+    <pattern id="tile" width="72" height="72" patternUnits="userSpaceOnUse">
+      <rect width="72" height="72" fill="#EFE8DA"/>
+      <path d="M0 0 H72 V72 H0 Z" fill="none" stroke="#D8CDB6" stroke-width="1.6"/>
+      <path d="M36 0 V72 M0 36 H72" stroke="#E2D8C3" stroke-width="1.2"/>
+    </pattern>
+    <radialGradient id="mirror" cx=".38" cy=".32" r=".9">
+      <stop offset="0" stop-color="#F6F0E3"/>
+      <stop offset=".6" stop-color="#E4DAC5"/>
+      <stop offset="1" stop-color="#D3C6A9"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#tile)"/>
+  <rect x="0" y="548" width="800" height="52" fill="#CBBD9F"/>
+  <rect x="0" y="544" width="800" height="4" fill="#B4A582"/>
+
+  <!-- mirror -->
+  <circle cx="400" cy="180" r="118" fill="url(#mirror)"/>
+  <circle cx="400" cy="180" r="118" fill="none" stroke="#241F19" stroke-width="7"/>
+  <path d="M330 130 a92 92 0 0 1 60 -38" fill="none" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- wall sconces -->
+  <g fill="#241F19">
+    <rect x="212" y="140" width="10" height="80" rx="5"/>
+    <rect x="578" y="140" width="10" height="80" rx="5"/>
+  </g>
+  <circle cx="217" cy="132" r="7" fill="#E9C98F"/>
+  <circle cx="583" cy="132" r="7" fill="#E9C98F"/>
+
+  <!-- floating vanity -->
+  <g>
+    <rect x="170" y="352" width="460" height="16" fill="#241F19"/>
+    <rect x="176" y="368" width="448" height="110" fill="url(#tv)"/>
+    <rect x="176" y="368" width="448" height="110" fill="url(#gv)"/>
+    <!-- drawer split -->
+    <line x1="400" y1="374" x2="400" y2="472" stroke="#5F3F17" stroke-opacity=".5" stroke-width="2.5"/>
+    <line x1="182" y1="422" x2="618" y2="422" stroke="#5F3F17" stroke-opacity=".5" stroke-width="2.5"/>
+    <!-- finger pull shadows -->
+    <rect x="262" y="376" width="80" height="5" rx="2.5" fill="#241F19"/>
+    <rect x="458" y="376" width="80" height="5" rx="2.5" fill="#241F19"/>
+    <!-- under-vanity glow -->
+    <rect x="190" y="486" width="420" height="6" rx="3" fill="#E9C98F" opacity=".8"/>
+  </g>
+
+  <!-- basin & tapware -->
+  <g>
+    <ellipse cx="300" cy="346" rx="58" ry="14" fill="#F6F0E3" stroke="#C9BC9E" stroke-width="2"/>
+    <ellipse cx="500" cy="346" rx="58" ry="14" fill="#F6F0E3" stroke="#C9BC9E" stroke-width="2"/>
+    <g stroke="#241F19" stroke-width="6" fill="none" stroke-linecap="round">
+      <path d="M300 300 v22 M282 300 h36"/>
+      <path d="M500 300 v22 M482 300 h36"/>
+    </g>
+  </g>
+
+  <!-- towel rail + towel -->
+  <line x1="655" y1="392" x2="740" y2="392" stroke="#241F19" stroke-width="5" stroke-linecap="round"/>
+  <rect x="676" y="392" width="44" height="96" rx="4" fill="#B98A4E"/>
+  <rect x="676" y="424" width="44" height="5" fill="#8F6531" opacity=".6"/>
+
+  <!-- plant -->
+  <g>
+    <rect x="86" y="448" width="52" height="44" rx="6" fill="#40342A"/>
+    <g stroke="#6E4E22" stroke-width="5" fill="none" stroke-linecap="round">
+      <path d="M112 448 q-2 -38 -26 -52"/>
+      <path d="M112 448 q4 -34 24 -46"/>
+      <path d="M112 448 q-14 -26 -2 -58"/>
+    </g>
+  </g>
+
+  <ellipse cx="400" cy="560" rx="280" ry="10" fill="#241F19" opacity=".08"/>
+</svg>

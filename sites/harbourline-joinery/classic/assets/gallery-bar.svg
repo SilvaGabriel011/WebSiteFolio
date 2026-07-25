@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stylised solid timber bar counter with stools, bottle shelf and hanging glasses">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1C3C5F"/><stop offset="1" stop-color="#0F2438"/>
+    </linearGradient>
+    <linearGradient id="oak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7C96C"/><stop offset="1" stop-color="#A8861E"/>
+    </linearGradient>
+    <pattern id="grain" width="140" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 7q35-7 70 0t70 0" fill="none" stroke="#7A620E" stroke-opacity=".4" stroke-width="1.3"/>
+    </pattern>
+    <pattern id="slats" width="30" height="40" patternUnits="userSpaceOnUse">
+      <rect width="30" height="40" fill="#16324F"/>
+      <rect x="5" width="16" height="40" rx="3" fill="#C9A227" fill-opacity=".8"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#C9A227" stroke-opacity=".3" stroke-width="1.5"/>
+
+  <!-- bottle shelf -->
+  <rect x="90" y="150" width="620" height="10" rx="3" fill="url(#oak)"/>
+  <g fill="#F4EFE4" fill-opacity=".8">
+    <path d="M130 96c0-8 6-8 6-16v-14h12v14c0 8 6 8 6 16v54h-24z"/>
+    <path d="M186 104c0-8 5-8 5-14v-20h12v20c0 6 5 6 5 14v46h-22z"/>
+    <rect x="240" y="86" width="18" height="64" rx="5"/>
+  </g>
+  <g fill="#C9A227" fill-opacity=".9">
+    <path d="M550 92c0-8 6-8 6-16v-10h12v10c0 8 6 8 6 16v58h-24z"/>
+    <rect x="606" y="94" width="18" height="56" rx="5"/>
+    <path d="M652 100c0-6 5-6 5-12v-16h12v16c0 6 5 6 5 12v50h-22z"/>
+  </g>
+
+  <!-- hanging glasses -->
+  <line x1="330" y1="20" x2="330" y2="70" stroke="#F4EFE4" stroke-opacity=".6" stroke-width="3"/>
+  <line x1="400" y1="20" x2="400" y2="70" stroke="#F4EFE4" stroke-opacity=".6" stroke-width="3"/>
+  <line x1="470" y1="20" x2="470" y2="70" stroke="#F4EFE4" stroke-opacity=".6" stroke-width="3"/>
+  <g fill="none" stroke="#F4EFE4" stroke-opacity=".85" stroke-width="4">
+    <path d="M330 70v14m-20 26 20-26 20 26a24 24 0 0 1-40 0z"/>
+    <path d="M400 70v14m-20 26 20-26 20 26a24 24 0 0 1-40 0z"/>
+    <path d="M470 70v14m-20 26 20-26 20 26a24 24 0 0 1-40 0z"/>
+  </g>
+
+  <!-- bar counter -->
+  <rect x="70" y="280" width="560" height="30" rx="5" fill="url(#oak)"/>
+  <rect x="70" y="280" width="560" height="30" rx="5" fill="url(#grain)"/>
+  <rect x="86" y="310" width="528" height="230" fill="url(#slats)"/>
+  <rect x="86" y="310" width="528" height="230" fill="none" stroke="#F4EFE4" stroke-opacity=".4" stroke-width="3"/>
+  <!-- foot rail -->
+  <line x1="86" y1="498" x2="614" y2="498" stroke="#E7C96C" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- stools -->
+  <g stroke="#F4EFE4" stroke-opacity=".85" stroke-width="6" stroke-linecap="round">
+    <line x1="682" y1="392" x2="670" y2="540"/>
+    <line x1="738" y1="392" x2="750" y2="540"/>
+    <line x1="686" y1="470" x2="734" y2="470"/>
+  </g>
+  <rect x="664" y="374" width="92" height="18" rx="8" fill="url(#oak)"/>
+
+  <!-- beer glass on bar -->
+  <g>
+    <path d="M180 236h34v40h-34z" fill="#E7C96C" fill-opacity=".9"/>
+    <rect x="178" y="228" width="38" height="12" rx="5" fill="#F4EFE4"/>
+  </g>
+  <line x1="40" y1="540" x2="760" y2="540" stroke="#F4EFE4" stroke-opacity=".3" stroke-width="3"/>
+</svg>

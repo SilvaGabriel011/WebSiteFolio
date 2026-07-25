@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Mitred corner joint mark">
+  <path d="M4 44V16L16 4h28v10H20.5L14 20.5V44z" fill="#16324F"/>
+  <path d="M16 4 4 16" stroke="#C9A227" stroke-width="2.5"/>
+  <path d="M9 44V22.5L22.5 9H44" fill="none" stroke="#C9A227" stroke-width="2.5"/>
+</svg>

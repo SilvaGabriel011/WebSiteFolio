@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="vt vd">
+  <title id="vt">Floating bathroom vanity</title>
+  <desc id="vd">Abstract bathroom: wall-hung timber vanity with stone top, round mirror and a soft light strip beneath.</desc>
+  <defs>
+    <linearGradient id="vBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#201B14"/>
+      <stop offset="1" stop-color="#131009"/>
+    </linearGradient>
+    <linearGradient id="vLed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0C98A" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#F0C98A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7EFDF"/>
+      <stop offset="1" stop-color="#CDBFA6"/>
+    </linearGradient>
+    <pattern id="vTile" width="66" height="66" patternUnits="userSpaceOnUse">
+      <path d="M66 0H0v66" fill="none" stroke="#332B1F" stroke-width="2"/>
+    </pattern>
+    <pattern id="vGrain" width="140" height="26" patternUnits="userSpaceOnUse">
+      <rect width="140" height="26" fill="#B98A4E"/>
+      <path d="M0 6q35-5 70 0t70 0" fill="none" stroke="#8A6130" stroke-width="1.3" opacity=".55"/>
+      <path d="M0 13q28 6 66 1t74 2" fill="none" stroke="#8A6130" stroke-width="1" opacity=".4"/>
+      <path d="M0 20q40-4 80 0t60-1" fill="none" stroke="#74501F" stroke-width="1" opacity=".35"/>
+      <ellipse cx="44" cy="10" rx="7" ry="2.6" fill="none" stroke="#74501F" stroke-width="1" opacity=".4"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#vBg)"/>
+  <rect width="800" height="600" fill="url(#vTile)"/>
+  <!-- mirror -->
+  <circle cx="400" cy="180" r="108" fill="#191510" stroke="#D8A45F" stroke-width="5"/>
+  <path d="M330 230q60-116 148-96" fill="none" stroke="#3F362A" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  <!-- wall sconces -->
+  <g fill="#F0C98A">
+    <circle cx="216" cy="150" r="9"/>
+    <circle cx="584" cy="150" r="9"/>
+  </g>
+  <g stroke="#3A3126" stroke-width="3">
+    <line x1="216" y1="112" x2="216" y2="140"/>
+    <line x1="584" y1="112" x2="584" y2="140"/>
+  </g>
+  <!-- vanity: stone top, grain drawers, floating -->
+  <g>
+    <rect x="170" y="348" width="460" height="18" fill="url(#vStone)"/>
+    <rect x="170" y="366" width="460" height="128" fill="url(#vGrain)"/>
+    <rect x="170" y="366" width="460" height="128" fill="none" stroke="#5E3F17" stroke-width="3"/>
+    <line x1="170" y1="430" x2="630" y2="430" stroke="#5E3F17" stroke-width="2.5"/>
+    <g fill="#1F1D1A">
+      <rect x="376" y="392" width="48" height="6" rx="3"/>
+      <rect x="376" y="456" width="48" height="6" rx="3"/>
+    </g>
+    <!-- basin + tap -->
+    <path d="M340 348q60 0 120 0-6-26-60-26t-60 26z" fill="#F4EADA"/>
+    <g stroke="#D8A45F" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M400 322v-34h34"/>
+    </g>
+    <!-- light strip under vanity -->
+    <rect x="170" y="500" width="460" height="52" fill="url(#vLed)"/>
+  </g>
+  <!-- towel rail -->
+  <g stroke="#D8A45F" stroke-width="4" stroke-linecap="round">
+    <line x1="672" y1="330" x2="672" y2="470"/>
+  </g>
+  <path d="M660 350h44v96q-22 10-44 0z" fill="#F4EADA" opacity=".85"/>
+  <!-- plant -->
+  <g stroke="#8A6130" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M104 470q-6-52 20-84M104 470q2-44-18-64M104 470q10-36 34-44"/>
+  </g>
+  <path d="M78 470h52l-8 56h-36z" fill="#B98A4E"/>
+  <!-- floor -->
+  <rect x="0" y="552" width="800" height="48" fill="#0F0C08"/>
+  <line x1="0" y1="552" x2="800" y2="552" stroke="#3B3226" stroke-width="2"/>
+</svg>

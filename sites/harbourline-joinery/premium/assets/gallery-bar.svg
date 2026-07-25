@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540">
+  <defs>
+    <linearGradient id="bbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A3A5C"/>
+      <stop offset="1" stop-color="#0E2336"/>
+    </linearGradient>
+    <linearGradient id="btop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CDA344"/>
+      <stop offset="1" stop-color="#9A742A"/>
+    </linearGradient>
+    <pattern id="bgrain" width="56" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q14 1 28 5 T56 5" fill="none" stroke="#6E5017" stroke-width="1" opacity="0.5"/>
+      <path d="M0 13 Q14 17 28 13 T56 13" fill="none" stroke="#6E5017" stroke-width="0.8" opacity="0.34"/>
+      <path d="M0 20 Q14 17 28 20 T56 20" fill="none" stroke="#E4C464" stroke-width="0.7" opacity="0.3"/>
+    </pattern>
+    <pattern id="bpanel" width="72" height="130" patternUnits="userSpaceOnUse">
+      <rect width="72" height="130" fill="#A87F2E"/>
+      <rect x="10" y="12" width="52" height="106" fill="#8C6824" stroke="#5C4413" stroke-width="1.4"/>
+      <rect x="18" y="20" width="36" height="90" fill="none" stroke="#E4C464" stroke-width="0.9" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="720" height="540" fill="url(#bbg)"/>
+
+  <!-- glass rack -->
+  <path d="M120 66h480" stroke="#C9A227" stroke-width="4"/>
+  <g stroke="#F4EFE4" stroke-width="2.2" fill="none" opacity="0.9">
+    <path d="M170 66v14l-9 22h18l-9-22M250 66v14l-9 22h18l-9-22M330 66v14l-9 22h18l-9-22M410 66v14l-9 22h18l-9-22M490 66v14l-9 22h18l-9-22M556 66v14l-9 22h18l-9-22"/>
+  </g>
+
+  <!-- back shelf with bottles -->
+  <path d="M96 216h528" stroke="#C9A227" stroke-width="4"/>
+  <g fill="#F4EFE4" opacity="0.85">
+    <path d="M132 216v-52q0-6 5-8v-10h8v10q5 2 5 8v52z"/>
+    <path d="M196 216v-40q0-6 5-8v-8h8v8q5 2 5 8v40z"/>
+    <path d="M262 216v-58q0-6 5-8v-10h8v10q5 2 5 8v58z"/>
+    <path d="M330 216v-44q0-6 5-8v-8h8v8q5 2 5 8v44z"/>
+    <path d="M396 216v-54q0-6 5-8v-10h8v10q5 2 5 8v54z"/>
+    <path d="M462 216v-38q0-6 5-8v-8h8v8q5 2 5 8v38z"/>
+    <path d="M528 216v-50q0-6 5-8v-10h8v10q5 2 5 8v50z"/>
+  </g>
+  <g fill="#C9A227">
+    <rect x="134" y="186" width="14" height="8"/>
+    <rect x="264" y="180" width="14" height="8"/>
+    <rect x="398" y="184" width="14" height="8"/>
+    <rect x="530" y="188" width="14" height="8"/>
+  </g>
+
+  <!-- bar counter -->
+  <g>
+    <rect x="48" y="258" width="624" height="26" rx="4" fill="url(#btop)"/>
+    <rect x="48" y="258" width="624" height="26" rx="4" fill="url(#bgrain)"/>
+    <rect x="48" y="258" width="624" height="26" rx="4" fill="none" stroke="#5C4413" stroke-width="2.4"/>
+    <rect x="66" y="284" width="588" height="148" fill="url(#bpanel)"/>
+    <rect x="66" y="284" width="588" height="148" fill="none" stroke="#5C4413" stroke-width="2.4"/>
+    <!-- foot rail -->
+    <path d="M60 452h600" stroke="#E4C464" stroke-width="6" stroke-linecap="round"/>
+    <path d="M96 432v20M624 432v20" stroke="#E4C464" stroke-width="4"/>
+  </g>
+
+  <!-- stools -->
+  <g>
+    <path d="M188 512v-32M244 512v-32M178 496h76M216 480v16" stroke="#C9A227" stroke-width="4" fill="none"/>
+    <rect x="180" y="466" width="72" height="14" rx="7" fill="#E4C464"/>
+    <path d="M476 512v-32M532 512v-32M466 496h76M504 480v16" stroke="#C9A227" stroke-width="4" fill="none"/>
+    <rect x="468" y="466" width="72" height="14" rx="7" fill="#E4C464"/>
+  </g>
+
+  <path d="M0 512h720" stroke="#22415F" stroke-width="2"/>
+</svg>

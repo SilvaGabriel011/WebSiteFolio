@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 84">
+  <defs>
+    <linearGradient id="plbody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C39A3B"/>
+      <stop offset="1" stop-color="#96702A"/>
+    </linearGradient>
+  </defs>
+  <!-- flanking hairlines -->
+  <path d="M0 52h72M188 52h72" stroke="#C9A227" stroke-width="1.4" opacity="0.8"/>
+  <circle cx="79" cy="52" r="2.2" fill="#C9A227"/>
+  <circle cx="181" cy="52" r="2.2" fill="#C9A227"/>
+  <!-- shaving curl -->
+  <path d="M94 34q-3-16 10-20q12-3 15 7q2 8-6 9q-6 1-7-4" fill="none" stroke="#E4C464" stroke-width="2" stroke-linecap="round"/>
+  <!-- plane body -->
+  <path d="M92 52q0-8 8-8h60q8 0 8 8v6q0 4-4 4h-16l-8 6h-40l-6-6q-2-2-2-6z" fill="url(#plbody)" stroke="#5C4413" stroke-width="1.6"/>
+  <!-- tote -->
+  <path d="M148 44v-12q0-6 6-6t6 6v12" fill="none" stroke="#5C4413" stroke-width="4" stroke-linecap="round"/>
+  <!-- knob -->
+  <circle cx="106" cy="38" r="6" fill="#C9A227" stroke="#5C4413" stroke-width="1.4"/>
+  <!-- iron -->
+  <path d="M132 44l10-14" stroke="#F4EFE4" stroke-width="3.4" stroke-linecap="round"/>
+</svg>

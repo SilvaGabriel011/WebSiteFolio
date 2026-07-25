@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="wt wd">
+  <title id="wt">Walk-in wardrobe fit-out</title>
+  <desc id="wd">Abstract walk-in wardrobe: timber towers, hanging rail with garment silhouettes and a lit shelf run.</desc>
+  <defs>
+    <linearGradient id="wBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#221C13"/>
+      <stop offset="1" stop-color="#14110C"/>
+    </linearGradient>
+    <linearGradient id="wLed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0C98A" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#F0C98A" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="wGrain" width="26" height="140" patternUnits="userSpaceOnUse">
+      <rect width="26" height="140" fill="#B98A4E"/>
+      <path d="M6 0q-5 35 0 70t0 70" fill="none" stroke="#8A6130" stroke-width="1.3" opacity=".5"/>
+      <path d="M15 0q6 28 1 66t2 74" fill="none" stroke="#8A6130" stroke-width="1" opacity=".4"/>
+      <path d="M22 0q-4 40 0 80t-1 60" fill="none" stroke="#74501F" stroke-width="1" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#wBg)"/>
+  <!-- left tower: drawers -->
+  <g>
+    <rect x="56" y="72" width="180" height="472" fill="url(#wGrain)"/>
+    <rect x="56" y="72" width="180" height="472" fill="none" stroke="#5E3F17" stroke-width="3"/>
+    <g stroke="#5E3F17" stroke-width="2.5">
+      <line x1="56" y1="190" x2="236" y2="190"/>
+      <line x1="56" y1="308" x2="236" y2="308"/>
+      <line x1="56" y1="426" x2="236" y2="426"/>
+    </g>
+    <g fill="#1F1D1A">
+      <rect x="122" y="124" width="48" height="6" rx="3"/>
+      <rect x="122" y="242" width="48" height="6" rx="3"/>
+      <rect x="122" y="360" width="48" height="6" rx="3"/>
+      <rect x="122" y="478" width="48" height="6" rx="3"/>
+    </g>
+  </g>
+  <!-- centre bay: rail + garments -->
+  <g>
+    <rect x="252" y="72" width="296" height="472" fill="#191510" stroke="#3B3226" stroke-width="2.5"/>
+    <rect x="252" y="112" width="296" height="10" fill="url(#wLed)"/>
+    <line x1="268" y1="150" x2="532" y2="150" stroke="#D8A45F" stroke-width="5" stroke-linecap="round"/>
+    <!-- hangers + garments -->
+    <g stroke="#D8A45F" stroke-width="2.5" fill="none">
+      <path d="M300 150v14M368 150v14M436 150v14M504 150v14"/>
+    </g>
+    <path d="M300 164l-34 30v130q34 12 68 0V194z" fill="#B98A4E" opacity=".92"/>
+    <path d="M368 164l-30 26v170q30 10 60 0V190z" fill="#F4EADA" opacity=".85"/>
+    <path d="M436 164l-32 28v112q32 12 64 0V192z" fill="#8A6130"/>
+    <path d="M504 164l-28 24v150q28 10 56 0V188z" fill="#3F362A"/>
+    <!-- shoe shelf -->
+    <line x1="252" y1="470" x2="548" y2="470" stroke="#3B3226" stroke-width="3"/>
+    <g fill="#B98A4E">
+      <path d="M280 500q22-10 40 0l4 10h-48z"/>
+      <path d="M350 500q22-10 40 0l4 10h-48z" opacity=".7"/>
+      <path d="M420 500q22-10 40 0l4 10h-48z" opacity=".5"/>
+    </g>
+  </g>
+  <!-- right tower: shelves -->
+  <g>
+    <rect x="564" y="72" width="180" height="472" fill="#191510" stroke="#3B3226" stroke-width="2.5"/>
+    <g stroke="#3B3226" stroke-width="3">
+      <line x1="564" y1="166" x2="744" y2="166"/>
+      <line x1="564" y1="260" x2="744" y2="260"/>
+      <line x1="564" y1="354" x2="744" y2="354"/>
+      <line x1="564" y1="448" x2="744" y2="448"/>
+    </g>
+    <g fill="#B98A4E">
+      <rect x="584" y="120" width="60" height="34" rx="2"/>
+      <rect x="654" y="132" width="44" height="22" rx="2" opacity=".75"/>
+      <rect x="584" y="214" width="88" height="34" rx="2" opacity=".6"/>
+      <rect x="584" y="308" width="52" height="34" rx="2" opacity=".85"/>
+      <rect x="648" y="316" width="52" height="26" rx="2" opacity=".5"/>
+      <rect x="584" y="402" width="72" height="34" rx="2" opacity=".7"/>
+    </g>
+    <ellipse cx="712" cy="424" rx="16" ry="12" fill="#F4EADA" opacity=".8"/>
+  </g>
+  <!-- floor -->
+  <rect x="0" y="544" width="800" height="56" fill="#0F0C08"/>
+  <line x1="0" y1="544" x2="800" y2="544" stroke="#3B3226" stroke-width="2"/>
+</svg>
