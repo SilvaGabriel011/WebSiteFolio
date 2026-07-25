@@ -38,12 +38,24 @@ The root page is a presentation hub linking to:
 
 One single-page app, themed per business. Modules: **Dashboard · Schedule ·
 Book online · Sales (quotes → jobs → invoices) · Purchasing · Inventory ·
-Maintenance**.
+Maintenance · Money · Settings**.
+
+The modules are wired to each other, so a pitch can follow one thread all the
+way through: a customer books online → the job lands on the run sheet → it gets
+started and finished → it becomes an invoice → the invoice gets paid. Same on
+the supply side: low stock → draft purchase order → receive it → stock levels
+and movements update.
 
 - URL scheme: `app/index.html?business=<slug>#/<route>` — e.g.
   `?business=proflow-plumbing#/book` is the customer-facing booking flow the
   marketing sites link to.
 - The topbar has a business switcher to flip trades live during a pitch.
+- Quick actions ("New quote", "Book maintenance") are pinned in the sidebar on
+  desktop, sit behind a floating + button on mobile, and answer to the `N` and
+  `M` keys. Both open a drawer over the current screen — no navigation.
+- Nav labels adapt per trade: `terms.jobNoun` turns "job" into "project", and
+  `terms.assetLabel` renames Maintenance to "Service contracts", "Warranty &
+  care", and so on.
 - Demo state lives in memory, mirrored to `localStorage` (key `demo:<slug>`).
   Saved state **expires at the start of each new day** so the seeded relative
   dates always look current. "Reset demo data" in the sidebar restores the seed.
@@ -58,8 +70,11 @@ Maintenance**.
 2. **Hash routing only** in the app (`#/dashboard`), never `history.pushState`.
 3. Script load order in `app/index.html` is fixed:
    `core/format.js → core/store.js → data/businesses.js → data/data-*.js →
-   core/ui.js → modules/*.js → core/router.js`. Modules self-register into
-   `DEMO.routes` and `DEMO.nav`, so order among modules doesn't matter.
+   core/ics.js → core/ui.js → core/quick-actions.js → modules/*.js →
+   core/router.js`. Modules self-register into `DEMO.routes` and `DEMO.nav`,
+   so order among modules doesn't matter. A module or data file that fails to
+   load must never break boot — you just get fewer nav entries, so check the
+   console when a section goes missing rather than assuming a crash.
 4. **The four sites share nothing** — each `sites/<slug>/` folder is fully
    standalone (own CSS reset, own JS, own SVG assets) so a folder can be zipped
    and handed to a client, and so the sites stay visually distinct.
@@ -81,6 +96,9 @@ Maintenance**.
    `app/css/themes.css`, a `DEMO.registerBusiness(...)` entry in
    `app/js/data/businesses.js`, and a `data-<slug>.js` seed file (copy
    `data-proflow.js` for the shapes), then include it in `app/index.html`.
+   Check the `<script src>` matches the filename exactly — boot is deliberately
+   fault-tolerant, so a typo there doesn't throw, it just leaves that business
+   with an empty dataset.
 
 ## Deploying
 
