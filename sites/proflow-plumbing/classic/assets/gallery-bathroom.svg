@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <pattern id="studs" width="52" height="20" patternUnits="userSpaceOnUse">
+      <rect width="52" height="20" fill="#F4EFE6"/>
+      <rect x="0" width="9" height="20" fill="#E4DBC9"/>
+    </pattern>
+    <pattern id="btile" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#E3EDF5"/>
+      <path d="M0 .5H24M.5 0V24" stroke="#C3D6E6" stroke-width="1.4"/>
+    </pattern>
+    <clipPath id="bframe"><rect x="8" y="8" width="424" height="304" rx="10"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="#FBF8F2"/>
+  <g clip-path="url(#bframe)">
+    <rect x="8" y="8" width="424" height="230" fill="url(#studs)"/>
+    <rect x="8" y="8" width="150" height="230" fill="url(#btile)"/>
+    <rect x="155" y="8" width="6" height="230" fill="#0B4F8A" opacity=".25"/>
+    <rect x="8" y="238" width="424" height="74" fill="#DCE4EA"/>
+    <rect x="8" y="234" width="424" height="6" fill="#0B4F8A" opacity=".3"/>
+
+    <!-- copper drops (rough-in pipes) -->
+    <g stroke="#F26722" stroke-width="9" fill="none" stroke-linecap="round">
+      <path d="M210 8v170"/>
+      <path d="M262 8v130"/>
+      <path d="M340 8v170"/>
+    </g>
+    <g fill="#C24E0F">
+      <circle cx="210" cy="183" r="11"/>
+      <circle cx="262" cy="143" r="11"/>
+      <circle cx="340" cy="183" r="11"/>
+    </g>
+    <g fill="#FBF8F2">
+      <circle cx="210" cy="183" r="4.5"/>
+      <circle cx="262" cy="143" r="4.5"/>
+      <circle cx="340" cy="183" r="4.5"/>
+    </g>
+    <!-- clips -->
+    <g fill="#0B4F8A">
+      <rect x="200" y="60" width="20" height="8" rx="3"/>
+      <rect x="330" y="60" width="20" height="8" rx="3"/>
+      <rect x="252" y="90" width="20" height="8" rx="3"/>
+    </g>
+
+    <!-- shower rose in tiled zone -->
+    <path d="M52 40v26a30 30 0 0 0 30 30" fill="none" stroke="#0B4F8A" stroke-width="8" stroke-linecap="round"/>
+    <path d="M84 82l24 24" stroke="#0B4F8A" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="112" cy="110" r="15" fill="#0B4F8A"/>
+    <g fill="#2B6FAD">
+      <circle cx="100" cy="150" r="4"/>
+      <circle cx="116" cy="158" r="4"/>
+      <circle cx="130" cy="145" r="4"/>
+      <circle cx="108" cy="180" r="3.2"/>
+      <circle cx="126" cy="190" r="3.2"/>
+    </g>
+
+    <!-- bath outline on slab -->
+    <rect x="180" y="248" width="220" height="52" rx="18" fill="none" stroke="#0B4F8A" stroke-width="5"/>
+    <circle cx="220" cy="274" r="7" fill="#F26722"/>
+    <!-- floor waste -->
+    <circle cx="90" cy="276" r="14" fill="none" stroke="#0B4F8A" stroke-width="5"/>
+    <path d="M84 276h12M90 270v12" stroke="#0B4F8A" stroke-width="3"/>
+  </g>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="none" stroke="#0B4F8A" stroke-width="2.5"/>
+</svg>

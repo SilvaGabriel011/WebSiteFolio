@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="nbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050D16"/>
+      <stop offset="1" stop-color="#0A1B2A"/>
+    </linearGradient>
+    <linearGradient id="npipe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16324A"/>
+      <stop offset=".45" stop-color="#2C567A"/>
+      <stop offset="1" stop-color="#10263A"/>
+    </linearGradient>
+    <radialGradient id="torch" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#F58B4F" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#F58B4F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#nbg)"/>
+  <!-- stars -->
+  <circle cx="90" cy="80" r="2.5" fill="#5E86A8"/>
+  <circle cx="180" cy="140" r="2" fill="#3C6C92"/>
+  <circle cx="300" cy="60" r="2.5" fill="#5E86A8"/>
+  <circle cx="430" cy="110" r="2" fill="#3C6C92"/>
+  <circle cx="740" cy="90" r="2.5" fill="#5E86A8"/>
+  <circle cx="660" cy="50" r="2" fill="#3C6C92"/>
+  <!-- moon -->
+  <path d="M640 150a74 74 0 1 1-64-110 60 60 0 1 0 64 110z" fill="#9FC2DC" opacity=".85"/>
+  <!-- torch glow on the work -->
+  <circle cx="330" cy="410" r="240" fill="url(#torch)"/>
+  <!-- burst pipe -->
+  <path d="M-20 430h250" stroke="url(#npipe)" stroke-width="34" stroke-linecap="round"/>
+  <path d="M420 430h400" stroke="url(#npipe)" stroke-width="34" stroke-linecap="round"/>
+  <path d="M230 413l40 10-12 14 34-6-10 13" fill="none" stroke="#5E86A8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M420 447l-40-10 12-14-34 6 10-13" fill="none" stroke="#5E86A8" stroke-width="4" stroke-linejoin="round"/>
+  <!-- escaping water -->
+  <path d="M300 400c-6-22-2-46 12-66M330 396c0-26 10-48 28-64M354 404c8-20 24-34 46-40" fill="none" stroke="#7FA8C9" stroke-width="4" stroke-linecap="round"/>
+  <path d="M298 310c6 8 10 14 10 19a10 10 0 1 1-20 0c0-5 4-11 10-19z" fill="#7FA8C9"/>
+  <path d="M382 300c5 7 9 12 9 16a9 9 0 1 1-18 0c0-4 4-9 9-16z" fill="#9FC2DC"/>
+  <path d="M430 336c4 6 7 10 7 14a7 7 0 1 1-14 0c0-4 3-8 7-14z" fill="#7FA8C9"/>
+  <!-- repair clamp being fitted -->
+  <rect x="272" y="398" width="112" height="64" rx="18" fill="none" stroke="#F26722" stroke-width="6" stroke-dasharray="26 12"/>
+  <rect x="300" y="470" width="56" height="14" rx="7" fill="#F26722"/>
+  <path d="M328 462v8" stroke="#F26722" stroke-width="5" stroke-linecap="round"/>
+  <!-- spanner -->
+  <path d="M520 520l90-52" stroke="#9FC2DC" stroke-width="10" stroke-linecap="round"/>
+  <path d="M628 448a22 22 0 1 1-10 34l-16-8 8-28z" fill="#9FC2DC"/>
+  <circle cx="633" cy="472" r="9" fill="#050D16"/>
+  <!-- isolation valve, closed -->
+  <path d="M700 402l34 17-34 17zM768 402l-34 17 34 17z" fill="#0A1B2A" stroke="#F26722" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="716" y="368" width="36" height="9" rx="4.5" fill="#F26722" transform="rotate(90 734 372)"/>
+  <!-- puddle -->
+  <ellipse cx="330" cy="540" rx="130" ry="16" fill="#10263A"/>
+  <ellipse cx="330" cy="540" rx="86" ry="9" fill="none" stroke="#1C3A52" stroke-width="2"/>
+</svg>

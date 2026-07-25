@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <clipPath id="kframe"><rect x="8" y="8" width="424" height="304" rx="10"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="#0C3E6B"/>
+  <g clip-path="url(#kframe)">
+    <g stroke="#2B6FAD" stroke-width="1.2" opacity=".55">
+      <path d="M8 36H432M8 64H432M8 92H432M8 120H432M8 148H432M8 176H432M8 204H432M8 232H432M8 260H432M8 288H432"/>
+      <path d="M36 8V312M64 8V312M92 8V312M120 8V312M148 8V312M176 8V312M204 8V312M232 8V312M260 8V312M288 8V312M316 8V312M344 8V312M372 8V312M400 8V312"/>
+    </g>
+
+    <!-- main pipe run -->
+    <path d="M8 168H432" stroke="#EAF2F9" stroke-width="10"/>
+    <!-- flanges -->
+    <g fill="#EAF2F9">
+      <rect x="86" y="150" width="10" height="36" rx="3"/>
+      <rect x="176" y="150" width="10" height="36" rx="3"/>
+      <rect x="254" y="150" width="10" height="36" rx="3"/>
+      <rect x="344" y="150" width="10" height="36" rx="3"/>
+    </g>
+    <!-- double check valve symbols -->
+    <g stroke="#EAF2F9" stroke-width="5" fill="none" stroke-linejoin="round">
+      <path d="M112 144l44 24-44 24zM156 144v48"/>
+      <path d="M290 144l44 24-44 24zM334 144v48"/>
+    </g>
+    <!-- test cocks -->
+    <g stroke="#F26722" stroke-width="6" stroke-linecap="round">
+      <path d="M134 140v-24M312 140v-24"/>
+      <path d="M124 112h20M302 112h20"/>
+    </g>
+    <!-- flow arrows -->
+    <g fill="#F26722">
+      <path d="M30 210l34 12-34 12z"/>
+      <path d="M208 210l34 12-34 12z"/>
+      <path d="M382 210l34 12-34 12z"/>
+    </g>
+
+    <!-- gauge test kit -->
+    <g transform="translate(222 84)">
+      <circle r="30" fill="#0C3E6B" stroke="#EAF2F9" stroke-width="5"/>
+      <path d="M-14 -12 L2 2" stroke="#F26722" stroke-width="4.5" stroke-linecap="round"/>
+      <circle r="4.5" fill="#EAF2F9"/>
+      <path d="M0 30v22" stroke="#EAF2F9" stroke-width="5"/>
+    </g>
+
+    <!-- compliance tick stamp -->
+    <g transform="translate(388 62)">
+      <circle r="30" fill="none" stroke="#F26722" stroke-width="5" stroke-dasharray="5 6"/>
+      <path d="M-13 2l9 10 18-22" fill="none" stroke="#F26722" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- corner marks -->
+    <g stroke="#EAF2F9" stroke-width="3" opacity=".7">
+      <path d="M24 262h-2v36M416 262h2v36" fill="none"/>
+      <path d="M24 278h24M392 278h24"/>
+    </g>
+  </g>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="none" stroke="#0B4F8A" stroke-width="2.5"/>
+</svg>

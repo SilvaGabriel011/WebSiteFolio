@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360">
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFF5FA"/>
+      <stop offset="1" stop-color="#D8E6F1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sparkles -->
+  <g fill="#F26722">
+    <path d="M160 12l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+    <path d="M74 34l2.4 6.4 6.4 2.4-6.4 2.4-2.4 6.4-2.4-6.4-6.4-2.4 6.4-2.4z"/>
+    <path d="M246 34l2.4 6.4 6.4 2.4-6.4 2.4-2.4 6.4-2.4-6.4-6.4-2.4 6.4-2.4z"/>
+  </g>
+
+  <!-- shield -->
+  <path d="M160 62c34 18 68 26 104 26v104c0 62-42 104-104 128C98 296 56 254 56 192V88c36 0 70-8 104-26z"
+        fill="url(#shield)" stroke="#0B4F8A" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M160 84c28 14 55 21 84 22v86c0 52-35 88-84 108-49-20-84-56-84-108v-86c29-1 56-8 84-22z"
+        fill="none" stroke="#0B4F8A" stroke-width="2.6" opacity=".5"/>
+
+  <!-- crossed spanners -->
+  <g stroke="#083A63" stroke-width="12" stroke-linecap="round">
+    <path d="M108 250l104-104"/>
+    <path d="M212 250L108 146"/>
+  </g>
+  <g fill="#083A63">
+    <circle cx="100" cy="258" r="17"/>
+    <circle cx="220" cy="258" r="17"/>
+    <circle cx="100" cy="138" r="17"/>
+    <circle cx="220" cy="138" r="17"/>
+  </g>
+  <g fill="url(#shield)">
+    <circle cx="93" cy="265" r="7.5"/>
+    <circle cx="227" cy="265" r="7.5"/>
+    <circle cx="93" cy="131" r="7.5"/>
+    <circle cx="227" cy="131" r="7.5"/>
+  </g>
+
+  <!-- droplet over the cross -->
+  <path d="M160 128c22 27 37 46 37 66a37 37 0 1 1-74 0c0-20 15-39 37-66z"
+        fill="#F26722" stroke="#C24E0F" stroke-width="5"/>
+  <path d="M143 200a17 17 0 0 0 15 18" fill="none" stroke="#FBF8F2" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- ribbon -->
+  <path d="M52 306l30-12v26l-30 12 12-13z" fill="#C24E0F"/>
+  <path d="M268 306l-30-12v26l30 12-12-13z" fill="#C24E0F"/>
+  <path d="M82 294h156v26H82z" fill="#F26722"/>
+  <path d="M82 294l8 13-8 13zM238 294l-8 13 8 13z" fill="#9A3A08"/>
+</svg>

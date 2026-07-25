@@ -1,0 +1,222 @@
+/* =============================================================================
+   themes.css — per-business design tokens for the systems app.
+
+   One light block + one dark override per business, keyed off:
+     <html data-business="<slug>" data-theme="light|dark">
+   (both attributes are set by the boot script in app/index.html).
+
+   FULL variable set (every rule in app.css builds on these and nothing else):
+     --brand        primary brand colour — AA (≥4.5:1) as TEXT on --bg/--surface
+     --brand-soft   soft tint of the brand, for active nav / chip / row washes
+     --on-brand     text colour on a --brand background — AA against --brand
+     --accent       secondary brand colour — AA as text on --bg
+     --bg           page background
+     --surface      cards, panels, table + chrome background
+     --surface-2    subtle contrast surface (hovers, table heads, wells)
+     --text         primary text — AA on all three surfaces
+     --muted        secondary text — AA on --bg and --surface
+     --border       hairlines and control borders
+     --ok / --warn / --danger  status colours — AA as text on --bg/--surface
+     --radius       corner radius flavour for the business
+     --shadow       elevation shadow
+     --font-display headings / display face (system stacks only — no webfonts)
+
+   Brand hues come from app/js/data/businesses.js. Where the raw marketing hue
+   is too light to pass WCAG AA as text (Ironbark tan, Sunline sage, both
+   accents' golds/oranges), the token below keeps the hue but shifts lightness
+   until it passes. Dark blocks re-tune every colour for dark surfaces.
+   ========================================================================== */
+
+/* ---- Fallback (pre-boot flash / no data-business attribute yet):
+        mirrors ProFlow light so the shell never renders unstyled. ---------- */
+:root {
+  --brand: #0B4F8A;
+  --brand-soft: #E1EDF8;
+  --on-brand: #FFFFFF;
+  --accent: #B84906;
+  --bg: #F4F7FA;
+  --surface: #FFFFFF;
+  --surface-2: #EAF0F6;
+  --text: #16212D;
+  --muted: #53667C;
+  --border: #D5DDE6;
+  --ok: #1B7A3D;
+  --warn: #8A5A00;
+  --danger: #C0272D;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(15, 30, 50, 0.08), 0 4px 16px rgba(15, 30, 50, 0.06);
+  --font-display: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: light;
+}
+
+/* =============================================================================
+   ProFlow Plumbing — hard-working blue + safety orange. Rounded, punchy.
+   ========================================================================== */
+[data-business="proflow-plumbing"] {
+  --brand: #0B4F8A;
+  --brand-soft: #E1EDF8;
+  --on-brand: #FFFFFF;
+  --accent: #B84906;
+  --bg: #F4F7FA;
+  --surface: #FFFFFF;
+  --surface-2: #EAF0F6;
+  --text: #16212D;
+  --muted: #53667C;
+  --border: #D5DDE6;
+  --ok: #1B7A3D;
+  --warn: #8A5A00;
+  --danger: #C0272D;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(15, 30, 50, 0.08), 0 4px 16px rgba(15, 30, 50, 0.06);
+  --font-display: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: light;
+}
+
+[data-business="proflow-plumbing"][data-theme="dark"] {
+  --brand: #66ACE5;
+  --brand-soft: #12283C;
+  --on-brand: #06253F;
+  --accent: #F58B4C;
+  --bg: #0D141C;
+  --surface: #151F2A;
+  --surface-2: #1C2938;
+  --text: #E7EDF4;
+  --muted: #9DB0C4;
+  --border: #2A3B4D;
+  --ok: #5BC488;
+  --warn: #E3AC4F;
+  --danger: #F0807F;
+  --radius: 10px;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.45), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --font-display: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color-scheme: dark;
+}
+
+/* =============================================================================
+   Ironbark Cabinetry — warm timber tan + charcoal. Sharp corners, serif.
+   ========================================================================== */
+[data-business="ironbark-cabinetry"] {
+  --brand: #7F5A2F;
+  --brand-soft: #F3E8D9;
+  --on-brand: #FFFFFF;
+  --accent: #2A2622;
+  --bg: #FAF7F1;
+  --surface: #FFFFFF;
+  --surface-2: #F2ECE1;
+  --text: #231E17;
+  --muted: #6C5F4E;
+  --border: #DFD4C3;
+  --ok: #1B7A3D;
+  --warn: #8A5A00;
+  --danger: #C0272D;
+  --radius: 6px;
+  --shadow: 0 1px 3px rgba(60, 45, 25, 0.10), 0 4px 16px rgba(60, 45, 25, 0.07);
+  --font-display: Georgia, "Times New Roman", Times, serif;
+  color-scheme: light;
+}
+
+[data-business="ironbark-cabinetry"][data-theme="dark"] {
+  --brand: #D2A468;
+  --brand-soft: #2E2416;
+  --on-brand: #26190A;
+  --accent: #E4DDD2;
+  --bg: #161210;
+  --surface: #201B16;
+  --surface-2: #2A231C;
+  --text: #EFE9DF;
+  --muted: #B2A492;
+  --border: #3C3327;
+  --ok: #5BC488;
+  --warn: #E3AC4F;
+  --danger: #F0807F;
+  --radius: 6px;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px 30px rgba(0, 0, 0, 0.38);
+  --font-display: Georgia, "Times New Roman", Times, serif;
+  color-scheme: dark;
+}
+
+/* =============================================================================
+   Harbourline Joinery — heritage navy + brass gold. Classic, bookish.
+   ========================================================================== */
+[data-business="harbourline-joinery"] {
+  --brand: #16324F;
+  --brand-soft: #E3EAF1;
+  --on-brand: #FFFFFF;
+  --accent: #8A6D0F;
+  --bg: #F4F6F8;
+  --surface: #FFFFFF;
+  --surface-2: #EBEFF3;
+  --text: #182430;
+  --muted: #54677A;
+  --border: #D3DCE4;
+  --ok: #1B7A3D;
+  --warn: #8A5A00;
+  --danger: #C0272D;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(15, 30, 50, 0.09), 0 4px 16px rgba(15, 30, 50, 0.06);
+  --font-display: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  color-scheme: light;
+}
+
+[data-business="harbourline-joinery"][data-theme="dark"] {
+  --brand: #82ABCF;
+  --brand-soft: #152838;
+  --on-brand: #0A1C2C;
+  --accent: #D9B54A;
+  --bg: #0D141B;
+  --surface: #141F29;
+  --surface-2: #1C2936;
+  --text: #E6EDF3;
+  --muted: #9CAFC1;
+  --border: #2A3B4C;
+  --ok: #5BC488;
+  --warn: #E3AC4F;
+  --danger: #F0807F;
+  --radius: 8px;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.45), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --font-display: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  color-scheme: dark;
+}
+
+/* =============================================================================
+   Sunline Kitchens — coastal sage + honey gold. Soft, generous radius.
+   ========================================================================== */
+[data-business="sunline-kitchens"] {
+  --brand: #4E6B52;
+  --brand-soft: #E4EDE5;
+  --on-brand: #FFFFFF;
+  --accent: #8A6528;
+  --bg: #F5F8F4;
+  --surface: #FFFFFF;
+  --surface-2: #EAF0E9;
+  --text: #1B231C;
+  --muted: #5A6A5C;
+  --border: #D3DED3;
+  --ok: #1B7A3D;
+  --warn: #8A5A00;
+  --danger: #C0272D;
+  --radius: 14px;
+  --shadow: 0 1px 3px rgba(30, 45, 30, 0.09), 0 4px 16px rgba(30, 45, 30, 0.06);
+  --font-display: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  color-scheme: light;
+}
+
+[data-business="sunline-kitchens"][data-theme="dark"] {
+  --brand: #A6C3A9;
+  --brand-soft: #1F2B20;
+  --on-brand: #122015;
+  --accent: #DBB35E;
+  --bg: #111611;
+  --surface: #19201A;
+  --surface-2: #222B23;
+  --text: #E8EFE7;
+  --muted: #A8B7A9;
+  --border: #344036;
+  --ok: #5BC488;
+  --warn: #E3AC4F;
+  --danger: #F0807F;
+  --radius: 14px;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.45), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --font-display: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  color-scheme: dark;
+}

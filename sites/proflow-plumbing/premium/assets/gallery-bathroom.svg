@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D2436"/>
+      <stop offset="1" stop-color="#091827"/>
+    </linearGradient>
+    <pattern id="studs" width="90" height="600" patternUnits="userSpaceOnUse">
+      <rect width="90" height="600" fill="none"/>
+      <rect x="70" width="20" height="600" fill="#10293D"/>
+      <rect x="70" width="2" height="600" fill="#1C3A52"/>
+    </pattern>
+    <linearGradient id="bcopper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E1560F"/>
+      <stop offset=".5" stop-color="#F58B4F"/>
+      <stop offset="1" stop-color="#C74A0B"/>
+    </linearGradient>
+    <pattern id="btile" width="36" height="36" patternUnits="userSpaceOnUse">
+      <rect width="36" height="36" fill="#0F2A40"/>
+      <path d="M36 0H0v36" fill="none" stroke="#1C3A52" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bbg)"/>
+  <rect width="800" height="600" fill="url(#studs)"/>
+  <rect x="55" width="6" height="600" fill="#1C3A52"/>
+  <!-- tiled return wall -->
+  <rect x="530" y="80" width="270" height="520" fill="url(#btile)"/>
+  <rect x="524" y="80" width="6" height="520" fill="#3C6C92"/>
+  <!-- copper drops in frame -->
+  <rect x="150" y="60" width="14" height="330" rx="7" fill="url(#bcopper)"/>
+  <rect x="250" y="60" width="14" height="330" rx="7" fill="url(#bcopper)"/>
+  <rect x="143" y="382" width="28" height="16" rx="5" fill="#F26722"/>
+  <rect x="243" y="382" width="28" height="16" rx="5" fill="#F26722"/>
+  <rect x="120" y="120" width="180" height="10" rx="5" fill="#3C6C92"/>
+  <!-- waste stack -->
+  <rect x="380" y="40" width="34" height="420" rx="10" fill="#16324A" stroke="#3C6C92" stroke-width="2"/>
+  <path d="M397 460v40a60 60 0 0 0 60 58h60" fill="none" stroke="#3C6C92" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="397" cy="180" r="22" fill="#0A1B2A" stroke="#7FA8C9" stroke-width="2.5"/>
+  <path d="M386 180h22M397 169v22" stroke="#7FA8C9" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- bath outline on tiles -->
+  <rect x="560" y="380" width="216" height="120" rx="26" fill="none" stroke="#9FC2DC" stroke-width="3"/>
+  <rect x="576" y="396" width="184" height="88" rx="18" fill="none" stroke="#5E86A8" stroke-width="2"/>
+  <circle cx="668" cy="440" r="8" fill="none" stroke="#7FA8C9" stroke-width="2"/>
+  <path d="M640 330c9 12 15 20 15 28a15 15 0 1 1-30 0c0-8 6-16 15-28z" fill="#F26722"/>
+  <path d="M700 296c7 9 12 16 12 22a12 12 0 1 1-24 0c0-6 5-13 12-22z" fill="none" stroke="#F58B4F" stroke-width="2.5"/>
+  <!-- floor line + shower channel -->
+  <rect y="560" width="800" height="40" fill="#0A1B2A"/>
+  <rect x="80" y="552" width="300" height="8" rx="4" fill="#3C6C92"/>
+  <path d="M96 556h268" stroke="#081521" stroke-width="3" stroke-dasharray="10 8"/>
+  <!-- level line -->
+  <path d="M40 210H520" stroke="#F26722" stroke-width="2" stroke-dasharray="14 10"/>
+  <circle cx="40" cy="210" r="5" fill="#F26722"/>
+  <circle cx="520" cy="210" r="5" fill="#F26722"/>
+</svg>

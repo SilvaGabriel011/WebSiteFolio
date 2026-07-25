@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Business systems demo</title>
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to content</a>
+
+  <!-- Admin topbar: business identity, live business switcher, theme toggle.
+       Hidden in consumer mode (body.consumer — the #/book flow). -->
+  <header class="topbar" id="topbar">
+    <div class="topbar__brand" id="topbar-brand"></div>
+    <div class="topbar__actions">
+      <label class="visually-hidden" for="business-switcher">Switch demo business</label>
+      <select id="business-switcher" class="input select select--switcher"></select>
+      <button id="theme-toggle" class="btn btn--ghost btn--icon" type="button"
+              aria-label="Toggle colour theme"></button>
+    </div>
+  </header>
+
+  <!-- Consumer header: shown ONLY on the customer-facing booking flow
+       (body.consumer). Populated by core/router.js with logo, phone and a
+       "Back to website" link. -->
+  <header class="consumer-topbar" id="consumer-topbar"></header>
+
+  <!-- Desktop sidebar (>=1024px): brand top, nav middle, footer bottom. -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand" id="sidebar-brand"></div>
+    <nav class="sidebar__nav" id="sidebar-nav" aria-label="Main"></nav>
+
+    <!-- #quick-actions: intentionally EMPTY.
+         Reserved for sidebar quick-action shortcuts; the design decision on
+         what lives here (and how it looks) is still pending. Keep this div in
+         the DOM exactly as-is — do not style against it or assume anything
+         beyond its existence. A future iteration will populate it. -->
+    <div id="quick-actions"></div>
+
+    <div class="sidebar__footer" id="sidebar-footer">
+      <button type="button" class="sidebar__footer-link" id="footer-theme">Switch theme</button>
+      <button type="button" class="sidebar__footer-link" id="footer-backup">Back up demo data</button>
+      <button type="button" class="sidebar__footer-link" id="footer-reset">Reset demo data</button>
+    </div>
+  </aside>
+
+  <main id="view" tabindex="-1"></main>
+
+  <!-- Mobile bottom tab bar (<1024px): first four sections + "More" sheet.
+       Built by core/router.js from DEMO.nav. -->
+  <nav class="tabbar" id="tabbar" aria-label="Primary"></nav>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <noscript>
+    <p style="padding:2rem;text-align:center">This demo needs JavaScript enabled — nothing is sent anywhere, everything runs locally in your browser.</p>
+  </noscript>
+
+  <!-- Script order is fixed (see README): core helpers, data seeds, ui kit,
+       modules (self-register into DEMO.routes / DEMO.nav — a missing module
+       file just means fewer nav entries), router last. Classic scripts only. -->
+  <script src="js/core/format.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/data/businesses.js"></script>
+  <script src="js/data/data-proflow.js"></script>
+  <script src="js/data/data-ironbark.js"></script>
+  <script src="js/data/data-harbourline.js"></script>
+  <script src="js/data/data-sunline.js"></script>
+  <script src="js/core/ics.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/modules/dashboard.js"></script>
+  <script src="js/modules/schedule.js"></script>
+  <script src="js/modules/booking.js"></script>
+  <script src="js/modules/sales.js"></script>
+  <script src="js/modules/purchasing.js"></script>
+  <script src="js/modules/inventory.js"></script>
+  <script src="js/modules/maintenance.js"></script>
+  <script src="js/modules/money.js"></script>
+  <script src="js/modules/settings.js"></script>
+  <script src="js/core/router.js"></script>
+
+  <script>
+  /* Boot. Runs after every script above has had its chance to load — a 404 on
+     a module or data file must NOT break boot (missing modules just mean
+     fewer nav entries; missing seed data falls back to an empty dataset). */
+  (function () {
+    'use strict';
+    var DEFAULT_SLUG = 'proflow-plumbing';
+
+    /* 1. Resolve ?business= (unknown slug → default + console.warn). */
+    var slug = DEFAULT_SLUG;
+    try {
+      var requested = new URLSearchParams(location.search).get('business');
+      if (requested) {
+        if (DEMO.businesses && DEMO.businesses[requested]) {
+          slug = requested;
+        } else {
+          console.warn('Unknown business slug "' + requested + '" — using "' + DEFAULT_SLUG + '".');
+        }
+      }
+    } catch (e) { /* keep default */ }
+    document.documentElement.dataset.business = slug;
+
+    /* 2. Resolve theme: localStorage "demo:theme", else OS preference. */
+    var theme = null;
+    try { theme = localStorage.getItem('demo:theme'); } catch (e) { /* in-memory only */ }
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = theme;
+
+    /* 3. Seed the store. If this business's data-*.js didn't load (parallel
+       build / 404), register an empty seed so the app still boots. */
+    try {
+      DEMO.store.init(slug);
+    } catch (e) {
+      console.warn('No seed data loaded for "' + slug + '" — starting with an empty dataset.', e);
+      DEMO.registerData(slug, {});
+      DEMO.store.init(slug);
+    }
+
+    /* 4. Go. */
+    DEMO.router.start();
+  })();
+  </script>
+</body>
+</html>

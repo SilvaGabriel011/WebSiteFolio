@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFF5FA"/>
+      <stop offset="1" stop-color="#D8E6F1"/>
+    </linearGradient>
+    <linearGradient id="pipeH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B6FAD"/>
+      <stop offset=".45" stop-color="#0B4F8A"/>
+      <stop offset="1" stop-color="#093E6C"/>
+    </linearGradient>
+    <linearGradient id="pipeV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2B6FAD"/>
+      <stop offset=".45" stop-color="#0B4F8A"/>
+      <stop offset="1" stop-color="#093E6C"/>
+    </linearGradient>
+    <pattern id="tiles" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#E3EDF5"/>
+      <path d="M0 .5H30M.5 0V30" stroke="#C3D6E6" stroke-width="1.6"/>
+    </pattern>
+    <clipPath id="frame"><rect x="12" y="12" width="776" height="576" rx="18"/></clipPath>
+    <g id="tick"><rect x="-3" y="-128" width="6" height="20" rx="3" fill="#0B4F8A"/></g>
+  </defs>
+
+  <rect x="12" y="12" width="776" height="576" rx="18" fill="url(#sky)"/>
+  <g clip-path="url(#frame)">
+    <rect x="12" y="462" width="776" height="126" fill="url(#tiles)"/>
+    <rect x="12" y="456" width="776" height="8" fill="#0B4F8A" opacity=".18"/>
+
+    <!-- horizontal main with flanges -->
+    <rect x="12" y="416" width="330" height="40" fill="url(#pipeH)"/>
+    <rect x="12" y="422" width="330" height="7" fill="#5E93C2" opacity=".85"/>
+    <rect x="118" y="408" width="18" height="56" rx="4" fill="#083A63"/>
+    <circle cx="127" cy="418" r="3.4" fill="#DCE9F4"/>
+    <circle cx="127" cy="454" r="3.4" fill="#DCE9F4"/>
+    <rect x="252" y="408" width="18" height="56" rx="4" fill="#083A63"/>
+    <circle cx="261" cy="418" r="3.4" fill="#DCE9F4"/>
+    <circle cx="261" cy="454" r="3.4" fill="#DCE9F4"/>
+
+    <!-- elbow up to the gauge stem -->
+    <path d="M342 416h30a26 26 0 0 1 26 26v20h-56z" fill="#0B4F8A"/>
+    <rect x="342" y="416" width="56 " height="40" fill="url(#pipeH)"/>
+    <rect x="358" y="392" width="40" height="28" rx="5" fill="#083A63"/>
+    <rect x="366" y="330" width="24" height="66" fill="url(#pipeV)"/>
+
+    <!-- valve wheel on the main -->
+    <g transform="translate(196 416)">
+      <rect x="-10" y="-26" width="20" height="26" fill="#083A63"/>
+      <circle r="30" cy="-52" fill="none" stroke="#F26722" stroke-width="9"/>
+      <path d="M0 -82v60M-30 -52h60" stroke="#F26722" stroke-width="8" stroke-linecap="round"/>
+      <circle cy="-52" r="8" fill="#C24E0F"/>
+    </g>
+
+    <!-- pressure gauge -->
+    <g transform="translate(548 240)">
+      <circle r="158" fill="#083A63" opacity=".1"/>
+      <circle r="148" fill="#FFFFFF" stroke="#0B4F8A" stroke-width="13"/>
+      <circle r="118" fill="none" stroke="#C3D6E6" stroke-width="2.5"/>
+      <use href="#tick" transform="rotate(-120)"/>
+      <use href="#tick" transform="rotate(-90)"/>
+      <use href="#tick" transform="rotate(-60)"/>
+      <use href="#tick" transform="rotate(-30)"/>
+      <use href="#tick" transform="rotate(0)"/>
+      <use href="#tick" transform="rotate(30)"/>
+      <use href="#tick" transform="rotate(60)"/>
+      <use href="#tick" transform="rotate(90)"/>
+      <use href="#tick" transform="rotate(120)"/>
+      <path d="M83 -95a127 127 0 0 1 44 95" fill="none" stroke="#F26722" stroke-width="12" stroke-linecap="round"/>
+      <g transform="rotate(38)">
+        <path d="M-7 14 L0 -108 L7 14z" fill="#F26722"/>
+      </g>
+      <circle r="17" fill="#0B4F8A"/>
+      <circle r="6" fill="#DCE9F4"/>
+      <rect x="-34" y="58" width="68" height="26" rx="6" fill="none" stroke="#C3D6E6" stroke-width="2.5"/>
+    </g>
+
+    <!-- droplets -->
+    <g fill="#0B4F8A">
+      <path d="M120 150c14 18 24 30 24 43a24 24 0 1 1-48 0c0-13 10-25 24-43z"/>
+      <path d="M215 235c10 13 17 22 17 31a17 17 0 1 1-34 0c0-9 7-18 17-31z" fill="#F26722"/>
+      <path d="M295 120c8 10 13 17 13 24a13 13 0 1 1-26 0c0-7 5-14 13-24z" opacity=".55"/>
+    </g>
+    <circle cx="180" cy="330" r="7" fill="#0B4F8A" opacity=".28"/>
+    <circle cx="260" cy="305" r="5" fill="#0B4F8A" opacity=".22"/>
+    <circle cx="140" cy="255" r="4.5" fill="#F26722" opacity=".5"/>
+  </g>
+  <rect x="12" y="12" width="776" height="576" rx="18" fill="none" stroke="#0B4F8A" stroke-width="3"/>
+</svg>

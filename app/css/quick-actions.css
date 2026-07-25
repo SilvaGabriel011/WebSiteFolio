@@ -1,0 +1,195 @@
+/* Quick actions — pinned sidebar panel (desktop), floating + button (mobile)
+   and the shared drawer forms. Loaded after app.css; styles build on the
+   per-business theme variables only. */
+
+/* ---- Sidebar panel (lives in #quick-actions, desktop sidebar only) ------- */
+
+.qa-panel {
+  margin: 0.9rem;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.qa-panel__label {
+  margin: 0 0 0.25rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.qa-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  cursor: pointer;
+  transition: filter 120ms ease, transform 120ms ease;
+}
+
+.qa-btn:hover { filter: brightness(1.05); }
+.qa-btn:active { transform: scale(0.985); }
+.qa-btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+.qa-btn--primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--on-brand);
+}
+
+.qa-btn__icon { display: inline-flex; flex: none; }
+.qa-btn__icon svg { width: 18px; height: 18px; }
+
+.qa-btn kbd {
+  margin-left: auto;
+  padding: 0 0.35rem;
+  font: inherit;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  opacity: 0.65;
+}
+
+/* ---- Floating action button (mobile/tablet only) -------------------------- */
+
+.qa-fab {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(76px + env(safe-area-inset-bottom));
+  z-index: 70; /* above .tabbar (60), below overlays */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: var(--brand);
+  color: var(--on-brand);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.qa-fab svg { width: 26px; height: 26px; }
+.qa-fab:active { transform: scale(0.94); }
+.qa-fab:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+
+@media (max-width: 1023.98px) {
+  .qa-fab { display: flex; }
+}
+
+body.consumer .qa-fab { display: none; }
+
+@media print {
+  .qa-fab, .qa-panel { display: none !important; }
+}
+
+/* ---- Mobile action sheet (rendered in a DEMO.ui drawer) ------------------- */
+
+.qa-sheet .qa-btn {
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+}
+
+/* ---- Drawer forms ---------------------------------------------------------- */
+
+.qa-form .field { margin-bottom: 0.8rem; }
+
+.qa-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.qa-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 72px 108px 32px;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.qa-line .input { width: 100%; }
+
+.qa-line__remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  cursor: pointer;
+}
+
+.qa-line__remove:hover { color: var(--danger); border-color: var(--danger); }
+
+.qa-line--custom {
+  grid-template-columns: minmax(0, 1fr) 72px 108px 32px;
+}
+
+.qa-line__desc { grid-column: 1 / -1; }
+
+.qa-add-line { margin-bottom: 0.4rem; }
+
+.qa-totals {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 0.15rem;
+  font-size: 0.85rem;
+}
+
+.qa-totals__row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+}
+
+.qa-totals__row--total {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.qa-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.qa-hint {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ---- Success state ---------------------------------------------------------- */
+
+.qa-success { text-align: center; padding: 0.5rem 0; }
+.qa-success__icon svg { width: 56px; height: 56px; color: var(--ok); }
+.qa-success h3 { margin: 0.5rem 0 0.25rem; font-size: 1.05rem; }
+.qa-success p { margin: 0.25rem 0; color: var(--muted); font-size: 0.88rem; }
+.qa-success .qa-cal { margin: 0.9rem 0 0.4rem; }
+.qa-success .qa-foot { justify-content: center; }

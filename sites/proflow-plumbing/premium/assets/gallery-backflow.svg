@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0C2134"/>
+      <stop offset="1" stop-color="#081521"/>
+    </linearGradient>
+    <linearGradient id="fpipe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E415D"/>
+      <stop offset=".45" stop-color="#3C6C92"/>
+      <stop offset="1" stop-color="#16324A"/>
+    </linearGradient>
+    <pattern id="fgrid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0v50" fill="none" stroke="#12293D" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#fbg)"/>
+  <rect width="800" height="600" fill="url(#fgrid)" opacity=".8"/>
+  <!-- main line -->
+  <rect x="-20" y="286" width="180" height="28" rx="14" fill="url(#fpipe)"/>
+  <rect x="640" y="286" width="180" height="28" rx="14" fill="url(#fpipe)"/>
+  <!-- device body -->
+  <rect x="160" y="256" width="480" height="88" rx="24" fill="#0F2A40" stroke="#9FC2DC" stroke-width="3"/>
+  <rect x="152" y="268" width="16" height="64" rx="5" fill="#3C6C92"/>
+  <rect x="632" y="268" width="16" height="64" rx="5" fill="#3C6C92"/>
+  <!-- twin check valves -->
+  <path d="M250 276l52 24-52 24z" fill="#0A1B2A" stroke="#F26722" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M312 276v48" stroke="#F26722" stroke-width="4" stroke-linecap="round"/>
+  <path d="M430 276l52 24-52 24z" fill="#0A1B2A" stroke="#F26722" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M492 276v48" stroke="#F26722" stroke-width="4" stroke-linecap="round"/>
+  <!-- test cocks -->
+  <path d="M230 256v-42M400 256v-42M560 256v-42" stroke="#5E86A8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="230" cy="200" r="13" fill="#0A1B2A" stroke="#7FA8C9" stroke-width="2.5"/>
+  <circle cx="400" cy="200" r="13" fill="#0A1B2A" stroke="#7FA8C9" stroke-width="2.5"/>
+  <circle cx="560" cy="200" r="13" fill="#0A1B2A" stroke="#7FA8C9" stroke-width="2.5"/>
+  <path d="M222 200h16M392 200h16M552 200h16" stroke="#7FA8C9" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- relief vent -->
+  <path d="M370 344v56" stroke="#5E86A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M370 424c7 9 12 16 12 22a12 12 0 1 1-24 0c0-6 5-13 12-22z" fill="#F26722"/>
+  <!-- flow direction arrows -->
+  <path d="M70 254h56l-14-12M126 254l-14 12" fill="none" stroke="#9FC2DC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M674 254h56l-14-12M730 254l-14 12" fill="none" stroke="#9FC2DC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- blocked reverse flow -->
+  <circle cx="400" cy="470" r="34" fill="none" stroke="#F26722" stroke-width="4"/>
+  <path d="M424 446 376 494" stroke="#F26722" stroke-width="4" stroke-linecap="round"/>
+  <path d="M446 470h80l-16-13M526 470l-16 13" fill="none" stroke="#1C3A52" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(180 486 470)"/>
+  <!-- gauge test kit -->
+  <circle cx="150" cy="120" r="48" fill="#0A1B2A" stroke="#9FC2DC" stroke-width="3"/>
+  <circle cx="150" cy="120" r="36" fill="none" stroke="#3C6C92" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <path d="M150 120 130 100" stroke="#F58B4F" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="150" cy="120" r="6" fill="#F26722"/>
+  <!-- strata blocks -->
+  <path d="M600 96h140v70H600zM620 96v-24h100v24" fill="none" stroke="#1C3A52" stroke-width="3"/>
+  <path d="M624 118h20M656 118h20M688 118h20M624 142h20M656 142h20M688 142h20" stroke="#1C3A52" stroke-width="3" stroke-linecap="round"/>
+</svg>

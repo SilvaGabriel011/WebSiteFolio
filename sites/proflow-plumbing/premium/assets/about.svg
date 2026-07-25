@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D2436"/>
+      <stop offset="1" stop-color="#081521"/>
+    </linearGradient>
+    <linearGradient id="adrop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F58B4F"/>
+      <stop offset="1" stop-color="#E1560F"/>
+    </linearGradient>
+    <pattern id="ahatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#0C2134"/>
+      <path d="M0 0v12" stroke="#16324A" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <rect width="700" height="700" fill="url(#abg)"/>
+  <rect x="40" y="40" width="620" height="620" rx="20" fill="url(#ahatch)"/>
+  <rect x="40" y="40" width="620" height="620" rx="20" fill="none" stroke="#1C3A52" stroke-width="2"/>
+  <circle cx="350" cy="350" r="240" fill="#0A1B2A" stroke="#3C6C92" stroke-width="2.5"/>
+  <circle cx="350" cy="350" r="212" fill="none" stroke="#3C6C92" stroke-width="2" stroke-dasharray="3 14" stroke-linecap="round"/>
+  <circle cx="350" cy="350" r="186" fill="none" stroke="#1C3A52" stroke-width="10"/>
+  <!-- droplet -->
+  <path d="M350 170c62 78 105 135 105 192a105 105 0 1 1-210 0c0-57 43-114 105-192z" fill="url(#adrop)"/>
+  <path d="M308 348a46 46 0 0 0 40 49" fill="none" stroke="#FCD9C2" stroke-width="8" stroke-linecap="round"/>
+  <!-- spanner across -->
+  <path d="M212 494l124-72" stroke="#9FC2DC" stroke-width="13" stroke-linecap="round"/>
+  <path d="M196 452a30 30 0 1 0 34 44l14-24-24-32z" fill="#9FC2DC"/>
+  <circle cx="208" cy="478" r="12" fill="#0A1B2A"/>
+  <path d="M364 406a30 30 0 1 1 24 50l-28 2-10-28z" fill="#9FC2DC"/>
+  <circle cx="376" cy="432" r="12" fill="#0A1B2A"/>
+  <!-- corner ticks -->
+  <path d="M76 120h44M76 120v44M624 120h-44M624 120v44M76 580h44M76 580v-44M624 580h-44M624 580v-44" fill="none" stroke="#F26722" stroke-width="4" stroke-linecap="round"/>
+  <!-- small droplets orbit -->
+  <path d="M540 210c7 9 12 16 12 22a12 12 0 1 1-24 0c0-6 5-13 12-22z" fill="none" stroke="#7FA8C9" stroke-width="3"/>
+  <path d="M160 250c6 8 10 14 10 19a10 10 0 1 1-20 0c0-5 4-11 10-19z" fill="#7FA8C9" opacity=".7"/>
+  <path d="M520 520c6 8 10 14 10 19a10 10 0 1 1-20 0c0-5 4-11 10-19z" fill="#F26722"/>
+</svg>

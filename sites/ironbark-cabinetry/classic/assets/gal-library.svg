@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a floor-to-ceiling library wall with a rolling ladder">
+  <defs>
+    <linearGradient id="tl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CB9E66"/>
+      <stop offset="1" stop-color="#9E7038"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#EFE6D2"/>
+  <rect x="0" y="540" width="800" height="60" fill="#D9C9A8"/>
+  <rect x="0" y="536" width="800" height="4" fill="#C4B18B"/>
+
+  <!-- shelving carcass -->
+  <rect x="52" y="40" width="696" height="496" fill="#241F19"/>
+  <g fill="url(#tl)">
+    <rect x="52" y="40" width="696" height="14"/>
+    <rect x="52" y="146" width="696" height="12"/>
+    <rect x="52" y="248" width="696" height="12"/>
+    <rect x="52" y="350" width="696" height="12"/>
+    <rect x="52" y="452" width="696" height="12"/>
+    <rect x="52" y="524" width="696" height="12"/>
+    <rect x="52" y="40" width="14" height="496"/>
+    <rect x="222" y="40" width="12" height="496"/>
+    <rect x="394" y="40" width="12" height="496"/>
+    <rect x="566" y="40" width="12" height="496"/>
+    <rect x="734" y="40" width="14" height="496"/>
+  </g>
+
+  <!-- book spines: bay 1 row 1 -->
+  <g>
+    <g fill="#B98A4E"><rect x="80" y="70" width="13" height="76"/><rect x="112" y="78" width="10" height="68"/><rect x="158" y="66" width="15" height="80"/></g>
+    <g fill="#E9DDC4"><rect x="95" y="82" width="9" height="64"/><rect x="139" y="74" width="11" height="72"/><rect x="190" y="80" width="10" height="66"/></g>
+    <g fill="#6E4E22"><rect x="124" y="70" width="13" height="76"/><rect x="175" y="86" width="13" height="60"/><rect x="202" y="72" width="12" height="74"/></g>
+  </g>
+  <!-- bay 2 row 1 -->
+  <g>
+    <g fill="#E9DDC4"><rect x="248" y="72" width="12" height="74"/><rect x="292" y="66" width="14" height="80"/><rect x="352" y="80" width="10" height="66"/></g>
+    <g fill="#B98A4E"><rect x="262" y="84" width="10" height="62"/><rect x="308" y="76" width="11" height="70"/><rect x="336" y="70" width="14" height="76"/></g>
+    <g fill="#6E4E22"><rect x="274" y="70" width="16" height="76"/><rect x="321" y="88" width="13" height="58"/><rect x="364" y="74" width="12" height="72"/></g>
+  </g>
+  <!-- bay 3 row 1: display gap -->
+  <g>
+    <g fill="#B98A4E"><rect x="420" y="74" width="12" height="72"/><rect x="452" y="66" width="15" height="80"/></g>
+    <g fill="#E9DDC4"><rect x="434" y="84" width="11" height="62"/></g>
+    <ellipse cx="516" cy="126" rx="22" ry="16" fill="#B98A4E"/>
+    <rect x="510" y="102" width="12" height="12" fill="#B98A4E"/>
+  </g>
+  <!-- bay 4 row 1 -->
+  <g>
+    <g fill="#6E4E22"><rect x="592" y="70" width="14" height="76"/><rect x="640" y="82" width="11" height="64"/><rect x="694" y="68" width="13" height="78"/></g>
+    <g fill="#E9DDC4"><rect x="608" y="78" width="11" height="68"/><rect x="653" y="72" width="13" height="74"/></g>
+    <g fill="#B98A4E"><rect x="621" y="86" width="12" height="60"/><rect x="668" y="78" width="14" height="68"/></g>
+  </g>
+
+  <!-- row 2 -->
+  <g>
+    <g fill="#E9DDC4"><rect x="82" y="176" width="12" height="72"/><rect x="130" y="184" width="10" height="64"/><rect x="186" y="172" width="14" height="76"/></g>
+    <g fill="#6E4E22"><rect x="96" y="182" width="14" height="66"/><rect x="142" y="176" width="12" height="72"/></g>
+    <g fill="#B98A4E"><rect x="112" y="190" width="11" height="58"/><rect x="156" y="186" width="13" height="62"/><rect x="202" y="180" width="11" height="68"/></g>
+    <ellipse cx="316" cy="228" rx="24" ry="18" fill="#E9DDC4"/>
+    <rect x="309" y="200" width="14" height="14" fill="#E9DDC4"/>
+    <g fill="#B98A4E"><rect x="250" y="178" width="13" height="70"/><rect x="360" y="184" width="12" height="64"/></g>
+    <g fill="#6E4E22"><rect x="266" y="188" width="11" height="60"/><rect x="374" y="176" width="13" height="72"/></g>
+    <g fill="#B98A4E"><rect x="422" y="176" width="12" height="72"/><rect x="470" y="184" width="11" height="64"/><rect x="522" y="172" width="14" height="76"/></g>
+    <g fill="#E9DDC4"><rect x="437" y="184" width="10" height="64"/><rect x="484" y="176" width="13" height="72"/></g>
+    <g fill="#6E4E22"><rect x="450" y="190" width="14" height="58"/><rect x="500" y="182" width="12" height="66"/><rect x="539" y="178" width="11" height="70"/></g>
+    <g fill="#E9DDC4"><rect x="592" y="180" width="13" height="68"/><rect x="646" y="172" width="12" height="76"/><rect x="700" y="186" width="11" height="62"/></g>
+    <g fill="#B98A4E"><rect x="608" y="174" width="11" height="74"/><rect x="661" y="182" width="14" height="66"/></g>
+    <g fill="#6E4E22"><rect x="622" y="188" width="13" height="60"/><rect x="678" y="176" width="12" height="72"/></g>
+  </g>
+
+  <!-- row 3 -->
+  <g>
+    <ellipse cx="140" cy="330" rx="24" ry="18" fill="#B98A4E"/>
+    <rect x="133" y="302" width="14" height="14" fill="#B98A4E"/>
+    <g fill="#6E4E22"><rect x="184" y="278" width="14" height="72"/><rect x="80" y="284" width="12" height="66"/></g>
+    <g fill="#B98A4E"><rect x="250" y="280" width="12" height="70"/><rect x="300" y="286" width="13" height="64"/><rect x="352" y="276" width="11" height="74"/></g>
+    <g fill="#E9DDC4"><rect x="264" y="288" width="11" height="62"/><rect x="316" y="278" width="12" height="72"/><rect x="366" y="286" width="12" height="64"/></g>
+    <g fill="#6E4E22"><rect x="278" y="282" width="13" height="68"/><rect x="331" y="292" width="12" height="58"/></g>
+    <g fill="#E9DDC4"><rect x="422" y="282" width="13" height="68"/><rect x="474" y="276" width="12" height="74"/><rect x="524" y="288" width="11" height="62"/></g>
+    <g fill="#B98A4E"><rect x="438" y="276" width="11" height="74"/><rect x="489" y="284" width="14" height="66"/><rect x="538" y="280" width="12" height="70"/></g>
+    <g fill="#6E4E22"><rect x="452" y="290" width="13" height="60"/><rect x="506" y="278" width="11" height="72"/></g>
+    <g fill="#B98A4E"><rect x="592" y="280" width="12" height="70"/><rect x="642" y="286" width="13" height="64"/><rect x="696" y="276" width="12" height="74"/></g>
+    <g fill="#E9DDC4"><rect x="607" y="288" width="11" height="62"/><rect x="658" y="278" width="12" height="72"/></g>
+    <g fill="#6E4E22"><rect x="621" y="282" width="13" height="68"/><rect x="673" y="292" width="13" height="58"/></g>
+  </g>
+
+  <!-- row 4 (lower, behind ladder) -->
+  <g>
+    <g fill="#B98A4E"><rect x="80" y="382" width="13" height="70"/><rect x="130" y="388" width="11" height="64"/><rect x="184" y="380" width="14" height="72"/></g>
+    <g fill="#E9DDC4"><rect x="96" y="390" width="10" height="62"/><rect x="144" y="382" width="13" height="70"/></g>
+    <g fill="#6E4E22"><rect x="109" y="384" width="13" height="68"/><rect x="160" y="392" width="12" height="60"/><rect x="201" y="386" width="11" height="66"/></g>
+    <g fill="#E9DDC4"><rect x="250" y="384" width="12" height="68"/><rect x="302" y="378" width="13" height="74"/><rect x="354" y="390" width="11" height="62"/></g>
+    <g fill="#B98A4E"><rect x="265" y="378" width="11" height="74"/><rect x="318" y="386" width="12" height="66"/><rect x="368" y="382" width="12" height="70"/></g>
+    <ellipse cx="470" cy="432" rx="23" ry="17" fill="#E9DDC4"/>
+    <rect x="463" y="404" width="14" height="14" fill="#E9DDC4"/>
+    <g fill="#6E4E22"><rect x="422" y="384" width="13" height="68"/><rect x="524" y="380" width="12" height="72"/></g>
+    <g fill="#B98A4E"><rect x="592" y="382" width="13" height="70"/><rect x="648" y="388" width="12" height="64"/><rect x="700" y="380" width="11" height="72"/></g>
+    <g fill="#E9DDC4"><rect x="608" y="390" width="11" height="62"/><rect x="663" y="382" width="13" height="70"/></g>
+    <g fill="#6E4E22"><rect x="622" y="384" width="13" height="68"/><rect x="679" y="392" width="12" height="60"/></g>
+  </g>
+
+  <!-- rolling ladder -->
+  <g stroke="#8F6531" stroke-width="9" fill="none" stroke-linecap="round">
+    <line x1="560" y1="60" x2="484" y2="530"/>
+    <line x1="620" y1="60" x2="544" y2="530"/>
+  </g>
+  <g stroke="#8F6531" stroke-width="6" stroke-linecap="round">
+    <line x1="551" y1="118" x2="611" y2="118"/>
+    <line x1="540" y1="186" x2="600" y2="186"/>
+    <line x1="529" y1="254" x2="589" y2="254"/>
+    <line x1="518" y1="322" x2="578" y2="322"/>
+    <line x1="507" y1="390" x2="567" y2="390"/>
+    <line x1="496" y1="458" x2="556" y2="458"/>
+  </g>
+  <circle cx="484" cy="532" r="9" fill="#241F19"/>
+  <circle cx="544" cy="532" r="9" fill="#241F19"/>
+</svg>

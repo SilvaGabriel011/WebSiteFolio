@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="gbrT">
+  <title id="gbrT">Bathroom rough-in schematic with wall studs and pipe drops</title>
+  <defs>
+    <linearGradient id="gbrBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E4A80"/>
+      <stop offset="1" stop-color="#072E4F"/>
+    </linearGradient>
+    <pattern id="gbrStud" width="66" height="300" patternUnits="userSpaceOnUse">
+      <rect x="24" width="18" height="300" fill="#0A3A64"/>
+      <rect x="24" width="3" height="300" fill="#2E77B0" fill-opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#gbrBg)"/>
+  <rect width="400" height="300" fill="url(#gbrStud)"/>
+  <rect y="252" width="400" height="10" fill="#0A3055"/>
+  <!-- pipe drops -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M96 300 V120" stroke="#2E77B0" stroke-width="14"/>
+    <path d="M162 300 V96" stroke="#F26722" stroke-width="14"/>
+    <path d="M228 300 V120" stroke="#2E77B0" stroke-width="14"/>
+    <path d="M96 120 H228" stroke="#2E77B0" stroke-width="12"/>
+  </g>
+  <!-- capped ends -->
+  <circle cx="96" cy="120" r="12" fill="#0A3055" stroke="#7FB4DE" stroke-width="4"/>
+  <circle cx="162" cy="96" r="12" fill="#0A3055" stroke="#F26722" stroke-width="4"/>
+  <circle cx="228" cy="120" r="12" fill="#0A3055" stroke="#7FB4DE" stroke-width="4"/>
+  <!-- shower rose & spray -->
+  <g transform="translate(322 64)">
+    <path d="M0 -28 V-8" stroke="#7FB4DE" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-26 0 h52 l-8 14 h-36 z" fill="#F26722"/>
+    <g stroke="#5FA8DC" stroke-width="4" stroke-linecap="round">
+      <path d="M-18 26 v16"/><path d="M0 26 v22"/><path d="M18 26 v16"/>
+      <path d="M-9 56 v12"/><path d="M9 56 v12"/>
+    </g>
+  </g>
+  <!-- bath outline -->
+  <g transform="translate(300 236)">
+    <rect x="-64" y="-20" width="128" height="40" rx="18" fill="none" stroke="#7FB4DE" stroke-width="5"/>
+    <circle cx="34" cy="-2" r="5" fill="#F26722"/>
+  </g>
+  <!-- level line -->
+  <path d="M24 150 h48" stroke="#F26722" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>
+  <path d="M24 96 h48" stroke="#F26722" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>
+</svg>

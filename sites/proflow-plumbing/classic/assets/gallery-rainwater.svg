@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <pattern id="corrugate" width="12" height="20" patternUnits="userSpaceOnUse">
+      <rect width="12" height="20" fill="#0B4F8A"/>
+      <path d="M0 10q3 -6 6 0t6 0" fill="none" stroke="#2B6FAD" stroke-width="2.4"/>
+    </pattern>
+    <clipPath id="rframe"><rect x="8" y="8" width="424" height="304" rx="10"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="#FBF8F2"/>
+  <g clip-path="url(#rframe)">
+    <rect x="8" y="252" width="424" height="60" fill="#D9E3D2"/>
+    <rect x="8" y="248" width="424" height="5" fill="#0B4F8A" opacity=".25"/>
+
+    <!-- cloud & rain -->
+    <g fill="#C3D6E6">
+      <circle cx="96" cy="52" r="22"/>
+      <circle cx="126" cy="44" r="27"/>
+      <circle cx="158" cy="56" r="19"/>
+      <rect x="76" y="52" width="100" height="22" rx="11"/>
+    </g>
+    <g fill="#5E93C2">
+      <path d="M92 100c4.4 5.5 7.6 9.5 7.6 13.4a7.6 7.6 0 1 1-15.2 0c0-3.9 3.2-7.9 7.6-13.4z"/>
+      <path d="M126 116c4.4 5.5 7.6 9.5 7.6 13.4a7.6 7.6 0 1 1-15.2 0c0-3.9 3.2-7.9 7.6-13.4z"/>
+      <path d="M158 98c4.4 5.5 7.6 9.5 7.6 13.4a7.6 7.6 0 1 1-15.2 0c0-3.9 3.2-7.9 7.6-13.4z"/>
+    </g>
+
+    <!-- slimline corrugated tank -->
+    <rect x="60" y="150" width="150" height="110" rx="10" fill="url(#corrugate)"/>
+    <rect x="60" y="150" width="150" height="14" rx="7" fill="#083A63"/>
+    <rect x="118" y="140" width="34" height="12" rx="5" fill="#083A63"/>
+    <!-- tank tap -->
+    <path d="M210 236h20" stroke="#F26722" stroke-width="8" stroke-linecap="round"/>
+    <rect x="224" y="224" width="8" height="14" rx="3" fill="#C24E0F"/>
+
+    <!-- pump box with impeller -->
+    <rect x="244" y="216" width="58" height="44" rx="8" fill="#083A63"/>
+    <circle cx="273" cy="238" r="14" fill="none" stroke="#F26722" stroke-width="5"/>
+    <path d="M273 226v24M261 238h24" stroke="#F26722" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- line to house -->
+    <path d="M302 238h44v-56h30" fill="none" stroke="#F26722" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- house outline -->
+    <path d="M330 140l52-40 52 40v112h-104z" fill="none" stroke="#0B4F8A" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="362" y="206" width="26" height="46" fill="#0B4F8A"/>
+    <rect x="398" y="168" width="22" height="20" fill="none" stroke="#0B4F8A" stroke-width="4"/>
+    <!-- downpipe feeding the tank -->
+    <path d="M330 148v-24h-178v14" fill="none" stroke="#0B4F8A" stroke-width="7" stroke-linecap="round" stroke-dasharray="1 12"/>
+  </g>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="none" stroke="#0B4F8A" stroke-width="2.5"/>
+</svg>

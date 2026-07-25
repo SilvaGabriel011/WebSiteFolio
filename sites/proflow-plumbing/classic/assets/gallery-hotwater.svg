@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+  <defs>
+    <linearGradient id="tank" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2B6FAD"/>
+      <stop offset=".4" stop-color="#0B4F8A"/>
+      <stop offset="1" stop-color="#083A63"/>
+    </linearGradient>
+    <clipPath id="hframe"><rect x="8" y="8" width="424" height="304" rx="10"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="#FBF8F2"/>
+  <g clip-path="url(#hframe)">
+    <rect x="8" y="252" width="424" height="60" fill="#DCE4EA"/>
+    <rect x="8" y="248" width="424" height="5" fill="#0B4F8A" opacity=".3"/>
+
+    <!-- 315L cylinder -->
+    <g>
+      <rect x="150" y="70" width="150" height="182" rx="26" fill="url(#tank)"/>
+      <path d="M150 108h150M150 146h150M150 184h150M150 222h150" stroke="#5E93C2" stroke-width="2.4" opacity=".8"/>
+      <rect x="165" y="76" width="12" height="170" rx="6" fill="#FFFFFF" opacity=".22"/>
+      <!-- element access panels -->
+      <circle cx="225" cy="130" r="14" fill="#083A63" stroke="#5E93C2" stroke-width="2.5"/>
+      <circle cx="225" cy="200" r="14" fill="#083A63" stroke="#5E93C2" stroke-width="2.5"/>
+    </g>
+
+    <!-- cold in / hot out at top -->
+    <rect x="176" y="40" width="14" height="34" fill="#0B4F8A"/>
+    <rect x="168" y="30" width="30" height="12" rx="4" fill="#083A63"/>
+    <rect x="260" y="40" width="14" height="34" fill="#C24E0F"/>
+    <rect x="252" y="30" width="30" height="12" rx="4" fill="#F26722"/>
+
+    <!-- TPR valve & drain line -->
+    <path d="M300 120h36v96" fill="none" stroke="#F26722" stroke-width="9" stroke-linecap="round"/>
+    <rect x="296" y="108" width="26" height="24" rx="5" fill="#C24E0F"/>
+    <g fill="#2B6FAD">
+      <circle cx="336" cy="232" r="4.4"/>
+      <circle cx="328" cy="244" r="3.4"/>
+      <circle cx="344" cy="246" r="3.4"/>
+    </g>
+
+    <!-- isolation valve on cold line -->
+    <g transform="translate(120 176)">
+      <rect x="-64" y="-8" width="94" height="16" fill="#0B4F8A"/>
+      <circle r="20" cy="-26" fill="none" stroke="#F26722" stroke-width="7"/>
+      <path d="M0 -46v40" stroke="#F26722" stroke-width="6" stroke-linecap="round"/>
+      <rect x="-9" y="-10" width="18" height="20" fill="#083A63"/>
+    </g>
+
+    <!-- little gauge -->
+    <g transform="translate(90 90)">
+      <circle r="34" fill="#FFFFFF" stroke="#0B4F8A" stroke-width="6"/>
+      <path d="M-18 -14 L2 2" stroke="#F26722" stroke-width="5" stroke-linecap="round"/>
+      <circle r="5" fill="#0B4F8A"/>
+      <path d="M-24 8a25 25 0 0 1 8 -26" fill="none" stroke="#C3D6E6" stroke-width="4"/>
+    </g>
+
+    <!-- concrete pad + drip tray -->
+    <rect x="138" y="252" width="174" height="14" rx="4" fill="#0B4F8A"/>
+    <rect x="128" y="266" width="194" height="10" rx="4" fill="#9FB4C6"/>
+    <path d="M60 286h320" stroke="#9FB4C6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <rect x="8" y="8" width="424" height="304" rx="10" fill="none" stroke="#0B4F8A" stroke-width="2.5"/>
+</svg>
