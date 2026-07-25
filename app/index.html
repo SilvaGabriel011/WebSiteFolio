@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Business systems demo</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='2' width='20' height='20' rx='5' fill='%230B4F8A'/%3E%3Cpath d='M7 15.5l3-4 2.5 2.5 4.5-6' stroke='%23fff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/themes.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/quick-actions.css">
 </head>
 <body>
   <a class="skip-link" href="#view">Skip to content</a>
@@ -33,11 +35,8 @@
     <div class="sidebar__brand" id="sidebar-brand"></div>
     <nav class="sidebar__nav" id="sidebar-nav" aria-label="Main"></nav>
 
-    <!-- #quick-actions: intentionally EMPTY.
-         Reserved for sidebar quick-action shortcuts; the design decision on
-         what lives here (and how it looks) is still pending. Keep this div in
-         the DOM exactly as-is — do not style against it or assume anything
-         beyond its existence. A future iteration will populate it. -->
+    <!-- Populated by core/quick-actions.js: "New quote" (N) and
+         "Book maintenance" (M), also reachable via the mobile FAB. -->
     <div id="quick-actions"></div>
 
     <div class="sidebar__footer" id="sidebar-footer">
@@ -66,11 +65,12 @@
   <script src="js/core/store.js"></script>
   <script src="js/data/businesses.js"></script>
   <script src="js/data/data-proflow.js"></script>
-  <script src="js/data/data-ironbark.js"></script>
-  <script src="js/data/data-harbourline.js"></script>
-  <script src="js/data/data-sunline.js"></script>
+  <script src="js/data/data-ironbark-cabinetry.js"></script>
+  <script src="js/data/data-harbourline-joinery.js"></script>
+  <script src="js/data/data-sunline-kitchens.js"></script>
   <script src="js/core/ics.js"></script>
   <script src="js/core/ui.js"></script>
+  <script src="js/core/quick-actions.js"></script>
   <script src="js/modules/dashboard.js"></script>
   <script src="js/modules/schedule.js"></script>
   <script src="js/modules/booking.js"></script>
