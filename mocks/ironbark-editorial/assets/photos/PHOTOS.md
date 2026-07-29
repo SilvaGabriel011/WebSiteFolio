@@ -49,3 +49,8 @@ Slots completos: 7 de 7. Três fotos vieram da varredura CC via Openverse
 dominado por foto amadora de imobiliaria) e as quatro restantes da API do
 Pexels, com curadoria em folha de contato. O filtro tonal da pagina
 unifica as duas origens.
+
+## Slides extras do hero (carrossel)
+
+- `02-hero.jpg` — OK: foto de Rana Matloob Hussain via Pexels (https://www.pexels.com/photo/luxury-modern-walk-in-closet-design-with-glass-panels-35189675/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `03-hero.jpg` — OK: foto de edithub pro via Pexels (https://www.pexels.com/photo/luxury-kitchen-in-a-house-18285887/) — licença Pexels, uso comercial livre; otimizada para 1600px

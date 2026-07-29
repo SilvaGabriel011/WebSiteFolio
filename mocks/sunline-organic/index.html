@@ -120,6 +120,44 @@
     }
     .hero-figure figcaption { position: relative; z-index: 1; margin-top: 0.6rem; font-size: 0.8rem; color: var(--soil); }
 
+
+    /* ---------------- Hero slider ---------------- */
+    .hslider { position: relative; }
+    .hero-figure .hslider { position: relative; z-index: 1; }
+    .hslider-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      overscroll-behavior-x: contain;
+    }
+    .hslider-track::-webkit-scrollbar { display: none; }
+    .hslide { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; scroll-snap-stop: always; }
+    .hs-btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      z-index: 2;
+      width: 2.4rem; height: 2.4rem;
+      display: grid; place-items: center;
+      background: var(--terra); color: var(--cream);
+      border: 0; border-radius: 999px;
+      font-size: 1.35rem; line-height: 1; font-family: inherit;
+      opacity: 0.88; transition: opacity 0.15s;
+    }
+    .hs-btn:hover { opacity: 1; }
+    .hs-prev { left: 0.55rem; }
+    .hs-next { right: 0.55rem; }
+    .hs-dots {
+      position: absolute; left: 50%; bottom: 0.6rem; transform: translateX(-50%);
+      z-index: 2;
+      display: flex; gap: 0.45rem;
+    }
+    .hs-dot {
+      width: 0.55rem; height: 0.55rem; padding: 0;
+      border: 0; border-radius: 50%;
+      background: rgba(246,241,229,0.6);
+    }
+    .hs-dot[aria-current="true"] { background: var(--terra); }
+
     /* ---------------- Sections ---------------- */
     section { padding-block: clamp(2.8rem, 7vw, 5.5rem); }
     .sect-head { max-width: 44rem; margin-bottom: clamp(1.6rem, 4vw, 2.6rem); }
@@ -234,8 +272,27 @@
           </div>
         </div>
         <figure class="hero-figure reveal">
-          <img src="assets/photos/01-hero-kitchen.jpg" onerror="this.onerror=null;this.src='assets/hero.svg'" alt="Warm timber kitchen with morning light, sage cabinetry and stone bench" width="640" height="512">
-          <figcaption>The Miami kitchen — Refresh package, week six</figcaption>
+          <div class="hslider">
+        <div class="hslider-track" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Recent kitchens">
+          <div class="hslide" data-caption="The Miami kitchen — Refresh package, week six" data-meta="">
+            <img src="assets/photos/01-hero-kitchen.jpg" onerror="this.onerror=null;this.src='assets/hero.svg'" alt="Morning light on a timber bench with lavender" width="640" height="480">
+          </div>
+          <div class="hslide" data-caption="The Palm Beach kitchen — Full Reno, handover day" data-meta="">
+            <img src="assets/photos/02-hero.jpg" onerror="this.onerror=null;this.src='assets/gal-palm-beach.svg'" alt="Light timber kitchen with white island at handover" width="640" height="480">
+          </div>
+          <div class="hslide" data-caption="Breakfast nook, Currumbin — where the quote was drawn" data-meta="">
+            <img src="assets/photos/03-hero.jpg" onerror="this.onerror=null;this.src='assets/gal-burleigh-heads.svg'" alt="Round-table breakfast nook with flowers and morning sun" width="640" height="480">
+          </div>
+        </div>
+        <button type="button" class="hs-btn hs-prev" aria-label="Previous photo">&lsaquo;</button>
+        <button type="button" class="hs-btn hs-next" aria-label="Next photo">&rsaquo;</button>
+        <div class="hs-dots">
+          <button type="button" class="hs-dot" aria-current="true" aria-label="Photo 1 of 3"></button>
+          <button type="button" class="hs-dot" aria-label="Photo 2 of 3"></button>
+          <button type="button" class="hs-dot" aria-label="Photo 3 of 3"></button>
+        </div>
+      </div>
+          <figcaption data-hs-caption>The Miami kitchen — Refresh package, week six</figcaption>
         </figure>
       </div>
     </div>
@@ -349,6 +406,54 @@
   </footer>
 
   <script>
+
+    /* Hero slider: scroll-snap nativo + sync de legenda/dots. */
+    (function () {
+      'use strict';
+      document.querySelectorAll('.hslider').forEach(function (root) {
+        var track = root.querySelector('.hslider-track');
+        var slides = Array.prototype.slice.call(track.children);
+        var dots = Array.prototype.slice.call(root.querySelectorAll('.hs-dot'));
+        var fig = root.closest('figure');
+        var capEl = fig ? fig.querySelector('[data-hs-caption]') : null;
+        var metaEl = fig ? fig.querySelector('[data-hs-meta]') : null;
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var current = 0;
+
+        function apply(i) {
+          current = i;
+          dots.forEach(function (d, k) {
+            d.setAttribute('aria-current', k === i ? 'true' : 'false');
+          });
+          var s = slides[i];
+          if (capEl && s.dataset.caption) capEl.textContent = s.dataset.caption;
+          if (metaEl) metaEl.textContent = s.dataset.meta || '';
+        }
+        function go(i) {
+          var n = (i + slides.length) % slides.length;
+          track.scrollTo({ left: slides[n].offsetLeft, behavior: reduce ? 'auto' : 'smooth' });
+        }
+
+        root.querySelector('.hs-prev').addEventListener('click', function () { go(current - 1); });
+        root.querySelector('.hs-next').addEventListener('click', function () { go(current + 1); });
+        dots.forEach(function (d, k) { d.addEventListener('click', function () { go(k); }); });
+        track.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowLeft') { e.preventDefault(); go(current - 1); }
+          if (e.key === 'ArrowRight') { e.preventDefault(); go(current + 1); }
+        });
+
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting) apply(slides.indexOf(en.target));
+            });
+          }, { root: track, threshold: 0.6 });
+          slides.forEach(function (s) { io.observe(s); });
+        }
+        apply(0);
+      });
+    })();
+
     (function () {
       'use strict';
       var items = document.querySelectorAll('.reveal');

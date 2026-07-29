@@ -17,3 +17,8 @@ atribuição registrada aqui:
 - `02-stairs.jpg` — OK: foto de Lucas Craig via Pexels (https://www.pexels.com/photo/an-abandoned-house-with-wooden-stairs-6588741/) — licença Pexels, uso comercial livre, sem atribuição obrigatória; otimizada para 1600px
 - `03-door.jpg` — OK: foto de William Larsen via Pexels (https://www.pexels.com/photo/dark-wooden-front-doors-at-the-house-entrance-with-brick-walls-at-exterior-11350641/) — licença Pexels, uso comercial livre, sem atribuição obrigatória; otimizada para 1600px
 - `04-fitout.jpg` — OK: foto de Recal Media via Pexels (https://www.pexels.com/photo/lighted-pendant-lamps-97815/) — licença Pexels, uso comercial livre, sem atribuição obrigatória; otimizada para 1600px
+
+## Slides extras do hero (carrossel)
+
+- `02-hero.jpg` — OK: foto de Ono  Kosuki via Pexels (https://www.pexels.com/photo/crop-woodworker-planing-hardwood-plank-5974247/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `03-hero.jpg` — OK: foto de Dmitriy Roschupkin via Pexels (https://www.pexels.com/photo/windows-and-curtain-in-hall-16912480/) — licença Pexels, uso comercial livre; otimizada para 1600px
