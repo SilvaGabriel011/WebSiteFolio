@@ -428,6 +428,11 @@ h3 { font-size: 1.16rem; font-weight: 800; }
 
 /* ---------- Quote form ---------- */
 .quote-grid { display: grid; gap: 2rem; }
+/* Grid items must be allowed to shrink below min-content on small screens,
+   and the unbroken email address needs a break opportunity — otherwise the
+   whole page gains a horizontal scroll at 375px. */
+.quote-grid > * { min-width: 0; }
+.quote-direct a { overflow-wrap: anywhere; }
 .quote-side h2 { margin-bottom: 0.8rem; }
 .quote-side .lede { margin-bottom: 1.4rem; }
 .quote-direct { display: grid; gap: 0.8rem; }
