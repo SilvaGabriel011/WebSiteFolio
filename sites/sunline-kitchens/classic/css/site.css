@@ -267,6 +267,7 @@ p  { max-width: 65ch; }
 @media (min-width: 48em) { .package-grid { grid-template-columns: repeat(3, 1fr); } }
 
 .extras-grid { display: grid; gap: 1.25rem; }
+.extras-grid > * { min-width: 0; }
 @media (min-width: 48em) { .extras-grid { grid-template-columns: 1fr 1fr; } }
 .extras {
   border: 1px solid var(--line-strong); border-radius: 4px; background: var(--card); padding: 1.25rem;
@@ -278,6 +279,11 @@ p  { max-width: 65ch; }
 .extras td { padding: 0.6rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
 .extras tr:last-child td { border-bottom: 0; }
 .extras td:last-child, .extras th:last-child { text-align: right; white-space: nowrap; font-weight: 700; color: var(--sage-deep); }
+/* nowrap keeps prices tidy on wide screens but blows the card out past a
+   375px viewport — let the price column wrap on phones instead. */
+@media (max-width: 26em) {
+  .extras td:last-child, .extras th:last-child { white-space: normal; }
+}
 .extras td:last-child small { color: var(--muted); font-weight: 400; }
 .extras .book-note { margin-top: 0.85rem; font-size: 0.9rem; }
 .extras .book-note a { color: var(--brass-ink); font-weight: 700; }
