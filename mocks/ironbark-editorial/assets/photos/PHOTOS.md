@@ -34,25 +34,18 @@ primeiro plano e marcas visíveis.
 Usar fontes com licença livre para uso comercial. CC BY exige atribuição —
 os créditos ficam no colophon da própria página e neste registro:
 
-- `01-hero-kitchen.jpg` — pendente (ver estado da curadoria abaixo)
-- `02-island.jpg` — pendente
+- `01-hero-kitchen.jpg` — OK: foto de Max Vakhtbovych via Pexels (https://www.pexels.com/photo/modern-kitchen-interior-with-stove-under-hood-at-home-6980666/) — licença Pexels, uso comercial livre, sem atribuição obrigatória; otimizada para 1600px
+- `02-island.jpg` — OK: foto de Ansar Muhammad via Pexels (https://www.pexels.com/photo/residential-project-in-sulaymaniyah-city-27562199/) — licença Pexels, uso comercial livre, sem atribuição obrigatória; otimizada para 1600px
 - `03-vanity.jpg` — OK: "Walk In Closet" (ensuite), Blueprint Homes, CC BY 2.0 — flickr.com/photos/187015085@N02/49685642182 (adaptada: recompressão + filtro tonal)
-- `04-media-wall.jpg` — pendente
+- `04-media-wall.jpg` — OK: foto de Max Vakhtbovych via Pexels (https://www.pexels.com/photo/wooden-furniture-and-wall-in-modern-apartment-with-cozy-sofa-and-tv-6585766/) — licença Pexels, uso comercial livre, sem atribuição obrigatória; otimizada para 1600px
 - `05-library.jpg` — OK: "The Library at Chirk", Brian Smithson, CC BY 2.0 — flickr.com/photos/15636379@N00/5949508817 (adaptada: recompressão + filtro tonal)
 - `06-wardrobe.jpg` — OK: "Walk In Closet", Blueprint Homes, CC BY 2.0 — flickr.com/photos/187015085@N02/49688664678 (adaptada: recompressão + filtro tonal)
-- `07-pantry.jpg` — pendente
+- `07-pantry.jpg` — OK: foto de Arina Krasnikova via Pexels (https://www.pexels.com/photo/glass-jars-on-a-wooden-shelf-in-a-kitchen-6654122/) — licença Pexels, uso comercial livre, sem atribuição obrigatória; otimizada para 1600px
 
-## Estado da curadoria (2026-07-29)
+## Estado da curadoria (2026-07-29, rodada 2)
 
-Varredura feita via Openverse (Flickr/Wikimedia/CC): ~70 candidatas
-avaliadas em folha de contato. Só 3 passaram o corte de qualidade — o
-acervo CC de interiores é dominado por foto amadora de imobiliária, e
-foto ruim derruba o mock em vez de elevar. Os 4 slots pendentes seguem
-com as pranchas ilustradas (o fallback), o que funciona como conceito
-editorial: fotografia para o construído, prancha para o desenhado.
-
-Para completar os 4 com fotografia profissional: criar uma chave gratuita
-da API do Unsplash (unsplash.com/developers) ou Pexels (pexels.com/api) —
-o acesso anônimo de ambos está bloqueado por anti-bot. Com a chave em
-mãos, a busca, o download e a otimização são automatizáveis, para este
-mock e para os 12 sites.
+Slots completos: 7 de 7. Três fotos vieram da varredura CC via Openverse
+(so 3 de ~70 candidatas passaram o corte — o acervo CC de interiores e
+dominado por foto amadora de imobiliaria) e as quatro restantes da API do
+Pexels, com curadoria em folha de contato. O filtro tonal da pagina
+unifica as duas origens.
