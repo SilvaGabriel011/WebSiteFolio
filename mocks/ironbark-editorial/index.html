@@ -134,6 +134,7 @@
     .btn-line { background: transparent; color: var(--ink); }
     .btn-line:hover { background: var(--ink); color: var(--paper); }
     .deck-figure { border: 1px solid var(--rule); padding: 0.7rem; background: #fff; box-shadow: 10px 10px 0 var(--paper-deep); }
+    .deck-figure img { aspect-ratio: 16 / 11; width: 100%; object-fit: cover; filter: saturate(0.94) contrast(1.03) sepia(0.05); }
     .deck-figure figcaption {
       display: flex; justify-content: space-between; gap: 1rem;
       padding-top: 0.65rem;
@@ -170,8 +171,14 @@
       .folio-item:nth-child(6n+6) { grid-column: span 3; }
     }
     .folio-item { text-decoration: none; display: block; }
-    .folio-media { border: 1px solid var(--rule); background: #fff; overflow: hidden; }
-    .folio-media img { width: 100%; height: auto; transition: transform 0.3s ease-out; }
+    .folio-media { border: 1px solid var(--rule); background: #fff; overflow: hidden; aspect-ratio: 3 / 2; }
+    .folio-media img {
+      width: 100%; height: 100%; object-fit: cover;
+      /* Unifica fotos de fontes diferentes num tom editorial quente;
+         quase imperceptível nos SVGs de fallback. */
+      filter: saturate(0.94) contrast(1.03) sepia(0.05);
+      transition: transform 0.3s ease-out;
+    }
     .folio-item:hover .folio-media img { transform: scale(1.025); }
     .folio-cap {
       display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
@@ -295,7 +302,7 @@
           </div>
         </div>
         <figure class="deck-figure reveal">
-          <img src="assets/hero.svg" alt="Line drawing of a full-height kitchen in blackbutt timber with brass pulls" width="640" height="440">
+          <img src="assets/photos/01-hero-kitchen.jpg" onerror="this.onerror=null;this.src='assets/hero.svg'" alt="Line drawing of a full-height kitchen in blackbutt timber with brass pulls" width="640" height="440">
           <figcaption><span>Fig. 01 — Blackbutt kitchen, Northcote</span><span>2026</span></figcaption>
         </figure>
       </div>
@@ -315,32 +322,32 @@
       </div>
       <div class="folio-grid">
         <a class="folio-item reveal" href="#contact">
-          <div class="folio-media"><img src="assets/gallery-island.svg" alt="Kitchen island in spotted gum with waterfall stone ends" width="640" height="420"></div>
+          <div class="folio-media"><img src="assets/photos/02-island.jpg" onerror="this.onerror=null;this.src='assets/gallery-island.svg'" alt="Kitchen island in spotted gum with waterfall stone ends" width="640" height="420"></div>
           <div class="folio-cap"><h3>The island that seats seven</h3><span class="fig">Fig. 02 &middot; Coburg</span></div>
           <p class="folio-sub">Spotted gum &amp; honed stone — a kitchen rebuilt around one long conversation.</p>
         </a>
         <a class="folio-item reveal" href="#contact">
-          <div class="folio-media"><img src="assets/gallery-vanity.svg" alt="Wall-hung bathroom vanity in oak with twin basins" width="640" height="420"></div>
+          <div class="folio-media"><img src="assets/photos/03-vanity.jpg" onerror="this.onerror=null;this.src='assets/gallery-vanity.svg'" alt="Wall-hung bathroom vanity in oak with twin basins" width="640" height="420"></div>
           <div class="folio-cap"><h3>Floating oak vanity</h3><span class="fig">Fig. 03 &middot; Fitzroy</span></div>
           <p class="folio-sub">Twin basins, one drawer that swallows everything.</p>
         </a>
         <a class="folio-item reveal" href="#contact">
-          <div class="folio-media"><img src="assets/gallery-entertainment.svg" alt="Low entertainment unit with fluted doors" width="640" height="420"></div>
+          <div class="folio-media"><img src="assets/photos/04-media-wall.jpg" onerror="this.onerror=null;this.src='assets/gallery-entertainment.svg'" alt="Low entertainment unit with fluted doors" width="640" height="420"></div>
           <div class="folio-cap"><h3>Fluted media wall</h3><span class="fig">Fig. 04 &middot; Brunswick</span></div>
           <p class="folio-sub">Cables hidden, records reachable, dust nowhere.</p>
         </a>
         <a class="folio-item reveal" href="#contact">
-          <div class="folio-media"><img src="assets/gallery-library.svg" alt="Floor-to-ceiling library wall with rolling ladder" width="640" height="420"></div>
+          <div class="folio-media"><img src="assets/photos/05-library.jpg" onerror="this.onerror=null;this.src='assets/gallery-library.svg'" alt="Floor-to-ceiling library wall with rolling ladder" width="640" height="420"></div>
           <div class="folio-cap"><h3>A library wall, ladder included</h3><span class="fig">Fig. 05 &middot; Northcote</span></div>
           <p class="folio-sub">Nine hundred books, one Victorian ceiling, zero visible fixings.</p>
         </a>
         <a class="folio-item reveal" href="#contact">
-          <div class="folio-media"><img src="assets/gallery-wardrobe.svg" alt="Walk-in wardrobe fit-out in pale timber" width="640" height="420"></div>
+          <div class="folio-media"><img src="assets/photos/06-wardrobe.jpg" onerror="this.onerror=null;this.src='assets/gallery-wardrobe.svg'" alt="Walk-in wardrobe fit-out in pale timber" width="640" height="420"></div>
           <div class="folio-cap"><h3>Walk-in, worked out</h3><span class="fig">Fig. 06 &middot; Pascoe Vale</span></div>
           <p class="folio-sub">Every coat, boot and hat measured before a single panel was cut.</p>
         </a>
         <a class="folio-item reveal" href="#contact">
-          <div class="folio-media"><img src="assets/gallery-pantry.svg" alt="Butler's pantry with open shelving and internal drawers" width="640" height="420"></div>
+          <div class="folio-media"><img src="assets/photos/07-pantry.jpg" onerror="this.onerror=null;this.src='assets/gallery-pantry.svg'" alt="Butler's pantry with open shelving and internal drawers" width="640" height="420"></div>
           <div class="folio-cap"><h3>The working pantry</h3><span class="fig">Fig. 07 &middot; Thornbury</span></div>
           <p class="folio-sub">A second kitchen behind the first — where the mess actually lives.</p>
         </a>
