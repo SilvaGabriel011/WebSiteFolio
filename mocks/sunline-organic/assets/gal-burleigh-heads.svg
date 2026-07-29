@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 560" role="img" aria-label="">
+  <defs>
+    <linearGradient id="bhstone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFCF7"/><stop offset="1" stop-color="#EFE9DA"/>
+    </linearGradient>
+    <radialGradient id="bhsun" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#E9C87F"/><stop offset="1" stop-color="#C99F53"/>
+    </radialGradient>
+    <pattern id="bhtile" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#F8F2E4"/>
+      <rect x="1.2" y="1.2" width="27.6" height="27.6" rx="1.5" fill="none" stroke="#E6DCC6" stroke-width="1.3"/>
+    </pattern>
+  </defs>
+  <rect width="840" height="560" fill="#FBF8F1"/>
+  <rect y="448" width="840" height="112" fill="#F0E7D2"/>
+  <path d="M0 496h840" stroke="#E3D8BD" stroke-width="2"/>
+
+  <!-- tall pantry, storage ladder -->
+  <rect x="58" y="60" width="150" height="388" fill="#87A48A"/>
+  <rect x="72" y="74" width="122" height="170" rx="3" fill="none" stroke="#6E8D74" stroke-width="2.5"/>
+  <rect x="72" y="258" width="122" height="176" rx="3" fill="none" stroke="#6E8D74" stroke-width="2.5"/>
+  <path d="M180 140v40M180 300v40" stroke="#D9B36A" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- compact run: shelves, splashback, bench, under-bench storage -->
+  <path d="M240 128h250M240 190h250" stroke="#2E332C" stroke-width="3.5" stroke-linecap="round" opacity=".8"/>
+  <g fill="#B7C9B4">
+    <rect x="256" y="102" width="14" height="22" rx="6"/>
+    <rect x="278" y="96" width="14" height="28" rx="6"/>
+    <ellipse cx="336" cy="119" rx="16" ry="5"/>
+    <ellipse cx="336" cy="108" rx="12" ry="4"/>
+  </g>
+  <path d="M420 124v-24m0 5c-6-6-12-8-18-6m18 0c6-6 12-8 18-6" fill="none" stroke="#6E8D74" stroke-width="2.6" stroke-linecap="round"/>
+  <rect x="392" y="168" width="30" height="22" rx="3" fill="#B58B3E" opacity=".85"/>
+
+  <rect x="240" y="206" width="250" height="96" fill="url(#bhtile)"/>
+  <rect x="232" y="298" width="266" height="16" rx="3" fill="url(#bhstone)"/>
+  <rect x="240" y="314" width="250" height="134" fill="#5F7A63"/>
+  <g fill="none" stroke="#4E6852" stroke-width="2.4">
+    <path d="M240 358h250M365 314v44"/>
+    <rect x="256" y="372" width="100" height="60" rx="2"/>
+    <rect x="374" y="372" width="100" height="60" rx="2"/>
+  </g>
+  <g stroke="#D9B36A" stroke-width="3.6" stroke-linecap="round">
+    <path d="M290 336h26M414 336h26M290 388h32M408 388h32"/>
+  </g>
+
+  <!-- balcony door with rail and sun -->
+  <rect x="546" y="60" width="238" height="388" fill="#F7EFDC"/>
+  <rect x="558" y="72" width="214" height="364" fill="#F8F1DF"/>
+  <circle cx="666" cy="164" r="38" fill="url(#bhsun)"/>
+  <rect x="558" y="284" width="214" height="44" fill="#9FBCA6"/>
+  <rect x="558" y="328" width="214" height="108" fill="#EBDFC2"/>
+  <g stroke="#B58B3E" stroke-width="2.5">
+    <rect x="546" y="60" width="238" height="388" fill="none"/>
+    <path d="M665 72v364"/>
+  </g>
+  <!-- balcony rail -->
+  <path d="M558 356h214" stroke="#8A6528" stroke-width="4" stroke-linecap="round"/>
+  <path d="M584 356v80M640 356v80M696 356v80M748 356v80" stroke="#8A6528" stroke-width="2.6"/>
+
+  <!-- fold-down breakfast ledge + stool -->
+  <ellipse cx="330" cy="512" rx="230" ry="15" fill="#26312B" opacity=".08"/>
+  <rect x="252" y="452" width="164" height="12" rx="3" fill="url(#bhstone)"/>
+  <path d="M262 464l-6 46M406 464l6 46" stroke="#8A6528" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="470" cy="470" rx="22" ry="7" fill="#B58B3E"/>
+  <path d="M456 476l-6 34M484 476l6 34" stroke="#8A6528" stroke-width="3" stroke-linecap="round"/>
+</svg>

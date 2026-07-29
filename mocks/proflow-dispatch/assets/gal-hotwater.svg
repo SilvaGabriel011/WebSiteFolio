@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="ghwT">
+  <title id="ghwT">315 litre hot water cylinder with valves and heat waves</title>
+  <defs>
+    <linearGradient id="ghwBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C4172"/>
+      <stop offset="1" stop-color="#062741"/>
+    </linearGradient>
+    <linearGradient id="ghwTank" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1C6DAE"/>
+      <stop offset="0.5" stop-color="#5FA8DC"/>
+      <stop offset="1" stop-color="#155C96"/>
+    </linearGradient>
+    <pattern id="ghwDots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.6" fill="#7FB4DE" fill-opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#ghwBg)"/>
+  <rect width="400" height="300" fill="url(#ghwDots)"/>
+  <rect y="258" width="400" height="8" fill="#0A3055"/>
+  <!-- tank -->
+  <g transform="translate(168 40)">
+    <rect x="0" y="0" width="128" height="204" rx="34" fill="url(#ghwTank)"/>
+    <rect x="0" y="58" width="128" height="7" fill="#0A3A64" fill-opacity="0.5"/>
+    <rect x="0" y="140" width="128" height="7" fill="#0A3A64" fill-opacity="0.5"/>
+    <rect x="14" y="204" width="14" height="18" fill="#0A3055"/>
+    <rect x="100" y="204" width="14" height="18" fill="#0A3055"/>
+    <!-- TPR valve -->
+    <g transform="translate(128 96)">
+      <rect x="0" y="-7" width="30" height="14" rx="5" fill="#F26722"/>
+      <path d="M30 0 v44" stroke="#F26722" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <!-- inlet -->
+    <path d="M-38 176 H0" stroke="#2E77B0" stroke-width="12" stroke-linecap="round"/>
+    <rect x="-46" y="166" width="14" height="20" rx="4" fill="#F26722"/>
+    <!-- outlet top -->
+    <path d="M64 0 V-26 H128" stroke="#2E77B0" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <!-- badge -->
+    <circle cx="64" cy="102" r="27" fill="#0A3A64"/>
+    <path d="M64 84 c9 12 15 19 15 27 a15 15 0 1 1 -30 0 c0 -8 6 -15 15 -27z" fill="#F26722"/>
+  </g>
+  <!-- heat waves -->
+  <g fill="none" stroke="#F26722" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <path d="M78 96 q10 -12 0 -24 q-10 -12 0 -24"/>
+    <path d="M104 110 q10 -12 0 -24 q-10 -12 0 -24"/>
+    <path d="M330 120 q10 -12 0 -24 q-10 -12 0 -24"/>
+  </g>
+  <!-- gauge -->
+  <g transform="translate(76 196)">
+    <circle r="26" fill="#0A3A64" stroke="#7FB4DE" stroke-width="4"/>
+    <path d="M0 0 L13 -13" stroke="#F26722" stroke-width="5" stroke-linecap="round"/>
+    <circle r="4" fill="#F26722"/>
+  </g>
+</svg>

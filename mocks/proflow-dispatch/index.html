@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProFlow Plumbing — 24/7 emergency plumbers, Penrith</title>
+  <meta name="description" content="Design mock — emergency dispatch direction for ProFlow Plumbing. Fast, licensed plumbing across Western Sydney, 24 hours a day.">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <style>
+    /* ================================================================
+       MOCK — "Hero-Centric + Conversion-Optimized" (ui-ux-pro-max).
+       Emergency dispatch board: near-black navy, hazard orange CTAs,
+       heavy condensed type, hard edges, trust signals everywhere.
+       Self-contained; system fonts; works over file://.
+       ================================================================ */
+    :root {
+      --night: #071523;
+      --night-2: #0B2237;
+      --navy: #0B4F8A;
+      --sky: #B9D4EA;
+      --sky-dim: #7FA3C2;
+      --orange: #F26722;
+      --orange-hot: #FF7A33;
+      --white: #F6FAFD;
+      --ok: #37C978;
+      --line: #1C3A55;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+    body {
+      background: var(--night);
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: 1.02rem;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: inherit; }
+    a, button { cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--orange-hot); outline-offset: 3px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -4rem; z-index: 99;
+      background: var(--orange); color: var(--night);
+      font-weight: 800; font-size: 0.85rem;
+      padding: 0.6rem 1rem; text-decoration: none;
+      transition: top 0.2s ease-out;
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { max-width: 72rem; margin-inline: auto; padding-inline: clamp(1.1rem, 4vw, 2.5rem); }
+
+    .caps {
+      font-size: 0.72rem; font-weight: 800;
+      letter-spacing: 0.18em; text-transform: uppercase;
+    }
+
+    /* ---------------- Status bar ---------------- */
+    .status {
+      background: var(--orange);
+      color: var(--night);
+      font-weight: 800; font-size: 0.8rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding-block: 0.45rem;
+    }
+    .status .wrap { display: flex; align-items: center; justify-content: center; gap: 0.6rem; flex-wrap: wrap; text-align: center; }
+    .status-dot {
+      width: 0.6rem; height: 0.6rem; border-radius: 50%;
+      background: var(--night);
+      animation: blink 1.6s ease-in-out infinite;
+      flex: none;
+    }
+    @keyframes blink { 50% { opacity: 0.25; } }
+
+    /* ---------------- Header ---------------- */
+    .hdr { border-bottom: 1px solid var(--line); background: var(--night); position: sticky; top: 0; z-index: 50; }
+    .hdr .wrap { display: flex; align-items: center; gap: 1rem; min-height: 4rem; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; font-weight: 900; font-size: 1.15rem; letter-spacing: -0.01em; }
+    .brand svg, .brand img { width: 2rem; height: 2rem; }
+    .brand em { font-style: normal; color: var(--orange); }
+    .hdr-nav { display: none; gap: 1.6rem; margin-left: auto; }
+    @media (min-width: 56em) { .hdr-nav { display: flex; } }
+    .hdr-nav a { text-decoration: none; font-weight: 700; font-size: 0.88rem; color: var(--sky); }
+    .hdr-nav a:hover { color: var(--white); }
+    .hdr-call {
+      margin-left: auto;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--orange); color: var(--night);
+      font-weight: 900; font-size: 0.95rem; text-decoration: none;
+      padding: 0.6em 1em; border-radius: 4px;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    @media (min-width: 56em) { .hdr-call { margin-left: 1.5rem; } }
+    .hdr-call:hover { background: var(--orange-hot); }
+
+    /* ---------------- Hero ---------------- */
+    .hero { padding-block: clamp(3rem, 9vw, 6.5rem) clamp(2.5rem, 6vw, 4.5rem); border-bottom: 1px solid var(--line); }
+    .hero-grid { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+    @media (min-width: 62em) { .hero-grid { grid-template-columns: 7fr 5fr; } }
+    .hero h1 {
+      font-size: clamp(2.4rem, 7.4vw, 5rem);
+      font-weight: 900;
+      line-height: 0.99;
+      letter-spacing: -0.025em;
+      text-transform: uppercase;
+      max-width: 14ch;
+    }
+    .hero h1 em { font-style: normal; color: var(--orange); }
+    .hero-sub { margin-top: 1.2rem; font-size: clamp(1rem, 1.6vw, 1.2rem); color: var(--sky); max-width: 46ch; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.9rem; align-items: center; }
+    .btn-call {
+      display: inline-flex; align-items: center; gap: 0.7rem;
+      background: var(--orange); color: var(--night);
+      font-weight: 900; font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+      text-decoration: none;
+      padding: 0.75em 1.2em; border-radius: 6px;
+      box-shadow: 0 6px 0 #A83F0D;
+      transition: transform 0.12s, box-shadow 0.12s, background 0.15s;
+    }
+    .btn-call:hover { background: var(--orange-hot); transform: translateY(2px); box-shadow: 0 4px 0 #A83F0D; }
+    .btn-quote {
+      font-weight: 800; font-size: 0.95rem; text-decoration: none; color: var(--white);
+      padding: 0.9em 1.3em; border: 2px solid var(--line); border-radius: 6px;
+      transition: border-color 0.15s;
+    }
+    .btn-quote:hover { border-color: var(--sky-dim); }
+    .hero-note { margin-top: 0.9rem; font-size: 0.85rem; color: var(--sky-dim); }
+    .hero-note b { color: var(--ok); }
+    .hero-figure {
+      border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+      background: var(--night-2);
+    }
+    .hero-figure img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .hero-figure figcaption {
+      padding: 0.6rem 0.9rem;
+      font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--sky-dim);
+      border-top: 1px solid var(--line);
+    }
+
+    /* ---------------- Trust strip ---------------- */
+    .trust { border-bottom: 1px solid var(--line); background: var(--night-2); }
+    .trust .wrap {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+    }
+    @media (min-width: 56em) { .trust .wrap { grid-template-columns: repeat(4, 1fr); } }
+    .trust-item { padding: 1.1rem 1rem; border-left: 1px solid var(--line); }
+    .trust-item:first-child { border-left: 0; }
+    .trust-item b { display: block; font-size: 1.05rem; font-weight: 900; }
+    .trust-item span { font-size: 0.8rem; color: var(--sky-dim); }
+
+    /* ---------------- Sections ---------------- */
+    section { padding-block: clamp(2.8rem, 7vw, 5rem); }
+    .sect-head { margin-bottom: clamp(1.6rem, 4vw, 2.6rem); }
+    .sect-head .caps { color: var(--orange); }
+    .sect-head h2 {
+      margin-top: 0.5rem;
+      font-size: clamp(1.7rem, 4.4vw, 2.8rem);
+      font-weight: 900; letter-spacing: -0.02em; text-transform: uppercase;
+    }
+
+    /* Service cards with fixed prices */
+    .svc-grid { display: grid; gap: 1rem; }
+    @media (min-width: 48em) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 62em) { .svc-grid { grid-template-columns: repeat(3, 1fr); } }
+    .svc {
+      display: flex; flex-direction: column; gap: 0.5rem;
+      background: var(--night-2);
+      border: 1px solid var(--line); border-radius: 8px;
+      padding: 1.3rem 1.25rem;
+      text-decoration: none;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .svc:hover { border-color: var(--orange); transform: translateY(-2px); }
+    .svc h3 { font-size: 1.08rem; font-weight: 800; }
+    .svc p { font-size: 0.88rem; color: var(--sky-dim); flex: 1; }
+    .svc-price { font-family: var(--mono); font-size: 0.85rem; color: var(--orange); }
+    .svc-price b { font-size: 1.2rem; }
+
+    /* Steps */
+    .steps { counter-reset: step; display: grid; gap: 1rem; }
+    @media (min-width: 56em) { .steps { grid-template-columns: repeat(3, 1fr); } }
+    .step { border: 1px solid var(--line); border-radius: 8px; padding: 1.3rem 1.25rem; position: relative; }
+    .step::before {
+      counter-increment: step;
+      content: "0" counter(step);
+      font-family: var(--mono); font-weight: 700; font-size: 1.6rem;
+      color: var(--orange);
+      display: block; margin-bottom: 0.5rem;
+    }
+    .step b { display: block; font-size: 1.02rem; margin-bottom: 0.3rem; }
+    .step span { font-size: 0.88rem; color: var(--sky-dim); }
+
+    /* Reviews */
+    .reviews { background: var(--night-2); border-block: 1px solid var(--line); }
+    .review-grid { display: grid; gap: 1rem; }
+    @media (min-width: 56em) { .review-grid { grid-template-columns: repeat(3, 1fr); } }
+    .review { border: 1px solid var(--line); border-radius: 8px; padding: 1.2rem 1.15rem; background: var(--night); }
+    .stars { color: var(--orange); letter-spacing: 0.15em; font-size: 0.85rem; }
+    .review p { margin-top: 0.6rem; font-size: 0.92rem; }
+    .review footer { margin-top: 0.7rem; font-size: 0.78rem; color: var(--sky-dim); }
+
+    /* Quote form */
+    .quote-grid { display: grid; gap: clamp(1.8rem, 5vw, 3.5rem); }
+    @media (min-width: 62em) { .quote-grid { grid-template-columns: 5fr 6fr; align-items: start; } }
+    .quote-grid > * { min-width: 0; }
+    .quote-side a { overflow-wrap: anywhere; }
+    .quote-side p { color: var(--sky); margin-top: 1rem; max-width: 46ch; }
+    .quote-direct { display: grid; gap: 0.7rem; margin-top: 1.4rem; font-weight: 700; }
+    .quote-direct a { text-decoration: none; color: var(--white); }
+    .quote-direct a:hover { color: var(--orange-hot); }
+    .quote-direct .caps { color: var(--sky-dim); display: block; font-weight: 800; }
+    .qform {
+      background: var(--white); color: var(--night);
+      border-radius: 10px; padding: clamp(1.3rem, 3vw, 2rem);
+      display: grid; gap: 0.9rem;
+    }
+    .qform h3 { font-size: 1.25rem; font-weight: 900; }
+    .qform label { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.3rem; }
+    .qform input, .qform select, .qform textarea {
+      width: 100%; font: inherit;
+      padding: 0.7rem 0.8rem;
+      border: 2px solid #C8D4DE; border-radius: 6px;
+      background: #fff; color: var(--night);
+    }
+    .qform input:focus-visible, .qform select:focus-visible, .qform textarea:focus-visible { outline-color: var(--navy); }
+    .qform button {
+      font: inherit; font-weight: 900; font-size: 1.05rem;
+      background: var(--orange); color: var(--night);
+      border: 0; border-radius: 6px;
+      padding: 0.85em 1.2em;
+      box-shadow: 0 5px 0 #A83F0D;
+      transition: transform 0.12s, box-shadow 0.12s;
+    }
+    .qform button:hover { transform: translateY(2px); box-shadow: 0 3px 0 #A83F0D; }
+    .qform small { color: #5A7186; font-size: 0.78rem; }
+
+    /* Footer */
+    .ftr { border-top: 1px solid var(--line); padding-block: 1.4rem 4.5rem; }
+    .ftr .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem 2rem; font-size: 0.78rem; color: var(--sky-dim); }
+    @media (min-width: 56em) { .ftr { padding-bottom: 1.4rem; } }
+
+    /* Mobile sticky call bar */
+    .callbar {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+      display: flex;
+      background: var(--orange);
+    }
+    @media (min-width: 56em) { .callbar { display: none; } }
+    .callbar a {
+      flex: 1;
+      text-align: center; text-decoration: none;
+      font-weight: 900; font-size: 1rem; color: var(--night);
+      padding: 0.95rem 0.5rem;
+    }
+    .callbar a + a { border-left: 2px solid rgba(7, 21, 35, 0.25); }
+
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.45s ease-out, transform 0.45s ease-out; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#services">Skip to content</a>
+
+  <div class="status" role="status">
+    <div class="wrap">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>Open now &middot; plumbers on the road across Western Sydney &middot; typical arrival under 60 min</span>
+    </div>
+  </div>
+
+  <header class="hdr">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="ProFlow Plumbing — home">
+        <img src="assets/mark.svg" alt="" width="32" height="32">
+        <span>ProFlow<em>.</em></span>
+      </a>
+      <nav class="hdr-nav" aria-label="Sections">
+        <a href="#services">Fixed prices</a>
+        <a href="#how">How it works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#quote">Get a price</a>
+      </nav>
+      <a class="hdr-call" href="tel:0400776121">
+        <span aria-hidden="true">&#9742;</span> 0400 776 121
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="caps" style="color:var(--orange)">24/7 emergency &middot; Penrith &amp; Western Sydney</p>
+          <h1 style="margin-top:0.8rem">Burst pipe? <em>We answer at 2am.</em></h1>
+          <p class="hero-sub">A licensed plumber picks up the phone — not a call centre — and you get a fixed price before any work starts. No surprises on the invoice, no meter running.</p>
+          <div class="hero-cta">
+            <a class="btn-call" href="tel:0400776121"><span aria-hidden="true">&#9742;</span> 0400 776 121</a>
+            <a class="btn-quote" href="#quote">Get a fixed price</a>
+          </div>
+          <p class="hero-note"><b>&#9679; 3 vans on the road now</b> &middot; NSW Lic. L048213 &middot; fully insured</p>
+        </div>
+        <figure class="hero-figure reveal">
+          <img src="assets/photos/01-hero-van.jpg" onerror="this.onerror=null;this.src='assets/hero.svg'" alt="ProFlow plumber at work on an emergency call-out" width="640" height="480">
+          <figcaption>Job 7218 — burst flexi hose, Glenmore Park, cleared in 40 min</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="trust" role="list" aria-label="Why ProFlow">
+      <div class="wrap">
+        <div class="trust-item" role="listitem"><b>Under 60 min</b><span>typical emergency arrival</span></div>
+        <div class="trust-item" role="listitem"><b>Fixed price first</b><span>approved before we start</span></div>
+        <div class="trust-item" role="listitem"><b>Licensed &amp; insured</b><span>NSW Lic. L048213</span></div>
+        <div class="trust-item" role="listitem"><b>4.9 ★ local rating</b><span>from 300+ jobs</span></div>
+      </div>
+    </div>
+
+    <section id="services" class="wrap" aria-labelledby="svc-title">
+      <div class="sect-head">
+        <p class="caps">Straight off the price list</p>
+        <h2 id="svc-title">Fixed prices, not estimates</h2>
+      </div>
+      <div class="svc-grid">
+        <a class="svc reveal" href="#quote"><h3>Emergency call-out</h3><p>Burst pipes, major leaks, no water. 24 hours, every day of the year.</p><span class="svc-price">from <b>$220</b> incl. GST</span></a>
+        <a class="svc reveal" href="#quote"><h3>Blocked drains</h3><p>High-pressure jet clear with CCTV inspection included — see the problem for yourself.</p><span class="svc-price">from <b>$380</b> incl. GST</span></a>
+        <a class="svc reveal" href="#quote"><h3>Hot water systems</h3><p>Repair today or replace tomorrow — supply, install and takeaway of the old unit.</p><span class="svc-price">from <b>$350</b> incl. GST</span></a>
+        <a class="svc reveal" href="#quote"><h3>Taps &amp; toilets</h3><p>Dripping taps, running cisterns, full replacements. Done in one visit.</p><span class="svc-price">from <b>$165</b> incl. GST</span></a>
+        <a class="svc reveal" href="#quote"><h3>Gas fitting</h3><p>Cooktops, bayonets and compliance certificates from a licensed gasfitter.</p><span class="svc-price">from <b>$190</b> incl. GST</span></a>
+        <a class="svc reveal" href="#quote"><h3>Backflow testing</h3><p>Annual tests and reports lodged for strata and commercial sites.</p><span class="svc-price">from <b>$145</b> incl. GST</span></a>
+      </div>
+    </section>
+
+    <section id="how" class="wrap" aria-labelledby="how-title">
+      <div class="sect-head">
+        <p class="caps">No meter, no mystery</p>
+        <h2 id="how-title">How the fixed price works</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><b>Call or book online</b><span>Tell us what's leaking. A plumber answers — day or night — and books the next available van.</span></div>
+        <div class="step reveal"><b>Approve the price on the spot</b><span>We assess, quote a fixed price from the printed list, and only start when you say go.</span></div>
+        <div class="step reveal"><b>Fixed means fixed</b><span>The price you approved is the price on the invoice — even if the job runs long.</span></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews" aria-labelledby="rev-title">
+      <div class="wrap">
+        <div class="sect-head">
+          <p class="caps">From the neighbours</p>
+          <h2 id="rev-title">300+ local jobs, 4.9 stars</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Burst pipe at 11pm, Shane was here by midnight. Fixed price quoted before he touched a thing."</p><footer>Maria C. — St Marys</footer></article>
+          <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"New hot water system supplied and installed the next morning. Old unit gone by lunch."</p><footer>Lisa T. — Kingswood</footer></article>
+          <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"They do our strata's backflow and TMV testing every year. Reports lodged without chasing."</p><footer>Grant E. — Peachtree Strata</footer></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="wrap" aria-labelledby="quote-title">
+      <div class="quote-grid">
+        <div class="quote-side">
+          <p class="caps" style="color:var(--orange)">Free quote</p>
+          <h2 id="quote-title" style="font-size:clamp(1.7rem,4.4vw,2.8rem);font-weight:900;text-transform:uppercase;letter-spacing:-0.02em;margin-top:0.5rem">Tell us what's leaking</h2>
+          <p>Send the details and we'll come back with a fixed price within 30 minutes in business hours. Prefer to talk?</p>
+          <div class="quote-direct">
+            <a href="tel:0400776121"><span class="caps">24/7 emergency</span>0400 776 121</a>
+            <a href="tel:0247328841"><span class="caps">Office</span>(02) 4732 8841</a>
+            <a href="mailto:bookings@proflowplumbing.com.au"><span class="caps">Email</span>bookings@proflowplumbing.com.au</a>
+            <a href="../../app/index.html?business=proflow-plumbing#/book"><span class="caps">Self-serve</span>Book online in under a minute &rarr;</a>
+          </div>
+        </div>
+        <form class="qform" onsubmit="return false">
+          <h3>Get a fixed price in 30 min</h3>
+          <div><label for="qf-name">Name</label><input id="qf-name" type="text" autocomplete="name"></div>
+          <div><label for="qf-phone">Mobile</label><input id="qf-phone" type="tel" inputmode="tel" placeholder="04xx xxx xxx" autocomplete="tel"></div>
+          <div><label for="qf-issue">What's the problem?</label><textarea id="qf-issue" rows="3" placeholder="e.g. Hot water system leaking from the base — no hot water this morning."></textarea></div>
+          <button type="submit">Send — get my price</button>
+          <small>Demo note: nothing is sent anywhere — this form only lives in your browser.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <span>ProFlow Plumbing &middot; ABN 62 405 118 397 &middot; NSW Plumbing Lic. L048213</span>
+      <span>Design mock — dispatch direction &middot; fictional business</span>
+    </div>
+  </footer>
+
+  <nav class="callbar" aria-label="Quick contact">
+    <a href="tel:0400776121">&#9742; Call now</a>
+    <a href="#quote">Get a price</a>
+  </nav>
+
+  <script>
+    (function () {
+      'use strict';
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) ||
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

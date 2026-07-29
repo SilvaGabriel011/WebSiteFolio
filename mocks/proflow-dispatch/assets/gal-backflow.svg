@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="gbfT">
+  <title id="gbfT">Backflow prevention device schematic with one-way flow arrows</title>
+  <defs>
+    <linearGradient id="gbfBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E4A80"/>
+      <stop offset="1" stop-color="#072E4F"/>
+    </linearGradient>
+    <pattern id="gbfGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0v28" fill="none" stroke="#3E7FB5" stroke-opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#gbfBg)"/>
+  <rect width="400" height="300" fill="url(#gbfGrid)"/>
+  <!-- main line -->
+  <path d="M0 168 H400" stroke="#0A3055" stroke-width="34"/>
+  <path d="M0 168 H400" stroke="#2E77B0" stroke-width="24"/>
+  <path d="M0 160 H400" stroke="#7FB4DE" stroke-width="3" stroke-opacity="0.5"/>
+  <!-- device body -->
+  <rect x="118" y="136" width="164" height="64" rx="12" fill="#0A3A64" stroke="#7FB4DE" stroke-width="4"/>
+  <!-- check valves (bowties) -->
+  <g fill="#F26722">
+    <path d="M150 152 v32 l26 -16 z"/>
+    <path d="M202 152 v32 l26 -16 z"/>
+  </g>
+  <g fill="none" stroke="#F26722" stroke-width="4">
+    <path d="M176 152 v32"/>
+    <path d="M228 152 v32"/>
+  </g>
+  <!-- test cocks -->
+  <g stroke="#F26722" stroke-width="7" stroke-linecap="round">
+    <path d="M140 136 v-18"/><path d="M200 136 v-18"/><path d="M260 136 v-18"/>
+  </g>
+  <!-- flanges -->
+  <rect x="104" y="146" width="14" height="44" rx="4" fill="#F26722"/>
+  <rect x="282" y="146" width="14" height="44" rx="4" fill="#F26722"/>
+  <!-- flow arrow (allowed) -->
+  <g transform="translate(72 236)">
+    <path d="M0 0 h64" stroke="#5FA8DC" stroke-width="8" stroke-linecap="round"/>
+    <path d="M58 -12 L82 0 L58 12 z" fill="#5FA8DC"/>
+  </g>
+  <!-- blocked reverse arrow -->
+  <g transform="translate(322 236)">
+    <path d="M0 0 h-56" stroke="#7FB4DE" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
+    <path d="M-50 -12 L-74 0 L-50 12 z" fill="#7FB4DE" opacity="0.55"/>
+    <circle cx="-32" cy="0" r="22" fill="none" stroke="#F26722" stroke-width="6"/>
+    <path d="M-47 -15 L-17 15" stroke="#F26722" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- gauge above -->
+  <g transform="translate(200 74)">
+    <circle r="30" fill="#0A3A64" stroke="#F26722" stroke-width="5"/>
+    <g stroke="#9CC4E4" stroke-width="3" stroke-linecap="round">
+      <path d="M-20 11 l-5 3"/><path d="M0 -23 v-5"/><path d="M20 11 l5 3"/>
+    </g>
+    <path d="M0 0 L14 -14" stroke="#F26722" stroke-width="5" stroke-linecap="round"/>
+    <circle r="4.5" fill="#F26722"/>
+    <path d="M0 30 v18" stroke="#7FB4DE" stroke-width="5"/>
+  </g>
+</svg>
