@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="gbpT">
+  <title id="gbpT">Night-time burst pipe with repair clamp and water spray</title>
+  <defs>
+    <linearGradient id="gbpBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#041526"/>
+      <stop offset="1" stop-color="#0A3055"/>
+    </linearGradient>
+    <radialGradient id="gbpMoon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#CFE7F7"/>
+      <stop offset="0.75" stop-color="#9CC4E4"/>
+      <stop offset="1" stop-color="#9CC4E4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#gbpBg)"/>
+  <!-- stars -->
+  <g fill="#7FB4DE">
+    <circle cx="52" cy="46" r="3"/><circle cx="128" cy="28" r="2"/>
+    <circle cx="212" cy="52" r="2.5"/><circle cx="300" cy="30" r="2"/>
+    <circle cx="368" cy="70" r="3"/><circle cx="86" cy="92" r="2"/>
+  </g>
+  <circle cx="330" cy="64" r="34" fill="url(#gbpMoon)"/>
+  <!-- ground -->
+  <rect y="252" width="400" height="48" fill="#041526"/>
+  <path d="M0 252 H400" stroke="#2E77B0" stroke-width="3" stroke-opacity="0.5"/>
+  <!-- pipe -->
+  <path d="M0 216 H400" stroke="#0A3055" stroke-width="40"/>
+  <path d="M0 216 H400" stroke="#2E77B0" stroke-width="30"/>
+  <path d="M0 206 H400" stroke="#7FB4DE" stroke-width="3" stroke-opacity="0.45"/>
+  <!-- crack -->
+  <path d="M182 200 l10 8 -8 6 12 6" fill="none" stroke="#041526" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- spray -->
+  <g fill="none" stroke="#5FA8DC" stroke-width="5" stroke-linecap="round">
+    <path d="M188 196 C186 160 172 132 148 112"/>
+    <path d="M192 194 C196 152 192 118 200 88"/>
+    <path d="M196 196 C210 162 228 140 252 126"/>
+  </g>
+  <g fill="#5FA8DC">
+    <path d="M142 100 c5 7 9 12 9 17 a9 9 0 1 1 -18 0 c0 -5 4 -10 9 -17z"/>
+    <path d="M200 72 c5 7 9 12 9 17 a9 9 0 1 1 -18 0 c0 -5 4 -10 9 -17z"/>
+    <path d="M260 114 c4 6 8 10 8 15 a8 8 0 1 1 -16 0 c0 -5 4 -9 8 -15z"/>
+    <circle cx="168" cy="140" r="4" opacity="0.7"/>
+    <circle cx="226" cy="120" r="4" opacity="0.7"/>
+  </g>
+  <!-- repair clamp -->
+  <g transform="translate(292 216)">
+    <rect x="-20" y="-26" width="40" height="52" rx="8" fill="#F26722"/>
+    <rect x="-20" y="-6" width="40" height="12" fill="#B34A12"/>
+    <circle cx="0" cy="-16" r="4" fill="#062741"/>
+    <circle cx="0" cy="16" r="4" fill="#062741"/>
+  </g>
+  <!-- torch beam -->
+  <g transform="translate(74 258)">
+    <rect x="-26" y="-10" width="34" height="20" rx="6" fill="#0A3A64" stroke="#7FB4DE" stroke-width="3"/>
+    <path d="M8 -8 L96 -52 L96 20 L8 8 z" fill="#F26722" opacity="0.28"/>
+  </g>
+</svg>

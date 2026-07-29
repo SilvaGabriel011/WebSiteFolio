@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Pipe schematic with pressure gauge and water droplet</title>
+  <defs>
+    <linearGradient id="hBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E4A80"/>
+      <stop offset="1" stop-color="#062741"/>
+    </linearGradient>
+    <linearGradient id="hDrop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5FA8DC"/>
+      <stop offset="1" stop-color="#1C6DAE"/>
+    </linearGradient>
+    <linearGradient id="hFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F5490"/>
+      <stop offset="1" stop-color="#0A3A64"/>
+    </linearGradient>
+    <pattern id="hGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#3E7FB5" stroke-opacity="0.18" stroke-width="1"/>
+    </pattern>
+    <pattern id="hHaz" width="24" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <rect width="24" height="12" fill="#F26722"/>
+      <rect width="12" height="12" fill="#0A3A64"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="460" rx="18" fill="url(#hBg)"/>
+  <rect width="640" height="460" rx="18" fill="url(#hGrid)"/>
+  <!-- pipe runs -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-10 120 H210 Q234 120 234 144 V332 Q234 356 258 356 H660" stroke="#0A3055" stroke-width="34"/>
+    <path d="M-10 120 H210 Q234 120 234 144 V332 Q234 356 258 356 H660" stroke="#2E77B0" stroke-width="24"/>
+    <path d="M-10 112 H206" stroke="#7FB4DE" stroke-width="4" stroke-opacity="0.55"/>
+    <path d="M266 348 H650" stroke="#7FB4DE" stroke-width="4" stroke-opacity="0.55"/>
+    <path d="M420 356 V214 Q420 190 444 190 H660" stroke="#0A3055" stroke-width="30"/>
+    <path d="M420 356 V214 Q420 190 444 190 H660" stroke="#2E77B0" stroke-width="20"/>
+  </g>
+  <!-- flanged joints -->
+  <g fill="#F26722">
+    <rect x="122" y="98" width="16" height="44" rx="4"/>
+    <rect x="216" y="238" width="36" height="16" rx="4"/>
+    <rect x="330" y="334" width="16" height="44" rx="4"/>
+    <rect x="404" y="256" width="32" height="16" rx="4"/>
+  </g>
+  <!-- valve wheel on vertical pipe -->
+  <g transform="translate(234 190)">
+    <circle r="26" fill="#062741" stroke="#F26722" stroke-width="8"/>
+    <path d="M-13 0h26M0 -13v26" stroke="#F26722" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- pressure gauge -->
+  <g transform="translate(470 132)">
+    <rect x="-10" y="52" width="20" height="26" rx="4" fill="#0A3055"/>
+    <circle r="64" fill="#062035"/>
+    <circle r="56" fill="url(#hFace)" stroke="#F26722" stroke-width="6"/>
+    <g stroke="#9CC4E4" stroke-width="4" stroke-linecap="round">
+      <path d="M-38 22 l-8 5"/><path d="M-44 -8 l-9 -2"/><path d="M-28 -34 l-6 -8"/>
+      <path d="M0 -44 v-9"/><path d="M28 -34 l6 -8"/><path d="M44 -8 l9 -2"/>
+    </g>
+    <path d="M38 22 l8 5" stroke="#F26722" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0 0 L30 -26" stroke="#F26722" stroke-width="7" stroke-linecap="round"/>
+    <circle r="9" fill="#F26722"/>
+    <circle r="3.5" fill="#062741"/>
+  </g>
+  <!-- droplet -->
+  <g transform="translate(140 300)">
+    <path d="M0 -74 C30 -34 52 -8 52 22 a52 52 0 1 1 -104 0 C-52 -8 -30 -34 0 -74z" fill="url(#hDrop)"/>
+    <path d="M-26 24 a26 26 0 0 0 22 26" fill="none" stroke="#CFE7F7" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- small droplets -->
+  <g fill="#5FA8DC">
+    <path d="M556 300 c8 11 14 18 14 26 a14 14 0 1 1 -28 0 c0 -8 6 -15 14 -26z"/>
+    <path d="M590 344 c6 8 10 13 10 19 a10 10 0 1 1 -20 0 c0 -6 4 -11 10 -19z" opacity="0.7"/>
+  </g>
+  <!-- hazard tab -->
+  <rect x="36" y="404" width="150" height="14" rx="7" fill="url(#hHaz)"/>
+  <circle cx="588" cy="72" r="6" fill="#F26722"/>
+  <circle cx="560" cy="52" r="4" fill="#3E7FB5"/>
+</svg>

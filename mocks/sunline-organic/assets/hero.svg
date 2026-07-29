@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 840" role="img" aria-label="">
+  <defs>
+    <radialGradient id="sun" cx="50%" cy="42%" r="60%">
+      <stop offset="0" stop-color="#E9C87F"/>
+      <stop offset=".65" stop-color="#D9B36A"/>
+      <stop offset="1" stop-color="#C39A4C"/>
+    </radialGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFCF7"/>
+      <stop offset="1" stop-color="#F0EADB"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9C87F" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#E9C87F" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="tile" width="46" height="46" patternUnits="userSpaceOnUse">
+      <rect width="46" height="46" fill="#F8F2E3"/>
+      <rect x="1.5" y="1.5" width="43" height="43" rx="2" fill="none" stroke="#E6DCC6" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="vein" width="240" height="150" patternUnits="userSpaceOnUse">
+      <rect width="240" height="150" fill="none"/>
+      <path d="M-10 28c40 10 62-16 96-8s40 34 84 26 62-30 80-24" fill="none" stroke="#DAD2BE" stroke-width="2.2" opacity=".8"/>
+      <path d="M-10 96c52-14 70 18 112 10s52-36 90-26 40 26 58 22" fill="none" stroke="#E2DAC6" stroke-width="1.6" opacity=".8"/>
+      <path d="M30 132c30 6 52-14 84-8" fill="none" stroke="#CBB98F" stroke-width="1.2" opacity=".6"/>
+    </pattern>
+  </defs>
+
+  <!-- room -->
+  <rect width="1440" height="840" fill="#FBF8F1"/>
+  <rect y="70" width="1440" height="570" fill="#F4EEE0"/>
+  <rect y="640" width="1440" height="200" fill="#EEE4CE"/>
+  <path d="M0 700h1440M0 756h1440M0 806h1440" stroke="#E3D7BC" stroke-width="2"/>
+  <rect y="636" width="1440" height="4" fill="#DDD0B2"/>
+
+  <!-- arched window, right -->
+  <path d="M1108 640V292a146 146 0 0 1 292 0v348z" fill="#F7EFDC"/>
+  <path d="M1122 640V292a132 132 0 0 1 264 0v348z" fill="#F9F2E0"/>
+  <rect x="1122" y="452" width="264" height="52" fill="#A9C0AC"/>
+  <rect x="1122" y="504" width="264" height="136" fill="#E9DCC0"/>
+  <circle cx="1254" cy="330" r="62" fill="url(#sun)"/>
+  <g stroke="#D9B36A" stroke-width="4" stroke-linecap="round" opacity=".8">
+    <path d="M1254 236v-18M1254 424v-6M1160 330h-18M1348 330h18M1188 264l-13-13M1320 264l13-13"/>
+  </g>
+  <path d="M1108 640V292a146 146 0 0 1 292 0v348" fill="none" stroke="#B58B3E" stroke-width="3"/>
+  <path d="M1254 198v442M1122 452h264" stroke="#B58B3E" stroke-width="2" opacity=".55"/>
+
+  <!-- tall cabinetry, left -->
+  <rect x="64" y="118" width="300" height="522" fill="#87A48A"/>
+  <rect x="80" y="134" width="130" height="238" rx="3" fill="none" stroke="#6E8D74" stroke-width="2.5"/>
+  <rect x="218" y="134" width="130" height="238" rx="3" fill="none" stroke="#6E8D74" stroke-width="2.5"/>
+  <rect x="80" y="388" width="130" height="236" rx="3" fill="none" stroke="#6E8D74" stroke-width="2.5"/>
+  <rect x="218" y="388" width="130" height="236" rx="3" fill="none" stroke="#6E8D74" stroke-width="2.5"/>
+  <g stroke="#D9B36A" stroke-width="5" stroke-linecap="round">
+    <path d="M198 244v36M230 244v36M198 480v36M230 480v36"/>
+  </g>
+
+  <!-- splashback + bench run -->
+  <rect x="384" y="250" width="700" height="192" fill="url(#tile)"/>
+  <rect x="384" y="426" width="700" height="16" fill="url(#glow)"/>
+  <rect x="376" y="440" width="716" height="22" rx="4" fill="url(#stone)"/>
+  <rect x="376" y="440" width="716" height="22" rx="4" fill="url(#vein)" opacity=".7"/>
+  <rect x="376" y="459" width="716" height="3" fill="#DDD2B8"/>
+  <rect x="384" y="462" width="700" height="178" fill="#5F7A63"/>
+  <path d="M559 462v178M734 462v178M909 462v178" stroke="#4E6852" stroke-width="2.5"/>
+  <g stroke="#D9B36A" stroke-width="4.5" stroke-linecap="round">
+    <path d="M448 486h48M623 486h48M798 486h48M973 486h48"/>
+  </g>
+  <!-- shelf objects on bench -->
+  <path d="M436 402c0-22 9-34 22-34s22 12 22 34a22 16 0 0 1-44 0z" fill="#B58B3E" opacity=".85"/>
+  <path d="M458 368v-30m0 6c-8-8-16-10-24-8m24 0c8-8 16-10 24-8" fill="none" stroke="#6E8D74" stroke-width="3" stroke-linecap="round"/>
+  <rect x="1000" y="410" width="64" height="30" rx="4" fill="#87A48A"/>
+
+  <!-- island -->
+  <ellipse cx="726" cy="768" rx="330" ry="24" fill="#26312B" opacity=".08"/>
+  <rect x="492" y="548" width="456" height="192" fill="#7E9B81"/>
+  <path d="M606 548v192M834 548v192" stroke="#6E8D74" stroke-width="2.5"/>
+  <rect x="462" y="520" width="516" height="30" rx="4" fill="url(#stone)"/>
+  <rect x="462" y="520" width="516" height="30" rx="4" fill="url(#vein)" opacity=".75"/>
+  <rect x="462" y="544" width="26" height="196" fill="url(#stone)"/>
+  <rect x="952" y="544" width="26" height="196" fill="url(#stone)"/>
+  <rect x="462" y="544" width="26" height="196" fill="url(#vein)" opacity=".55"/>
+  <rect x="952" y="544" width="26" height="196" fill="url(#vein)" opacity=".55"/>
+  <path d="M462 546h516" stroke="#DDD2B8" stroke-width="2.5"/>
+  <!-- bowl on island -->
+  <path d="M666 520a30 14 0 0 0 60 0z" fill="#B58B3E"/>
+  <circle cx="684" cy="512" r="7" fill="#87A48A"/><circle cx="700" cy="509" r="7" fill="#6E8D74"/><circle cx="712" cy="514" r="7" fill="#87A48A"/>
+
+  <!-- pendants -->
+  <g stroke="#8A6528" stroke-width="2.5">
+    <path d="M602 0v318M726 0v318M850 0v318"/>
+  </g>
+  <g fill="url(#sun)">
+    <path d="M566 356a36 36 0 0 1 72 0z"/>
+    <path d="M690 356a36 36 0 0 1 72 0z"/>
+    <path d="M814 356a36 36 0 0 1 72 0z"/>
+  </g>
+  <g fill="#E9C87F" opacity=".5">
+    <ellipse cx="602" cy="360" rx="26" ry="6"/>
+    <ellipse cx="726" cy="360" rx="26" ry="6"/>
+    <ellipse cx="850" cy="360" rx="26" ry="6"/>
+  </g>
+</svg>
