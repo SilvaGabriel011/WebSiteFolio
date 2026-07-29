@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="eOak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BB8C50"/>
+      <stop offset="1" stop-color="#8F5F2C"/>
+    </linearGradient>
+    <linearGradient id="eScr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E2A24"/>
+      <stop offset=".5" stop-color="#1C1A17"/>
+      <stop offset="1" stop-color="#26221D"/>
+    </linearGradient>
+    <pattern id="slat" width="16" height="120" patternUnits="userSpaceOnUse">
+      <rect width="16" height="120" fill="#8F5F2C"/>
+      <rect x="2" width="9" height="120" fill="url(#eOak)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="#F3EBDC"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#1F1D1A" stroke-opacity=".16" stroke-width="1.2"/>
+  <rect x="150" y="60" width="500" height="330" fill="#26221D"/>
+  <rect x="150" y="60" width="500" height="330" fill="none" stroke="#D8B77E" stroke-opacity=".5" stroke-width="1.6"/>
+  <g>
+    <rect x="250" y="108" width="300" height="176" rx="6" fill="url(#eScr)"/>
+    <rect x="250" y="108" width="300" height="176" rx="6" fill="none" stroke="#0F0E0C" stroke-width="3"/>
+    <path d="M282 130l70 132" stroke="#EFE3CC" stroke-opacity=".08" stroke-width="26"/>
+    <circle cx="400" cy="196" r="26" fill="none" stroke="#D8B77E" stroke-opacity=".7" stroke-width="2.4"/>
+    <path d="M394 184l20 12-20 12z" fill="#D8B77E"/>
+  </g>
+  <path d="M400 284v56" stroke="#8A6130" stroke-width="3" stroke-dasharray="7 7"/>
+  <circle cx="400" cy="336" r="5" fill="none" stroke="#8A6130" stroke-width="2"/>
+  <g>
+    <rect x="110" y="340" width="580" height="18" rx="3" fill="#EFE7DA" stroke="#C9BCA3" stroke-width="1.6"/>
+    <rect x="122" y="358" width="556" height="104" rx="4" fill="url(#slat)"/>
+    <rect x="122" y="358" width="556" height="104" rx="4" fill="none" stroke="#5F3F1B" stroke-opacity=".6" stroke-width="2"/>
+    <path d="M308 358v104M492 358v104" stroke="#3B2E1B" stroke-width="3"/>
+    <rect x="122" y="462" width="556" height="16" fill="#1C1A17"/>
+  </g>
+  <g fill="#1F1D1A">
+    <path d="M196 306q-2-38 22-40t14 26q18-16 26 2t-18 20q14 6 4 16t-24-4h-24z"/>
+    <path d="M212 306l4 34h12l4-34z" fill="#1F1D1A"/>
+  </g>
+  <path d="M586 306q10-26 30-26t18 26v34h-48z" fill="#C99C60"/>
+  <ellipse cx="400" cy="500" rx="300" ry="12" fill="#1F1D1A" opacity=".13"/>
+  <g stroke="#1F1D1A" stroke-opacity=".3" stroke-width="1.2" fill="none">
+    <path d="M122 520h556" stroke-dasharray="5 7"/>
+    <path d="M122 512v16M678 512v16"/>
+  </g>
+</svg>
