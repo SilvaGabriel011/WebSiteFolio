@@ -16,7 +16,8 @@ python3 -m http.server 8000
 
 The root page is a presentation hub linking to:
 
-- **4 demo marketing sites**, one per trade (`sites/<business>/`)
+- **16 demo marketing sites** — 4 fictional businesses × 4 design directions
+  (`sites/<business>/{premium,classic,bold,signature}/`)
 - **1 business-management demo app** (`app/`) themed per business via
   `app/index.html?business=<slug>#/dashboard`
 
@@ -75,9 +76,17 @@ and movements update.
    so order among modules doesn't matter. A module or data file that fails to
    load must never break boot — you just get fewer nav entries, so check the
    console when a section goes missing rather than assuming a crash.
-4. **The four sites share nothing** — each `sites/<slug>/` folder is fully
+4. **The sites share nothing** — each `sites/<slug>/<variant>/` folder is fully
    standalone (own CSS reset, own JS, own SVG assets) so a folder can be zipped
    and handed to a client, and so the sites stay visually distinct.
+   The `signature` variant is the newest design direction per business (chosen
+   with the ui-ux-pro-max skill: editorial for Ironbark, dispatch board for
+   ProFlow, trust ledger for Harbourline, nature distilled for Sunline). Its
+   pages are photo-ready: real photos live in `assets/photos/` with provenance
+   in `PHOTOS.md`, and every `<img>` falls back to an SVG plate via `onerror`
+   when a photo file is missing — so pages never break while photography is
+   being filled in. Hero images are 3-slide carousels (native scroll-snap +
+   a small vanilla JS layer for arrows/dots/caption sync).
 5. Copy is **Australian English** (colour, centre, organised); currency is AUD
    via `Intl.NumberFormat('en-AU')`; dates dd/mm/yyyy; mobiles `04xx xxx xxx`;
    landlines match the state's area code.

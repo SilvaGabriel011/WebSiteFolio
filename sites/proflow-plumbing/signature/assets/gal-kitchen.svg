@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="gkT">
+  <title id="gkT">Kitchen sink, mixer tap and under-bench pipework with tiled splashback</title>
+  <defs>
+    <linearGradient id="gkBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0C4172"/>
+      <stop offset="1" stop-color="#072E4F"/>
+    </linearGradient>
+    <pattern id="gkTile" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#0E4A80"/>
+      <rect x="1.5" y="1.5" width="37" height="37" rx="3" fill="#155C96"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#gkBg)"/>
+  <!-- splashback -->
+  <rect x="0" y="0" width="400" height="128" fill="url(#gkTile)"/>
+  <!-- benchtop -->
+  <rect x="0" y="128" width="400" height="18" fill="#0A3055"/>
+  <rect x="0" y="128" width="400" height="4" fill="#7FB4DE" fill-opacity="0.5"/>
+  <!-- cabinet face -->
+  <rect x="0" y="146" width="400" height="154" fill="#062741"/>
+  <!-- sink bowl (cutaway) -->
+  <path d="M120 146 v34 q0 12 12 12 h96 q12 0 12 -12 v-34" fill="none" stroke="#7FB4DE" stroke-width="6"/>
+  <!-- mixer tap -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M256 128 V76 Q256 52 232 52 H196" stroke="#5FA8DC" stroke-width="10"/>
+    <path d="M196 52 v14" stroke="#5FA8DC" stroke-width="8"/>
+    <path d="M272 92 h20" stroke="#F26722" stroke-width="9"/>
+  </g>
+  <!-- drip -->
+  <path d="M196 84 c4 6 7 10 7 14 a7 7 0 1 1 -14 0 c0 -4 3 -8 7 -14z" fill="#F26722"/>
+  <!-- P-trap under bench -->
+  <g fill="none" stroke="#2E77B0" stroke-width="12" stroke-linecap="round">
+    <path d="M180 192 V232 Q180 252 200 252 Q220 252 220 232 V226"/>
+    <path d="M220 226 V212 Q220 200 232 200 H300"/>
+  </g>
+  <path d="M300 192 v16" stroke="#F26722" stroke-width="10" stroke-linecap="round"/>
+  <!-- isolation valves -->
+  <g fill="#F26722">
+    <circle cx="96" cy="236" r="12"/>
+    <rect x="90" y="214" width="12" height="14" rx="3"/>
+  </g>
+  <path d="M96 248 v30" stroke="#2E77B0" stroke-width="10" stroke-linecap="round"/>
+  <!-- cabinet handles -->
+  <g stroke="#7FB4DE" stroke-width="5" stroke-linecap="round" opacity="0.7">
+    <path d="M40 168 h32"/><path d="M328 168 h32"/>
+  </g>
+</svg>

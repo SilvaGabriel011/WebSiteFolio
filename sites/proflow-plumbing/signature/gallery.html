@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The job board — ProFlow Plumbing, Penrith</title>
+  <meta name="description" content="Recent jobs cleared by ProFlow Plumbing across Western Sydney — with the fixed price and the time on the clock for each one.">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <style>
+    /* Signature gallery — same dispatch-board system as index.html. */
+    :root {
+      --night: #071523;
+      --night-2: #0B2237;
+      --sky: #B9D4EA;
+      --sky-dim: #7FA3C2;
+      --orange: #F26722;
+      --orange-hot: #FF7A33;
+      --white: #F6FAFD;
+      --ok: #37C978;
+      --line: #1C3A55;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+    body {
+      background: var(--night); color: var(--white);
+      font-family: var(--sans); font-size: 1.02rem; line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: inherit; }
+    a, button { cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--orange-hot); outline-offset: 3px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -4rem; z-index: 99;
+      background: var(--orange); color: var(--night);
+      font-weight: 800; font-size: 0.85rem;
+      padding: 0.6rem 1rem; text-decoration: none;
+      transition: top 0.2s ease-out;
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { max-width: 72rem; margin-inline: auto; padding-inline: clamp(1.1rem, 4vw, 2.5rem); }
+    .caps { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+
+    .hdr { border-bottom: 1px solid var(--line); background: var(--night); position: sticky; top: 0; z-index: 50; }
+    .hdr .wrap { display: flex; align-items: center; gap: 1rem; min-height: 4rem; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; font-weight: 900; font-size: 1.15rem; }
+    .brand img { width: 2rem; height: 2rem; }
+    .brand em { font-style: normal; color: var(--orange); }
+    .hdr-back { margin-left: auto; font-weight: 700; font-size: 0.88rem; color: var(--sky); text-decoration: none; }
+    .hdr-back:hover { color: var(--white); }
+    .hdr-call {
+      margin-left: 1.2rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--orange); color: var(--night);
+      font-weight: 900; font-size: 0.95rem; text-decoration: none;
+      padding: 0.6em 1em; border-radius: 4px;
+      transition: background 0.15s; white-space: nowrap;
+    }
+    .hdr-call:hover { background: var(--orange-hot); }
+
+    .head { padding-block: clamp(2.6rem, 7vw, 5rem) clamp(1.6rem, 4vw, 2.6rem); }
+    .head .caps { color: var(--orange); }
+    .head h1 {
+      margin-top: 0.6rem;
+      font-size: clamp(2.1rem, 6.4vw, 4rem);
+      font-weight: 900; line-height: 1; letter-spacing: -0.02em; text-transform: uppercase;
+    }
+    .head p.sub { margin-top: 1rem; color: var(--sky); max-width: 52ch; }
+
+    .board { padding-bottom: clamp(2.6rem, 7vw, 5rem); }
+    .board-grid { display: grid; gap: 1rem; }
+    @media (min-width: 48em) { .board-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 62em) { .board-grid { grid-template-columns: repeat(3, 1fr); } }
+    .job {
+      display: flex; flex-direction: column;
+      background: var(--night-2);
+      border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .job:hover { border-color: var(--orange); transform: translateY(-2px); }
+    .job-media { aspect-ratio: 4 / 3; overflow: hidden; border-bottom: 1px solid var(--line); }
+    .job-media img { width: 100%; height: 100%; object-fit: cover; }
+    .job-body { padding: 1.1rem 1.15rem 1.25rem; display: flex; flex-direction: column; gap: 0.45rem; flex: 1; }
+    .job-no { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); }
+    .job h2 { font-size: 1.06rem; font-weight: 800; }
+    .job p { font-size: 0.88rem; color: var(--sky-dim); flex: 1; }
+    .job-meta {
+      display: flex; justify-content: space-between; gap: 1rem;
+      font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--sky-dim);
+      border-top: 1px solid var(--line); padding-top: 0.6rem;
+    }
+    .job-meta b { color: var(--ok); font-weight: 700; }
+
+    .closing { border-top: 1px solid var(--line); text-align: center; padding-block: clamp(2.4rem, 6vw, 4rem); }
+    .closing h2 { font-size: clamp(1.6rem, 4.2vw, 2.6rem); font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+    .closing h2 em { font-style: normal; color: var(--orange); }
+    .closing p { margin: 0.9rem auto 0; color: var(--sky); max-width: 46ch; }
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem; margin-top: 1.6rem; }
+    .btn-call {
+      display: inline-flex; align-items: center; gap: 0.7rem;
+      background: var(--orange); color: var(--night);
+      font-weight: 900; font-size: 1.15rem; text-decoration: none;
+      padding: 0.75em 1.2em; border-radius: 6px;
+      box-shadow: 0 6px 0 #A83F0D;
+      transition: transform 0.12s, box-shadow 0.12s, background 0.15s;
+    }
+    .btn-call:hover { background: var(--orange-hot); transform: translateY(2px); box-shadow: 0 4px 0 #A83F0D; }
+    .btn-quote {
+      font-weight: 800; font-size: 0.95rem; text-decoration: none; color: var(--white);
+      padding: 0.9em 1.3em; border: 2px solid var(--line); border-radius: 6px;
+      transition: border-color 0.15s;
+    }
+    .btn-quote:hover { border-color: var(--sky-dim); }
+
+    .ftr { border-top: 1px solid var(--line); padding-block: 1.4rem; }
+    .ftr .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem 2rem; font-size: 0.78rem; color: var(--sky-dim); }
+
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.45s ease-out, transform 0.45s ease-out; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#board">Skip to content</a>
+
+  <header class="hdr">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="ProFlow Plumbing — home">
+        <img src="assets/mark.svg" alt="" width="32" height="32">
+        <span>ProFlow<em>.</em></span>
+      </a>
+      <a class="hdr-back" href="index.html">&larr; Front page</a>
+      <a class="hdr-call" href="tel:0400776121"><span aria-hidden="true">&#9742;</span> 0400 776 121</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="head wrap">
+      <p class="caps">Straight off the dispatch log</p>
+      <h1>The job board</h1>
+      <p class="sub">Recent jobs across Western Sydney, with the fixed price the customer approved and the time on the clock. Names withheld — invoices real.</p>
+    </div>
+
+    <section id="board" class="board wrap" aria-label="Recent jobs">
+      <div class="board-grid">
+        <article class="job reveal">
+          <div class="job-media"><img src="assets/photos/01-hero-van.jpg" onerror="this.onerror=null;this.src='assets/gal-burst-pipe.svg'" alt="Burst flexi hose being replaced under a kitchen sink" width="640" height="480"></div>
+          <div class="job-body">
+            <p class="job-no">Job 7218 &middot; Glenmore Park</p>
+            <h2>Burst flexi hose, midnight call</h2>
+            <p>Water off, hose swapped, cabinet dried and checked — homeowner back in bed before 1am.</p>
+            <div class="job-meta"><span>40 min on site</span><b>$220 fixed</b></div>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div class="job-media"><img src="assets/photos/02-hero.jpg" onerror="this.onerror=null;this.src='assets/gal-hotwater.svg'" alt="Technician servicing a hot water system" width="640" height="480"></div>
+          <div class="job-body">
+            <p class="job-no">Job 7203 &middot; St Marys</p>
+            <h2>Same-day hot water changeover</h2>
+            <p>Old unit leaking at 7am, new 315L unit heating by 2pm, old one gone on the trailer.</p>
+            <div class="job-meta"><span>Same day</span><b>$2,130 fixed</b></div>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div class="job-media"><img src="assets/photos/03-hero.jpg" onerror="this.onerror=null;this.src='assets/gal-backflow.svg'" alt="Pipe wrenches laid out ready for the next job" width="640" height="480"></div>
+          <div class="job-body">
+            <p class="job-no">Job 7195 &middot; Peachtree Strata</p>
+            <h2>Backflow annual test &times;4</h2>
+            <p>Four devices tested and tagged, reports lodged with Sydney Water the same afternoon.</p>
+            <div class="job-meta"><span>Half day</span><b>$580 fixed</b></div>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div class="job-media"><img src="assets/gal-burst-pipe.svg" alt="Illustration of an emergency pipe repair" width="640" height="480"></div>
+          <div class="job-body">
+            <p class="job-no">Job 7181 &middot; Emu Plains</p>
+            <h2>Blocked sewer, roots at the boundary</h2>
+            <p>High-pressure jet clear with CCTV proof, plus a 12-month root management plan.</p>
+            <div class="job-meta"><span>2 hrs</span><b>$560 fixed</b></div>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div class="job-media"><img src="assets/gal-kitchen.svg" alt="Illustration of a kitchen plumbing fit-off" width="640" height="480"></div>
+          <div class="job-body">
+            <p class="job-no">Job 7176 &middot; Jordan Springs</p>
+            <h2>Kitchen reno rough-in &amp; fit-off</h2>
+            <p>New supply lines, dishwasher stop valve and pull-out mixer for a builder's reno.</p>
+            <div class="job-meta"><span>2 visits</span><b>$1,340 fixed</b></div>
+          </div>
+        </article>
+        <article class="job reveal">
+          <div class="job-media"><img src="assets/gal-rainwater.svg" alt="Illustration of a rainwater tank installation" width="640" height="480"></div>
+          <div class="job-body">
+            <p class="job-no">Job 7168 &middot; Mulgoa</p>
+            <h2>Rural pressure pump service</h2>
+            <p>Pressure switch replaced, foot valve cleaned, tank connections re-sealed.</p>
+            <div class="job-meta"><span>2 hrs</span><b>$395 fixed</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="wrap">
+        <h2 id="closing-title">Your job goes <em>next on the board.</em></h2>
+        <p>Call now or send the details — fixed price approved before we start, day or night.</p>
+        <div class="actions">
+          <a class="btn-call" href="tel:0400776121"><span aria-hidden="true">&#9742;</span> 0400 776 121</a>
+          <a class="btn-quote" href="index.html#quote">Get a fixed price</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <span>ProFlow Plumbing &middot; ABN 62 405 118 397 &middot; NSW Plumbing Lic. L048213</span>
+      <span>Fictional business &middot; photos via Pexels</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) ||
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

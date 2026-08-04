@@ -1,6 +1,6 @@
 /* Business registry — identity, contact details, branding hooks and per-trade
    terminology for the systems app. All details are fictional (see README).
-   Sites live at sites/<slug>/<variant>/ (variants: premium | classic | bold). */
+   Sites live at sites/<slug>/<variant>/ (variants: premium | classic | bold | signature). */
 (function () {
   'use strict';
 
@@ -17,7 +17,7 @@
     owner: 'Shane Doherty',
     brand: '#0B4F8A',
     accent: '#F26722',
-    siteUrl: '../sites/proflow-plumbing/bold/index.html',
+    siteUrl: '../sites/proflow-plumbing/signature/index.html',
     logo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.2 3.9 5.5 6.8 5.5 9.7a5.5 5.5 0 1 1-11 0C6.5 9.8 8.8 6.9 12 3z"/><path d="M9.5 13.2a2.6 2.6 0 0 0 2.4 2.7"/></svg>',
     terms: {
       jobNoun: 'job',
@@ -60,7 +60,7 @@
     owner: 'Marcus Reid',
     brand: '#B98A4E',
     accent: '#1F1D1A',
-    siteUrl: '../sites/ironbark-cabinetry/premium/index.html',
+    siteUrl: '../sites/ironbark-cabinetry/signature/index.html',
     logo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M4 12h16M9.5 8h5M9.5 16h5"/></svg>',
     terms: {
       jobNoun: 'project',
@@ -99,7 +99,7 @@
     owner: 'The Calloway family',
     brand: '#16324F',
     accent: '#C9A227',
-    siteUrl: '../sites/harbourline-joinery/classic/index.html',
+    siteUrl: '../sites/harbourline-joinery/signature/index.html',
     logo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V8a7 7 0 0 1 14 0v13"/><path d="M5 21h14M12 21v-6"/><path d="M8.5 11h7"/></svg>',
     terms: {
       jobNoun: 'job',
@@ -137,7 +137,7 @@
     owner: 'Dana Whitfield & Priya Sharma',
     brand: '#8BA88E',
     accent: '#B58B3E',
-    siteUrl: '../sites/sunline-kitchens/premium/index.html',
+    siteUrl: '../sites/sunline-kitchens/signature/index.html',
     logo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17a8 8 0 0 1 16 0"/><path d="M12 5V3M5.6 7.6 4.2 6.2M18.4 7.6l1.4-1.4"/><path d="M2 21h20M6 17h12"/></svg>',
     terms: {
       jobNoun: 'project',
