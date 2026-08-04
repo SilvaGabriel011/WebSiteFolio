@@ -1,0 +1,9 @@
+- `workshop.jpg` — OK: foto de Quintin Gellar via Pexels (https://www.pexels.com/photo/man-using-table-saw-313776/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `dovetail.jpg` — OK: foto de Daniel Reche via Pexels (https://www.pexels.com/photo/a-person-using-a-chisel-7109996/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `hero.jpg` — OK: reaproveitada da variante signature (01-hero-kitchen.jpg), Pexels/CC BY conforme registro de lá
+- `island.jpg` — OK: reaproveitada da variante signature (02-island.jpg), Pexels/CC BY conforme registro de lá
+- `vanity.jpg` — OK: reaproveitada da variante signature (03-vanity.jpg), Pexels/CC BY conforme registro de lá
+- `entertainment.jpg` — OK: reaproveitada da variante signature (04-media-wall.jpg), Pexels/CC BY conforme registro de lá
+- `library.jpg` — OK: reaproveitada da variante signature (05-library.jpg), Pexels/CC BY conforme registro de lá
+- `wardrobe.jpg` — OK: reaproveitada da variante signature (06-wardrobe.jpg), Pexels/CC BY conforme registro de lá
+- `pantry.jpg` — OK: reaproveitada da variante signature (07-pantry.jpg), Pexels/CC BY conforme registro de lá
