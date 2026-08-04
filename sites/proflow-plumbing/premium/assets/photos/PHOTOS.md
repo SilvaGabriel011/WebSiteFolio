@@ -1,0 +1,7 @@
+- `burst.jpg` — OK: foto de Anıl Karakaya via Pexels (https://www.pexels.com/photo/plumber-installs-pipe-fittings-6419128/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `bathroom.jpg` — OK: foto de Max Vakhtbovych via Pexels (https://www.pexels.com/photo/modern-bathroom-interior-with-shower-cabin-and-mirror-in-house-7018243/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `kitchen.jpg` — OK: foto de Martin Lang via Pexels (https://www.pexels.com/photo/sink-in-kitchen-27459830/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `backflow.jpg` — OK: foto de David McElwee via Pexels (https://www.pexels.com/photo/valves-and-pipes-13312223/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `rainwater.jpg` — OK: foto de Magda Ehlers via Pexels (https://www.pexels.com/photo/large-containers-standing-by-the-building-on-a-farm-13772681/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `hero.jpg` — OK: foto de Anıl Karakaya via Pexels (reaproveitada da signature) — licença Pexels
+- `hotwater.jpg` — OK: foto de MOBO Modulnye Kotelnye via Pexels (reaproveitada da signature) — licença Pexels
