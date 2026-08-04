@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The order book — Harbourline Joinery, Newcastle</title>
+  <meta name="description" content="Numbered commissions from the Harbourline Joinery order book — doors, stairs and fit-outs across Newcastle since 1987.">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <style>
+    /* Signature gallery — same institutional-ledger system as index.html. */
+    :root {
+      --paper: #F6F2E9;
+      --paper-2: #EEE7D8;
+      --navy: #16324F;
+      --navy-soft: #3F5875;
+      --gold: #C9A227;
+      --gold-ink: #8F7015;
+      --line: #16324F;
+      --hairline: #CBBFA5;
+      --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+    body {
+      background: var(--paper); color: var(--navy);
+      font-family: var(--serif); font-size: 1.04rem; line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: inherit; }
+    a, button { cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--gold-ink); outline-offset: 3px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -4rem; z-index: 99;
+      background: var(--navy); color: var(--paper);
+      font-family: var(--sans); font-weight: 700; font-size: 0.85rem;
+      padding: 0.6rem 1rem; text-decoration: none;
+      transition: top 0.2s ease-out;
+    }
+    .skip-link:focus { top: 1rem; }
+    .wrap { max-width: 72rem; margin-inline: auto; padding-inline: clamp(1.1rem, 4vw, 2.75rem); }
+    .caps {
+      font-family: var(--sans); font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-ink);
+    }
+
+    .letterhead { border-bottom: 3px double var(--line); }
+    .letterhead-top {
+      display: flex; justify-content: space-between; gap: 1rem;
+      padding-block: 0.6rem; border-bottom: 1px solid var(--hairline);
+      font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--navy-soft);
+    }
+    .letterhead-top a { text-decoration: none; }
+    .letterhead-top a:hover { color: var(--gold-ink); }
+    .letterhead-main { text-align: center; padding-block: clamp(1.4rem, 3.5vw, 2.2rem); }
+    .letterhead-main p.crumb { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--navy-soft); margin-bottom: 0.6rem; }
+    .letterhead-main p.crumb a { text-decoration: none; color: var(--gold-ink); }
+    .letterhead-main h1 { font-size: clamp(2rem, 6vw, 3.8rem); font-weight: 400; line-height: 1.05; }
+    .letterhead-main h1 em { font-style: italic; color: var(--gold-ink); }
+
+    .standfirst { max-width: 54ch; margin: clamp(1.6rem, 4.5vw, 2.6rem) auto 0; text-align: center; color: var(--navy-soft); padding-inline: 1rem; }
+
+    .book { padding-block: clamp(2.2rem, 6vw, 4.5rem); display: grid; gap: clamp(1.8rem, 5vw, 3rem); }
+    .entry { display: grid; gap: 1.1rem; border: 1px solid var(--line); background: #fff; padding: 0.7rem; box-shadow: 8px 8px 0 var(--paper-2); }
+    @media (min-width: 56em) {
+      .entry { grid-template-columns: 7fr 5fr; align-items: center; padding: 0.85rem; }
+      .entry:nth-child(even) .entry-media { order: 2; }
+    }
+    .entry-media { aspect-ratio: 4 / 3; overflow: hidden; border: 1px solid var(--hairline); }
+    .entry-media img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.95) contrast(1.02) sepia(0.04); }
+    .entry-body { padding: 0.6rem 0.9rem 0.9rem; }
+    .entry-no { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-ink); }
+    .entry-body h2 { font-size: clamp(1.25rem, 2.6vw, 1.7rem); font-weight: 400; font-style: italic; margin-top: 0.3rem; }
+    .entry-body p { font-family: var(--sans); font-size: 0.92rem; color: var(--navy-soft); margin-top: 0.5rem; max-width: 52ch; }
+    .entry-stats {
+      display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem;
+      margin-top: 0.8rem; padding-top: 0.7rem; border-top: 1px solid var(--hairline);
+      font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy-soft);
+    }
+    .entry-stats b { color: var(--gold-ink); font-weight: 600; }
+
+    .closing { background: var(--navy); color: var(--paper); border-top: 4px double var(--gold); text-align: center; padding-block: clamp(2.4rem, 6vw, 4rem); }
+    .closing h2 { font-size: clamp(1.7rem, 4.4vw, 2.8rem); font-weight: 400; max-width: 24ch; margin-inline: auto; }
+    .closing h2 em { font-style: italic; color: var(--gold); }
+    .closing p { margin: 1rem auto 0; color: #C7D0DC; max-width: 48ch; }
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 1.7rem; }
+    .btn {
+      display: inline-block; text-decoration: none; text-align: center;
+      font-family: var(--sans); font-size: 0.84rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.9em 1.5em; border: 2px solid var(--gold);
+      transition: background 0.18s, color 0.18s, border-color 0.18s;
+    }
+    .btn-solid { background: var(--gold); color: var(--navy); }
+    .btn-solid:hover { background: var(--paper); border-color: var(--paper); }
+    .btn-line { color: var(--paper); }
+    .btn-line:hover { background: var(--gold); color: var(--navy); }
+    .colophon {
+      border-top: 1px solid #2C4A6B; margin-top: clamp(1.8rem, 5vw, 2.6rem); padding-top: 1rem;
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem;
+      font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: #8FA3BC; text-align: left;
+    }
+
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.5s ease-out, transform 0.5s ease-out; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#book">Skip to content</a>
+
+  <header class="letterhead">
+    <div class="wrap">
+      <div class="letterhead-top">
+        <span>Hamilton &middot; Newcastle NSW</span>
+        <a href="tel:0403118265">0403 118 265</a>
+      </div>
+      <div class="letterhead-main">
+        <p class="crumb"><a href="index.html">Harbourline Joinery</a> / The order book</p>
+        <h1>Entries from <em>the order book.</em></h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <p class="standfirst wrap">Every job since 1987 gets a number in the book Ken started — 2,400 and counting. Six recent entries below, each signed off by a Calloway before the invoice went out.</p>
+
+    <section id="book" class="book wrap" aria-label="Order book entries">
+      <article class="entry reveal">
+        <div class="entry-media"><img src="assets/photos/02-stairs.jpg" onerror="this.onerror=null;this.src='assets/gallery-stairs.svg'" alt="Heritage timber staircase with turned balusters" width="640" height="480"></div>
+        <div class="entry-body">
+          <p class="entry-no">Entry № 2,404 &middot; Merewether</p>
+          <h2>The return stair, rebuilt around its newel</h2>
+          <p>A 1910 staircase saved rather than replaced — every tread template-matched on site, the original newel post cleaned and kept in service.</p>
+          <div class="entry-stats"><span><b>14 weeks</b> on the book</span><span><b>Heritage</b> approved</span><span>2024</span></div>
+        </div>
+      </article>
+      <article class="entry reveal">
+        <div class="entry-media"><img src="assets/photos/03-door.jpg" onerror="this.onerror=null;this.src='assets/gallery-door.svg'" alt="Dark timber entry door on a brick terrace" width="640" height="480"></div>
+        <div class="entry-body">
+          <p class="entry-no">Entry № 2,411 &middot; Cooks Hill</p>
+          <h2>A terrace entry that finally fits</h2>
+          <p>Solid blackbutt door and sidelights for a terrace that had seen four bad replacements. Draught-sealed, hung sweet, guaranteed for ten years.</p>
+          <div class="entry-stats"><span><b>Blackbutt</b> solid</span><span><b>10-yr</b> guarantee</span><span>2025</span></div>
+        </div>
+      </article>
+      <article class="entry reveal">
+        <div class="entry-media"><img src="assets/photos/04-fitout.jpg" onerror="this.onerror=null;this.src='assets/gallery-cafe.svg'" alt="Café counter and shelving in warm timber" width="640" height="480"></div>
+        <div class="entry-body">
+          <p class="entry-no">Entry № 2,407 &middot; Darby St</p>
+          <h2>The café that never closed</h2>
+          <p>Counter, banquettes and wall panelling installed over six nights — the espresso machine never missed a morning.</p>
+          <div class="entry-stats"><span><b>6 nights</b>, zero trading days lost</span><span><b>On budget</b></span><span>2025</span></div>
+        </div>
+      </article>
+      <article class="entry reveal">
+        <div class="entry-media"><img src="assets/photos/03-hero.jpg" onerror="this.onerror=null;this.src='assets/gallery-window.svg'" alt="Restored timber bay windows in a heritage room" width="640" height="480"></div>
+        <div class="entry-body">
+          <p class="entry-no">Entry № 2,398 &middot; The Junction</p>
+          <h2>Bay windows, breathing again</h2>
+          <p>Full sash restoration on a heritage bay — new cords, parting beads and one replacement sill, matched to the originals in grain and profile.</p>
+          <div class="entry-stats"><span><b>Sash</b> restoration</span><span><b>3 windows</b></span><span>2024</span></div>
+        </div>
+      </article>
+      <article class="entry reveal">
+        <div class="entry-media"><img src="assets/photos/01-workshop.jpg" onerror="this.onerror=null;this.src='assets/hero.svg'" alt="Hands shaping timber at the workshop bench" width="640" height="480"></div>
+        <div class="entry-body">
+          <p class="entry-no">Entry № 2,412 &middot; the bench</p>
+          <h2>In progress: a spotted gum entry</h2>
+          <p>On the bench this week — a spotted gum door for a Mayfield federation front. Photographed mid-build because the joinery is the point.</p>
+          <div class="entry-stats"><span><b>Spotted gum</b></span><span><b>Due</b> this month</span><span>2026</span></div>
+        </div>
+      </article>
+      <article class="entry reveal">
+        <div class="entry-media"><img src="assets/photos/02-hero.jpg" onerror="this.onerror=null;this.src='assets/gallery-stairs.svg'" alt="Hand plane and shavings on the workshop bench" width="640" height="480"></div>
+        <div class="entry-body">
+          <p class="entry-no">The standing entry &middot; since 1987</p>
+          <h2>The bench itself</h2>
+          <p>Same workshop, same wall of hand planes, thirty-nine years of shavings. Visitors welcome — ring ahead and Rob will put the kettle on.</p>
+          <div class="entry-stats"><span><b>Est. 1987</b></span><span><b>2 generations</b></span><span>Hamilton</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="wrap">
+        <p class="caps" style="color:var(--gold)">Next entries open</p>
+        <h2 id="closing-title" style="margin-top:0.6rem">№ 2,413 could be <em>your front door.</em></h2>
+        <p>Start with a site measure — quotes are written, fixed and honoured, the way Ken did it in 1987.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="../../../app/index.html?business=harbourline-joinery#/book">Book a site measure</a>
+          <a class="btn btn-line" href="index.html">Back to the letterhead</a>
+        </div>
+        <div class="colophon">
+          <span>Harbourline Joinery &middot; ABN 33 617 208 445 &middot; Lic. 187442C</span>
+          <span>Fictional business &middot; photos via Pexels</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      'use strict';
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) ||
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
