@@ -1,0 +1,9 @@
+- `mermaid.jpg` — OK: foto de Curtis Adams via Pexels (https://www.pexels.com/photo/modern-kitchen-design-15409513/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `tallebudgera.jpg` — OK: foto de Ahmet ÇÖTÜR via Pexels (https://www.pexels.com/photo/a-kitchen-with-green-cabinets-and-white-counter-tops-27626178/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `burleigh.jpg` — OK: foto de Max Vakhtbovych via Pexels (https://www.pexels.com/photo/kitchen-counter-and-sink-facing-the-windows-with-sheer-curtains-7587380/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `hero.jpg` — OK: reaproveitada da variante signature (01-hero-kitchen.jpg), Pexels/CC BY conforme registro de lá
+- `miami.jpg` — OK: reaproveitada da variante signature (01-hero-kitchen.jpg), Pexels/CC BY conforme registro de lá
+- `palm-beach.jpg` — OK: reaproveitada da variante signature (02-hero.jpg), Pexels/CC BY conforme registro de lá
+- `currumbin.jpg` — OK: reaproveitada da variante signature (03-hero.jpg), Pexels/CC BY conforme registro de lá
+- `before.jpg` — OK: reaproveitada da variante signature (02-before.jpg), Pexels/CC BY conforme registro de lá
+- `after.jpg` — OK: reaproveitada da variante signature (03-after.jpg), Pexels/CC BY conforme registro de lá

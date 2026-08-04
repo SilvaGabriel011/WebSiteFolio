@@ -1,0 +1,8 @@
+- `bar.jpg` — OK: foto de Pavel Danilyuk via Pexels (https://www.pexels.com/photo/photo-of-wooden-stools-in-a-bar-5858038/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `panelling.jpg` — OK: foto de Max Vakhtbovych via Pexels (https://www.pexels.com/photo/number-of-hotel-room-on-wall-7534171/) — licença Pexels, uso comercial livre; otimizada para 1600px
+- `hero.jpg` — OK: reaproveitada da variante signature (01-workshop.jpg), Pexels/CC BY conforme registro de lá
+- `workshop.jpg` — OK: reaproveitada da variante signature (02-hero.jpg), Pexels/CC BY conforme registro de lá
+- `stairs.jpg` — OK: reaproveitada da variante signature (02-stairs.jpg), Pexels/CC BY conforme registro de lá
+- `door.jpg` — OK: reaproveitada da variante signature (03-door.jpg), Pexels/CC BY conforme registro de lá
+- `cafe.jpg` — OK: reaproveitada da variante signature (04-fitout.jpg), Pexels/CC BY conforme registro de lá
+- `window.jpg` — OK: reaproveitada da variante signature (03-hero.jpg), Pexels/CC BY conforme registro de lá
