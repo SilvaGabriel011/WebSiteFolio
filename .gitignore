@@ -1,2 +1,4 @@
 .DS_Store
+.photo-pipeline/
 Thumbs.db
+node_modules/
